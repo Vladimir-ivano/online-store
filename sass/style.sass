@@ -7,11 +7,99 @@ body
   font-size: $FONT-SIZE
   line-height: 1.1
   font-weight: $FONT-WEIGHT-REG
+  font-family: $FONT-FAMALI1
 .container
   max-width: 1140px
   padding: 0 10px
   margin: 0 auto
   width: 100%
+.navigation
+  position: fixed
+  top: 0
+  width: 100%
+  left: 50%
+  z-index: 1
+  color: $COLOR-ACCENT
+  padding: 15px 0
+  display: flex
+  background: $COLOR-GREEN
+  box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
+  transform: translateX(-50%)
+.nav
+  display: flex
+  &__nav
+    margin-right: auto
+    display: flex
+    order: -1
+  &__item
+    margin-bottom: 13px
+    &:nth-last-child(2n+1)
+      margin-bottom: 0
+  &__link
+    text-align: left
+    line-height: $FONT-HEIGHT1
+    text-decoration: underline
+    font-family: $FONT-FAMALI2
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-BOLT
+    color: $COLOR-ACCENT
+    padding: 9px 15px
+    border-radius: 50px
+    transform: background 0.2s liner
+    &:hover
+      background: #068292
 
-  
+  &__logo
+    position: absolute
+    top: 75%
+    left: 47%
+    width: 225px
+    height: 225px
+    z-index: -1
+    transform: translate(-47%,-75%)
+    box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
+    border-radius: 100%
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    margin: 0 auto
+    background-color: $COLOR-GREEN
+    padding: 40px
+    &__item
 
+      font-family: $FONT-FAMALI2
+      font-size: $FONT-SIZE-LOGO
+      font-weight: $FONT-WEIGHT-BOLT
+      color: $COLOR-ACCENT
+    
+    &__link
+      
+      font-size: $FONT-SIZE
+      font-family: $FONT-FAMALI1
+      font-weight: $FONT-WEIGHT-LIGHT
+  &__con
+    display: flex
+  &__grup
+    align-self: center
+    position: relative
+    padding: 0 36px
+    border-right: 1px solid $COLOR-ACCENT
+    &:last-child
+      border-right: 0
+    &__icon
+      position: absolute
+      top: 12px
+      left: 10px
+      width: 20px
+      height: 20px
+      fill: $COLOR-ACCENT
+  &__citi
+    font-family: $FONT-FAMALI1
+    font-size: $FONT-SIZE
+    font-weight: $FONT-WEIGHT-LIGHT
+    line-height: $FONT-HEIGHT2
+  &__tel
+    color: $COLOR-ACCENT
+    font-weight: $FONT-WEIGHT-BLACK
+    font-size: $FONT-SIZE-TEL

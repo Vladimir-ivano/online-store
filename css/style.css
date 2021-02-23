@@ -52,6 +52,7 @@ body {
   font-size: 12px;
   line-height: 1.1;
   font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -59,4 +60,108 @@ body {
   padding: 0 10px;
   margin: 0 auto;
   width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  z-index: 1;
+  color: #FFFFFF;
+  padding: 15px 0;
+  display: flex;
+  background: #009CB0;
+  box-shadow: 4px 6px 10px rgba(0, 156, 176, 0.25);
+  transform: translateX(-50%);
+}
+
+.nav {
+  display: flex;
+}
+.nav__nav {
+  margin-right: auto;
+  display: flex;
+  order: -1;
+}
+.nav__item {
+  margin-bottom: 13px;
+}
+.nav__item:nth-last-child(2n+1) {
+  margin-bottom: 0;
+}
+.nav__link {
+  text-align: left;
+  line-height: 1.3;
+  text-decoration: underline;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 9px 15px;
+  border-radius: 50px;
+  transform: background 0.2s liner;
+}
+.nav__link:hover {
+  background: #068292;
+}
+.nav__logo {
+  position: absolute;
+  top: 75%;
+  left: 47%;
+  width: 225px;
+  height: 225px;
+  z-index: -1;
+  transform: translate(-47%, -75%);
+  box-shadow: 4px 6px 10px rgba(0, 156, 176, 0.25);
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #009CB0;
+  padding: 40px;
+}
+.nav__logo__item {
+  font-family: "Play", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.nav__logo__link {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.nav__con {
+  display: flex;
+}
+.nav__grup {
+  align-self: center;
+  position: relative;
+  padding: 0 36px;
+  border-right: 1px solid #FFFFFF;
+}
+.nav__grup:last-child {
+  border-right: 0;
+}
+.nav__grup__icon {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  fill: #FFFFFF;
+}
+.nav__citi {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.nav__tel {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 18px;
 }
