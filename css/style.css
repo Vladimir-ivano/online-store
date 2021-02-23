@@ -69,7 +69,7 @@ body {
   left: 50%;
   z-index: 1;
   color: #FFFFFF;
-  padding: 15px 0;
+  padding: 20px 0;
   display: flex;
   background: #009CB0;
   box-shadow: 4px 6px 10px rgba(0, 156, 176, 0.25);
@@ -113,15 +113,15 @@ body {
   height: 225px;
   z-index: -1;
   transform: translate(-47%, -75%);
+  justify-content: flex-end;
+  padding: 40px;
   box-shadow: 4px 6px 10px rgba(0, 156, 176, 0.25);
   border-radius: 100%;
   text-align: center;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   margin: 0 auto;
   background-color: #009CB0;
-  padding: 40px;
 }
 .nav__logo__item {
   font-family: "Play", sans-serif;
@@ -148,22 +148,28 @@ body {
 }
 .nav__grup__icon {
   position: absolute;
-  top: 12px;
-  left: 10px;
+  bottom: 3px;
+  left: 0px;
   width: 20px;
   height: 20px;
   fill: #FFFFFF;
 }
 .nav__citi {
+  padding: 6px 6px;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 1.5;
 }
 .nav__tel {
+  padding: 6px 6px;
+  border-radius: 50px;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 18px;
+}
+.nav__tel:hover {
+  background: #068292;
 }
 
 .profil {

@@ -20,7 +20,7 @@ body
   left: 50%
   z-index: 1
   color: $COLOR-ACCENT
-  padding: 15px 0
+  padding: 20px 0
   display: flex
   background: $COLOR-GREEN
   box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
@@ -57,15 +57,16 @@ body
     height: 225px
     z-index: -1
     transform: translate(-47%,-75%)
+    justify-content: flex-end
+    padding: 40px
     box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
     border-radius: 100%
     text-align: center
     display: flex
-    justify-content: flex-end
     flex-direction: column
     margin: 0 auto
     background-color: $COLOR-GREEN
-    padding: 40px
+    
     &__item
 
       font-family: $FONT-FAMALI2
@@ -84,25 +85,32 @@ body
     align-self: center
     position: relative
     padding: 0 36px
+    
     border-right: 1px solid $COLOR-ACCENT
+    
     &:last-child
       border-right: 0
     &__icon
       position: absolute
-      top: 12px
-      left: 10px
+      bottom: 3px
+      left: 0px
       width: 20px
       height: 20px
       fill: $COLOR-ACCENT
   &__citi
+    padding: 6px 6px
     font-family: $FONT-FAMALI1
     font-size: $FONT-SIZE
     font-weight: $FONT-WEIGHT-LIGHT
     line-height: $FONT-HEIGHT2
   &__tel
+    padding: 6px 6px
+    border-radius: 50px
     color: $COLOR-ACCENT
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-TEL
+    &:hover
+      background: #068292
 
 .profil
   margin-top: 110px
