@@ -106,7 +106,7 @@ body {
   background: #068292;
 }
 .nav__logo {
-  position: absolute;
+  position: fixed;
   top: 75%;
   left: 47%;
   width: 225px;
