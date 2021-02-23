@@ -155,21 +155,15 @@ body {
   fill: #FFFFFF;
 }
 .nav__citi {
-  padding: 6px 6px;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 1.5;
 }
 .nav__tel {
-  padding: 6px 6px;
-  border-radius: 50px;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 18px;
-}
-.nav__tel:hover {
-  background: #068292;
 }
 
 .profil {
