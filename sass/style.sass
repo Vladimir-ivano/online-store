@@ -19,7 +19,91 @@ body
   width: 100%
   left: 0
   z-index: 1
+  &:before
+    background-color: $COLOR-GREEN
+    border-radius: 50%
+    bottom: 60px
+    content: ''
+    z-index: -1
+    display: block
+    height: 400px
+    left: 50%
+    pointer-events: none
+    position: absolute
+    transform: translateX(-50%)
+    width: 400px
 .navigation
   color: $COLOR-ACCENT
-  background: $COLOR-GREEN
+  background: linear-gradient(90deg, rgba(0,156,176,1) 1%, rgba(0,156,176,1) 37%, rgba(0,156,176,1) 70%, rgba(0,156,176,1) 92%)
+  box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
+.nav
+  padding: 20px 0 0 0
   display: flex
+  &__items
+    flex-basis: calc( 100% /3  )
+  &__nav
+    margin-right: auto
+    display: flex
+  &__item
+    margin-bottom: 13px
+    &:nth-last-child(2n+1)
+      margin-bottom: 0
+  &__link
+    text-align: left
+    line-height: $FONT-HEIGHT1
+    text-decoration: underline
+    font-family: $FONT-FAMALI2
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-BOLT
+    color: $COLOR-ACCENT
+    padding: 9px 15px
+    border-radius: 50px
+    transform: background 0.2s liner
+    &:hover
+      background: #068292
+
+  &__logo
+    text-align: center
+    
+    align-items: flex-end
+    
+    &__item
+
+      font-family: $FONT-FAMALI2
+      font-size: $FONT-SIZE-LOGO
+      font-weight: $FONT-WEIGHT-BOLT
+      color: $COLOR-ACCENT
+    
+    &__link
+      
+      font-size: $FONT-SIZE
+      font-family: $FONT-FAMALI1
+      font-weight: $FONT-WEIGHT-LIGHT
+  &__con
+    display: flex
+  &__grup
+    align-self: center
+    position: relative
+    padding: 0 36px
+    
+    border-right: 1px solid $COLOR-ACCENT
+    
+    &:last-child
+      border-right: 0
+    &__icon
+      position: absolute
+      bottom: 3px
+      left: 0px
+      width: 20px
+      height: 20px
+      fill: $COLOR-ACCENT
+  &__citi
+    
+    font-family: $FONT-FAMALI1
+    font-size: $FONT-SIZE
+    font-weight: $FONT-WEIGHT-LIGHT
+    line-height: $FONT-HEIGHT2
+  &__tel
+    color: $COLOR-ACCENT
+    font-weight: $FONT-WEIGHT-BLACK
+    font-size: $FONT-SIZE-TEL
