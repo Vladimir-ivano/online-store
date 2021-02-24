@@ -139,7 +139,6 @@ body {
 }
 .nav__con {
   display: flex;
-  justify-content: space-between;
 }
 .nav__grup {
   align-self: center;
@@ -149,7 +148,7 @@ body {
 }
 .nav__grup:last-child {
   border-right: 0;
-  padding: 0 10px 0 0;
+  padding: 0 19px 0 35px;
 }
 .nav__grup__icon {
   position: absolute;
@@ -168,5 +167,5 @@ body {
 .nav__tel {
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
 }
