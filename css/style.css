@@ -67,7 +67,7 @@ body {
   top: 0;
   width: 100%;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .headar:before {
   background-color: #009CB0;
@@ -171,5 +171,6 @@ body {
 }
 
 .profil {
-  margin-top: 40px;
+  padding-top: 50px;
+  background: #fff;
 }
