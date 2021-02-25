@@ -124,6 +124,7 @@ body
     flex-basis: calc( 50% - 105px )
     justify-content: space-between
   &__inner--shop
+    position: relative
     display: flex
     width: 44px
     height: 44px
@@ -131,8 +132,9 @@ body
     border-radius: 100%
     align-items: center
     justify-content: center
-    &:hover
+  .activ
       background: $COLOR-GREEN
+      
   &__inner--calendar
     display: flex
     align-self: center
@@ -156,7 +158,17 @@ body
     fill: rgba($COLOR-TEXT,0.9 )
     &--shop
       margin: 0 auto
-      
+  &__items
+    
+    position: absolute
+    top: 5px
+    color: $COLOR-ACCENT
+    right: -19px
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-BOLT
+    padding: 2px 7px
+    background: $COLOR-ORANGE
+    border-radius: 50px
   &__links
     color: rgba($COLOR-TEXT,0.9 )
     font-size: $FONT-SIZE-MENU

@@ -185,6 +185,7 @@ body {
   justify-content: space-between;
 }
 .profil__inner--shop {
+  position: relative;
   display: flex;
   width: 44px;
   height: 44px;
@@ -193,7 +194,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.profil__inner--shop:hover {
+.profil .activ {
   background: #009CB0;
 }
 .profil__inner--calendar {
@@ -223,6 +224,17 @@ body {
 }
 .profil__icon--shop {
   margin: 0 auto;
+}
+.profil__items {
+  position: absolute;
+  top: 5px;
+  color: #FFFFFF;
+  right: -19px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px 7px;
+  background: #FD8424;
+  border-radius: 50px;
 }
 .profil__links {
   color: rgba(153, 153, 153, 0.9);
