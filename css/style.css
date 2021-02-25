@@ -230,3 +230,9 @@ body {
   font-weight: 300;
   border-bottom: 1px dotted rgba(153, 153, 153, 0.9);
 }
+.profil__links--no {
+  color: rgba(153, 153, 153, 0.9);
+  font-size: 14px;
+  font-weight: 300;
+  border-bottom: none;
+}
