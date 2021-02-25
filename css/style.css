@@ -67,12 +67,12 @@ body {
   top: 0;
   width: 100%;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 .headar:before {
   background-color: #009CB0;
   border-radius: 50%;
-  bottom: 100px;
+  bottom: 60px;
   content: "";
   z-index: -1;
   display: block;
@@ -172,5 +172,38 @@ body {
 
 .profil {
   padding-top: 50px;
-  background: #fff;
+  background: white;
+}
+.profil__nav {
+  display: flex;
+}
+.profil__item {
+  flex-basis: calc((100%/6));
+  margin-right: 40px;
+}
+.profil__item--items:hover {
+  background: #009CB0;
+}
+.profil__item__icon {
+  width: 25px;
+  height: 25px;
+  fill: rgba(153, 153, 153, 0.9);
+  transform: fill 0.9 liner;
+}
+.profil__item__icon:hover {
+  fill: #009CB0;
+}
+.profil__inner {
+  display: flex;
+}
+.profil__link {
+  display: inline;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(153, 153, 153, 0.9);
+  transform: all 0.9 liner;
+  border-bottom: 1px dotted #999999, 0.9;
+}
+.profil__link:hover {
+  color: #009CB0;
 }

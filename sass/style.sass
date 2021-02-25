@@ -18,11 +18,11 @@ body
   top: 0
   width: 100%
   left: 0
-  z-index: 2
+  z-index: 3
   &:before
     background-color: $COLOR-GREEN
     border-radius: 50%
-    bottom: 100px
+    bottom: 60px
     content: ''
     z-index: -1
     display: block
@@ -30,7 +30,7 @@ body
     left: 50%
     pointer-events: none
     position: absolute
-    transform: translateX(-50%)
+    transform: translateX(-50%,)
     width: 350px
 .navigation
   
@@ -110,9 +110,37 @@ body
     color: $COLOR-ACCENT
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-TEL
+
+
+//  ---------profil
 .profil
   padding-top: 50px
-  
-  background: #fff
-  
- 
+  background: rgba($COLOR-ACCENT,1 )
+  &__nav
+    display: flex
+    
+  &__item
+    flex-basis: calc((100%/6))
+    margin-right: 40px
+    &--items
+      
+      &:hover
+        background: $COLOR-GREEN
+    &__icon
+      width: 25px
+      height: 25px
+      fill: rgba($COLOR-TEXT,0.9 )
+      transform: fill 0.9 liner
+      &:hover
+        fill: $COLOR-GREEN
+  &__inner
+    display: flex
+  &__link
+    display: inline
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-LIGHT
+    color: rgba($COLOR-TEXT,0.9 )
+    transform: all 0.9 liner
+    border-bottom: 1px dotted ($COLOR-TEXT,0.9 )
+    &:hover
+      color: $COLOR-GREEN
