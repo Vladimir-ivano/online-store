@@ -74,7 +74,7 @@ body {
   border-radius: 50%;
   bottom: 60px;
   content: "";
-  z-index: -1;
+  z-index: 1;
   display: block;
   height: 350px;
   left: 50%;
@@ -184,13 +184,13 @@ body {
 .profil__item--items:hover {
   background: #009CB0;
 }
-.profil__item__icon {
+.profil__icon {
   width: 25px;
   height: 25px;
   fill: rgba(153, 153, 153, 0.9);
   transform: fill 0.9 liner;
 }
-.profil__item__icon:hover {
+.profil__icon:hover {
   fill: #009CB0;
 }
 .profil__inner {

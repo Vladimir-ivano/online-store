@@ -24,7 +24,7 @@ body
     border-radius: 50%
     bottom: 60px
     content: ''
-    z-index: -1
+    z-index: 1
     display: block
     height: 350px
     left: 50%
@@ -126,13 +126,13 @@ body
       
       &:hover
         background: $COLOR-GREEN
-    &__icon
-      width: 25px
-      height: 25px
-      fill: rgba($COLOR-TEXT,0.9 )
-      transform: fill 0.9 liner
-      &:hover
-        fill: $COLOR-GREEN
+  &__icon
+    width: 25px
+    height: 25px
+    fill: rgba($COLOR-TEXT,0.9 )
+    transform: fill 0.9 liner
+    &:hover
+      fill: $COLOR-GREEN
   &__inner
     display: flex
   &__link
