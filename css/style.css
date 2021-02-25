@@ -67,7 +67,7 @@ body {
   top: 0;
   width: 100%;
   left: 0;
-  z-index: 100;
+  z-index: 4;
 }
 .headar:before {
   background-color: #009CB0;
@@ -124,6 +124,7 @@ body {
 }
 .nav__logo {
   text-align: center;
+  z-index: 4;
   align-items: flex-end;
 }
 .nav__logo__item {
