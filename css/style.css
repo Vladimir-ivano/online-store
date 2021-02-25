@@ -171,39 +171,60 @@ body {
 }
 
 .profil {
-  padding-top: 50px;
+  padding-top: 30px;
   background: white;
 }
 .profil__nav {
   display: flex;
+  justify-content: space-between;
 }
-.profil__item {
-  flex-basis: calc((100%/6));
-  margin-right: 40px;
+.profil__navs {
+  display: flex;
+  flex-basis: calc( 50% - 105px );
+  justify-content: space-between;
 }
-.profil__item--items:hover {
+.profil__inner--shop {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.profil__inner--shop:hover {
   background: #009CB0;
 }
-.profil__icon {
-  width: 25px;
-  height: 25px;
-  fill: rgba(153, 153, 153, 0.9);
-  transform: fill 0.9 liner;
-}
-.profil__icon:hover {
-  fill: #009CB0;
-}
-.profil__inner {
+.profil__inner--calendar {
   display: flex;
+  align-self: center;
 }
 .profil__link {
-  display: inline;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.profil__link > .profil__icon > .profil__links:hover {
+  fill: #FFFFFF;
+}
+.profil__link--shop > .profil__icon:hover {
+  fill: #FFFFFF;
+}
+.profil__item {
+  margin: auto;
+}
+.profil__icon {
+  padding-right: 4px;
+  width: 27px;
+  height: 35px;
+  fill: rgba(153, 153, 153, 0.9);
+}
+.profil__icon--shop {
+  margin: 0 auto;
+}
+.profil__links {
+  color: rgba(153, 153, 153, 0.9);
   font-size: 14px;
   font-weight: 300;
-  color: rgba(153, 153, 153, 0.9);
-  transform: all 0.9 liner;
-  border-bottom: 1px dotted #999999, 0.9;
-}
-.profil__link:hover {
-  color: #009CB0;
 }

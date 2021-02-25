@@ -114,33 +114,50 @@ body
 
 //  ---------profil
 .profil
-  padding-top: 50px
+  padding-top: 30px
   background: rgba($COLOR-ACCENT,1 )
   &__nav
     display: flex
-    
-  &__item
-    flex-basis: calc((100%/6))
-    margin-right: 40px
-    &--items
-      
-      &:hover
-        background: $COLOR-GREEN
-  &__icon
-    width: 25px
-    height: 25px
-    fill: rgba($COLOR-TEXT,0.9 )
-    transform: fill 0.9 liner
-    &:hover
-      fill: $COLOR-GREEN
-  &__inner
+    justify-content: space-between
+  &__navs
     display: flex
+    flex-basis: calc( 50% - 105px )
+    justify-content: space-between
+  &__inner--shop
+    display: flex
+    width: 44px
+    height: 44px
+    background: $COLOR-ACCENT
+    border-radius: 100%
+    align-items: center
+    justify-content: center
+    &:hover
+      background: $COLOR-GREEN
+  &__inner--calendar
+    display: flex
+    align-self: center
   &__link
-    display: inline
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+  &__link > &__icon > &__links
+    &:hover
+      fill: $COLOR-ACCENT
+  &__link--shop> &__icon
+    &:hover
+      fill: $COLOR-ACCENT
+  &__item
+    margin: auto
+  &__icon
+    padding-right: 4px
+    width: 27px
+    height: 35px
+    fill: rgba($COLOR-TEXT,0.9 )
+    &--shop
+      margin: 0 auto
+      
+  &__links
+    color: rgba($COLOR-TEXT,0.9 )
     font-size: $FONT-SIZE-MENU
     font-weight: $FONT-WEIGHT-LIGHT
-    color: rgba($COLOR-TEXT,0.9 )
-    transform: all 0.9 liner
-    border-bottom: 1px dotted ($COLOR-TEXT,0.9 )
-    &:hover
-      color: $COLOR-GREEN
