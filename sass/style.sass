@@ -128,43 +128,38 @@ body
     display: flex
     width: 44px
     height: 44px
-    background: $COLOR-ACCENT
     border-radius: 100%
     align-items: center
     justify-content: center
+    &:hover
+      background: $COLOR-GREEN
   .activ
       background: $COLOR-GREEN
-  &__link
-    &:hover
-      fill: $COLOR-ORANGE
-      color: $COLOR-ORANGE
+  
   &__inner--calendar
     display: flex
     align-self: center
   &__link
-    width: 100%
-    height: 100%
-    z-index: 3
     display: flex
     align-items: center
     &:hover
       fill: $COLOR-ORANGE
       color: $COLOR-ORANGE
-  &__link--shop> &__icon
-    &:hover
-      fill: $COLOR-ACCENT
+  &__link--shop
   &__item
     margin: auto
   &__icon
-    display: inline-block
+   
     padding-right: 4px
     width: 27px
     height: 35px
-    fill: rgba($COLOR-TEXT,0.9 )
+    
     &--shop
       margin: 0 auto
   &__items
-    
+    opacity: 0
+  &__items--active
+    opacity: 100
     position: absolute
     top: 5px
     color: $COLOR-ACCENT
@@ -174,10 +169,8 @@ body
     padding: 2px 7px
     background: $COLOR-ORANGE
     border-radius: 50px
-    
   &__links
-    display: inline-block
-    color: rgba($COLOR-TEXT,0.9 )
+    
     font-size: $FONT-SIZE-MENU
     font-weight: $FONT-WEIGHT-LIGHT
     border-bottom: 1px dotted rgba($COLOR-TEXT,0.9 )
