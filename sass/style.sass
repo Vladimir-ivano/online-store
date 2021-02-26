@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:wght@300;900&family=Unica+One&display=swap')
 @import "null.sass"
 @import "var.sass"
-
+@import "aside.sass"
 body
   background: $COLOR-ACCENT
   font-size: $FONT-SIZE
@@ -142,10 +142,18 @@ body
   &__link
     display: flex
     align-items: center
+    fill: rgba($COLOR-TEXT,0.9 )
+    color: rgba($COLOR-TEXT,0.9 )
     &:hover
-      fill: $COLOR-ORANGE
-      color: $COLOR-ORANGE
+      fill: $COLOR-GREEN
+      color: $COLOR-GREEN
+    &--calendar
+      fill: rgba($COLOR-TEXT,0.9 )
   &__link--shop
+    fill: rgba($COLOR-TEXT,0.9 )
+    &:hover
+      fill: $COLOR-ACCENT
+      
   &__item
     margin: auto
   &__icon

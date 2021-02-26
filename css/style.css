@@ -206,10 +206,21 @@ body {
 .profil__link {
   display: flex;
   align-items: center;
+  fill: rgba(153, 153, 153, 0.9);
+  color: rgba(153, 153, 153, 0.9);
 }
 .profil__link:hover {
-  fill: #FD8424;
-  color: #FD8424;
+  fill: #009CB0;
+  color: #009CB0;
+}
+.profil__link--calendar {
+  fill: rgba(153, 153, 153, 0.9);
+}
+.profil__link--shop {
+  fill: rgba(153, 153, 153, 0.9);
+}
+.profil__link--shop:hover {
+  fill: #FFFFFF;
 }
 .profil__item {
   margin: auto;
