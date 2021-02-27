@@ -59,7 +59,7 @@ body
     color: $COLOR-ACCENT
     padding: 9px 15px
     border-radius: 50px
-    transform: background 0.2s liner
+    transition: 0.2s linear
     &:hover
       background: #068292
 
@@ -123,6 +123,28 @@ body
     display: flex
     flex-basis: calc( 50% - 105px )
     justify-content: space-between
+  
+  
+  &__inner--calendar
+    display: flex
+    align-self: center
+    fill: rgba($COLOR-TEXT,0.9 )
+  &__link
+    display: flex
+    align-items: center
+    fill: rgba($COLOR-TEXT,0.9 )
+    color: rgba($COLOR-TEXT,0.9 )
+    transition: 0.2s linear
+    &:hover
+      fill: $COLOR-GREEN
+      color: $COLOR-GREEN
+      
+    
+  &__link--shop
+    &:hover
+      fill: $COLOR-ACCENT
+      color: $COLOR-GREEN
+
   &__inner--shop
     position: relative
     display: flex
@@ -133,27 +155,8 @@ body
     justify-content: center
     &:hover
       background: $COLOR-GREEN
-  .activ
-      background: $COLOR-GREEN
-  
-  &__inner--calendar
-    display: flex
-    align-self: center
-  &__link
-    display: flex
-    align-items: center
-    fill: rgba($COLOR-TEXT,0.9 )
-    color: rgba($COLOR-TEXT,0.9 )
-    &:hover
-      fill: $COLOR-GREEN
-      color: $COLOR-GREEN
-    &--calendar
-      fill: rgba($COLOR-TEXT,0.9 )
-  &__link--shop
-    fill: rgba($COLOR-TEXT,0.9 )
-    &:hover
       fill: $COLOR-ACCENT
-      
+    
   &__item
     margin: auto
   &__icon

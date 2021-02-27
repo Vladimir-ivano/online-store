@@ -117,7 +117,7 @@ body {
   color: #FFFFFF;
   padding: 9px 15px;
   border-radius: 50px;
-  transform: background 0.2s liner;
+  transition: 0.2s linear;
 }
 .nav__link:hover {
   background: #068292;
@@ -184,6 +184,26 @@ body {
   flex-basis: calc( 50% - 105px );
   justify-content: space-between;
 }
+.profil__inner--calendar {
+  display: flex;
+  align-self: center;
+  fill: rgba(153, 153, 153, 0.9);
+}
+.profil__link {
+  display: flex;
+  align-items: center;
+  fill: rgba(153, 153, 153, 0.9);
+  color: rgba(153, 153, 153, 0.9);
+  transition: 0.2s linear;
+}
+.profil__link:hover {
+  fill: #009CB0;
+  color: #009CB0;
+}
+.profil__link--shop:hover {
+  fill: #FFFFFF;
+  color: #009CB0;
+}
 .profil__inner--shop {
   position: relative;
   display: flex;
@@ -195,31 +215,6 @@ body {
 }
 .profil__inner--shop:hover {
   background: #009CB0;
-}
-.profil .activ {
-  background: #009CB0;
-}
-.profil__inner--calendar {
-  display: flex;
-  align-self: center;
-}
-.profil__link {
-  display: flex;
-  align-items: center;
-  fill: rgba(153, 153, 153, 0.9);
-  color: rgba(153, 153, 153, 0.9);
-}
-.profil__link:hover {
-  fill: #009CB0;
-  color: #009CB0;
-}
-.profil__link--calendar {
-  fill: rgba(153, 153, 153, 0.9);
-}
-.profil__link--shop {
-  fill: rgba(153, 153, 153, 0.9);
-}
-.profil__link--shop:hover {
   fill: #FFFFFF;
 }
 .profil__item {
