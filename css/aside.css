@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
     font-weight: 700; }
   .menu__products {
+    height: 0px;
     background: #009CB0;
     opacity: 0;
     transform: translateY(-100%);
