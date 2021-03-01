@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #009CB0;
     opacity: 0;
     transform: translateY(-100%);
-    transition: transform 0.3s linear; }
+    transition: transform 0s linear; }
     .menu__products.activ {
       height: 800px;
       opacity: 1;
@@ -66,6 +66,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .menu__inner:last-child {
+      border-bottom: none; }
     .menu__inner:hover {
       background-color: #098494; }
   .menu__item {
