@@ -333,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .menu__title {
+  text-transform: uppercase;
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   color: #FFFFFF;
@@ -487,7 +488,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   width: 25px;
   height: 3px;
-  left: 1px;
+  left: 0px;
   top: 9px;
 }
 .burger__btn::after {
