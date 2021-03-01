@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-100%);
     transition: transform 0.3s linear; }
     .menu__products.activ {
-      height: 100%;
+      height: 800px;
       opacity: 1;
       transform: translateY(0px); }
   .menu__inner {
