@@ -53,9 +53,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
     font-weight: 700; }
   .menu__products {
+    overflow: hidden;
+    max-height: 0;
     background: #009CB0;
-    transform: translateY(-100%);
-    transition: transform 0s linear; }
+    transition: max-width 0.3s linear; }
+    .menu__products.activ {
+      max-height: 100%; }
   .menu__inner {
     display: flex;
     flex-direction: column;

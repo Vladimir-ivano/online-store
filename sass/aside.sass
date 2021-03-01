@@ -19,15 +19,16 @@
     font-weight: $FONT-WEIGHT-BOLT
   
   &__products
-   
+    overflow: hidden
+    max-height: 0
     background: $COLOR-GREEN
  
-    transform: translateY(-100%)
-    transition: transform .0s linear
+    
+    transition: max-width 0.3s linear
     
     &.activ
       
-     
+      max-height: 100%
   &__inner
     
     display: flex
