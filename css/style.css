@@ -340,16 +340,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 .menu__products {
-  height: 0px;
   background: #009CB0;
-  opacity: 0;
   transform: translateY(-100%);
   transition: transform 0s linear;
-}
-.menu__products.activ {
-  height: 800px;
-  opacity: 1;
-  transform: translateY(0px);
 }
 .menu__inner {
   display: flex;
@@ -384,6 +377,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 45px;
 }
 .news__title {
+  text-transform: uppercase;
   font-size: 30px;
   color: rgba(153, 153, 153, 0.6);
   font-weight: 700;
@@ -419,6 +413,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 60px;
 }
 .reviews__title {
+  text-transform: uppercase;
   margin-bottom: 40px;
   font-size: 30px;
   color: rgba(153, 153, 153, 0.6);
