@@ -84,9 +84,13 @@
   &__inner
     margin-top: 47px
     &:hover
+      .reviews__name,.reviews__time
+        color: $COLOR-GREEN
+
   &__content
     display: flex
     justify-content: space-between
+    margin-bottom: 25px
   &__name
     font-size: $FONT-SIZE
     font-weight: $FONT-WEIGHT-BLACK
@@ -95,13 +99,21 @@
     ze: $FONT-SIZE
     font-weight: $FONT-WEIGHT-LIGHT
     line-height: $FONT-HEIGHT1
+  &__contents
+    display: flex
+  &__icon
+    font-size: 25px
+    width: 25px
+    height: 18px
+    fill: rgba($COLOR-TEXT,0.6 )
+    
   &__text
+    cursor: pointer
+    flex-basis: calc(100%-30px  )
+    display: block
     font-size: $FONT-SIZE
     line-height: $FONT-HEIGHT1
-    &::before
-      font-size: $FONT-SIZE-LOGO
-      content: " ' "
-      display: block
-      color: $COLOR-TEXT
-      width: 15px
-      height: 15px
+  &__text:hover
+      
+      background: $COLOR-GREEN
+      color: $COLOR-ACCENT
