@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:wght@300;900&family=Unica+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,700&display=swap')
+@import "null.sass"
+@import "var.sass"
+.menu
+  flex-basis: 260px
+  margin-right: 30px
+  &__headar
+   
+    background: $COLOR-GREEN
+    padding: 25px 22px
+    display: flex
+    align-items: center
+  &__title
+    font-family: $FONT-FAMALI4
+    font-size: $FONT-SIZE-CAT
+    color: $COLOR-ACCENT
+    font-weight: $FONT-WEIGHT-BOLT
+  
+  &__products
+    background: $COLOR-GREEN
+    opacity: 0
+    transform: translateY(-100%)
+    transition: transform .3s linear
+    &.activ
+      opacity: 1
+      transform: translateY(0px)
+  &__inner
+    display: flex
+    flex-direction: column
+    border-bottom: 1px solid  rgba( $COLOR-ACCENT,0.2 )
+    &:hover
+      background-color: #098494
+  &__item
+    display: flex
+    padding: 20px 15px 15px 15px
+  &__link
+    display: block
+    font-size: $FONT-SIZE
+    color: $COLOR-ACCENT
+    font-weight: $FONT-WEIGHT-LIGHT
+    line-height: $FONT-HEIGHT1
+    margin-right: auto
+  &__icon 
+    width: 17px
+    height: 17px
+    fill: $COLOR-ACCENT
+//====== .news
+.news
+  margin-top: 45px
+  &__title
+    font-size: $FONT-SIZE-CAT
+    color: rgba($COLOR-TEXT,0.6 )
+    font-weight: $FONT-WEIGHT-BOLT
+    font-family: $FONT-FAMALI4
+  &__inner
+    margin-top: 47px
+  &__subtitle
+    font-size: $FONT-SIZE
+    font-weight: $FONT-WEIGHT-BLACK
+    color: $COLOR-ORANGE
+    text-transform: uppercase
+    margin-bottom: 20px
+  &__content
+    display: flex
+  &__time
+    font-weight: $FONT-WEIGHT-BLACK
+    font-size: $FONT-SIZE-TEL
+    color: rgba($COLOR-TEXT,0.6 )
+    flex-basis: 30px
+    margin-right: 18px
+  &__text
+    font-size: $FONT-SIZE
+    color: $COLOR-TEXT
+    line-height: $FONT-HEIGHT1
+//====== .reviews
+.reviews
+  margin-top: 70px
+  &__title
+    font-size: $FONT-SIZE-CAT
+    color: rgba($COLOR-TEXT,0.6 )
+    font-weight: $FONT-WEIGHT-BOLT
+    font-family: $FONT-FAMALI4
+  &__inner
+    margin-top: 47px
+    &:hover
+  &__content
+    display: flex
+    justify-content: space-between
+  &__name
+    font-size: $FONT-SIZE
+    font-weight: $FONT-WEIGHT-BLACK
+    line-height: $FONT-HEIGHT1
+  &__time
+    ze: $FONT-SIZE
+    font-weight: $FONT-WEIGHT-LIGHT
+    line-height: $FONT-HEIGHT1
+  &__text
+    font-size: $FONT-SIZE
+    line-height: $FONT-HEIGHT1
+    &::before
+      font-size: $FONT-SIZE-LOGO
+      content: " ' "
+      display: block
+      color: $COLOR-TEXT
+      width: 15px
+      height: 15px
