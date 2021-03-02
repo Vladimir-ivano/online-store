@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   max-height: 0;
   background: #009CB0;
-  transition: max-width 0.3s linear;
+  transition: max-height 0.3s linear;
 }
 .menu__products.activ {
   max-height: 100%;
