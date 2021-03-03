@@ -40,7 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
   flex-basis: 260px;
-  margin-right: 30px; }
+  margin-right: 30px;
+  position: relative; }
   .menu__headar {
     background: #009CB0;
     padding: 25px 22px;
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
     font-weight: 700; }
   .menu__products {
-    overflow: hidden;
+    overflow-y: hidden;
     max-height: 0;
     background: #009CB0;
     transition: max-height 0.3s linear; }
