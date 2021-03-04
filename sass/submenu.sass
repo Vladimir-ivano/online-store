@@ -9,7 +9,7 @@
   top: 0
   left: 0%
   z-index: 1
-  height: 52.75%
+  height: 53.7%
   width: 280px
   border: 2px solid $COLOR-GREEN
   background-color: $COLOR-ACCENT
@@ -55,9 +55,57 @@
       background-color: $COLOR-ORANGE
       color: $COLOR-ACCENT
     &__img
-      display: block
-      margin-top: 15px
-      cursor: pointer
+      
+      width: 200px
+      height: auto
     &__image
-      background: #fff
-        
+      margin: 25px 0
+      width: 100%
+      object-fit: cover
+  &__inner
+    text-align: center
+    margin: 0 -25px
+    display: block
+    font-size: $FONT-SIZE-T2
+    color: $COLOR-GREEN
+    cursor: pointer
+    font-weight: $FONT-WEIGHT-LIGHT
+    line-height: $FONT-HEIGHT2
+    transition: all 0.2s linear
+    &:hover
+      background-color: rgba($COLOR-GREEN,0.5 )
+      color: $COLOR-ACCENT
+  &__content
+    margin-top: 30px
+    display: flex
+    align-items: center
+    
+    &__inner
+      height: 41px
+      width: 41px
+      background-color: rgba($COLOR-TEXT, 0.5)
+      border-radius: 100%
+      margin-right: auto
+      transition: all 0.2s linear
+      position: relative
+      &:hover
+        background-color: rgba($COLOR-GREEN, 0.5)
+    &__prise
+      font-size: $FONT-SIZE-PRISE
+      font-weight: $FONT-WEIGHT-BLACK
+      color: $COLOR-BLACK
+      line-height: $FONT-HEIGHT
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 1
+    margin: 0 auto
+    fill: $COLOR-ACCENT
+    height: 25px
+    width: 25px
+   
+      
+
+    
