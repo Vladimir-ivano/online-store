@@ -839,7 +839,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: auto;
   transform: translateX(-100%);
-  background: #F3F3F3;
+  background: #FFFFFF;
   display: flex;
   border-bottom: 4px solid #FD8322;
 }
