@@ -29,6 +29,8 @@
         color: $COLOR-ACCENT
         background: $COLOR-ORANGE
   &__btn
+    
+    cursor: pointer
     color: $COLOR-TEXT
     padding: 0 15px
     display: flex
@@ -63,14 +65,16 @@
   &__categories
     position: absolute
     z-index: 2
-    opacity: 0
+    opacity: 1
     width: 100%
     height: auto
-    transform: translate(0,-100%)
+    transform: translate(0,-118%)
     background: $COLOR-ACCENT
     display: flex
     border-bottom: 4px solid $COLOR-ORANGE
+    transition: translate 0.3s linear
     &.activ
+      
       opacity: 1
       transform: translateX(0%)
   

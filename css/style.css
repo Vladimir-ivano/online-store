@@ -183,6 +183,7 @@ body {
 }
 
 .profil {
+  z-index: 4;
   padding-top: 40px;
   background: white;
 }
@@ -271,7 +272,7 @@ body {
 
 .page {
   height: 100%;
-  padding-top: 190px;
+  padding-top: 170px;
 }
 
 .wrapper {
@@ -352,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: hidden;
   max-height: 0;
   background: #009CB0;
-  transition: max-height 0.3s linear;
+  transition: max-height 0.4s linear;
 }
 .menu__products.activ {
   max-height: 100%;
@@ -802,6 +803,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #FD8322;
 }
 .search__btn {
+  cursor: pointer;
   color: #999999;
   padding: 0 15px;
   display: flex;
@@ -840,13 +842,14 @@ h1, h2, h3, h4, h5, h6 {
 .search__categories {
   position: absolute;
   z-index: 2;
-  opacity: 0;
+  opacity: 1;
   width: 100%;
   height: auto;
-  transform: translate(0, -100%);
+  transform: translate(0, -118%);
   background: #FFFFFF;
   display: flex;
   border-bottom: 4px solid #FD8322;
+  transition: translate 0.3s linear;
 }
 .search__categories.activ {
   opacity: 1;
