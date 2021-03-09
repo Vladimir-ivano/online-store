@@ -41,6 +41,8 @@
     background: #F3F3F3
     transition: all .3s linear
   &__btns
+    z-index: 3
+    cursor: pointer
     height: 40px
     width: 87px
     background: $COLOR-ORANGE
@@ -49,6 +51,7 @@
     font-weight: $FONT-WEIGHT-BLACK
     transition: all .3s linear
   &__input
+    z-index: 3
     width: calc(100% - (116px+87px) )
     height: 40px
     border-bottom: 2px solid rgba($COLOR-TEXT, 0.3)
@@ -59,11 +62,11 @@
     height: 100%
   &__categories
     position: absolute
-    z-index: 1
+    z-index: 2
     opacity: 0
     width: 100%
     height: auto
-    transform: translateX(-100%)
+    transform: translate(0,-100%)
     background: $COLOR-ACCENT
     display: flex
     border-bottom: 4px solid $COLOR-ORANGE
