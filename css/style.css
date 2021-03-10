@@ -814,7 +814,6 @@ body {
   width: 55px;
   height: 55px;
   position: relative;
-  opacity: 0;
 }
 .slider__item.activ::before {
   position: absolute;
