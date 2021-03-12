@@ -559,10 +559,20 @@ body {
 .product__content__inner:hover {
   background-color: rgba(0, 156, 176, 0.5);
 }
+.product__content__item {
+  text-align: right;
+}
 .product__content__prise {
   font-size: 24px;
   font-weight: 900;
   color: #333333;
+  line-height: 1.1;
+}
+.product__content__prises {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(153, 153, 153, 0.5);
   line-height: 1.1;
 }
 .product__icon {
@@ -682,7 +692,7 @@ body {
 
 .slider {
   position: relative;
-  margin-top: 25px;
+  margin: 25px 0 75px 0;
 }
 .slider__image {
   z-index: 1;
@@ -825,4 +835,38 @@ body {
 }
 .slider__links:hover {
   background-color: #FD8322;
+}
+
+.products-slider__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.products-slider__title {
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  color: #999999;
+  font-weight: 700;
+}
+.products-slider__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+.products-slider--product {
+  height: 382px;
+  width: 262px;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+}
+.products-slider--inner {
+  padding: 0 25px;
+  text-align: left;
+}
+.products-slider--item {
+  display: flex;
+  flex-direction: column;
+}
+.products-slider--title {
+  font-weight: 700;
 }
