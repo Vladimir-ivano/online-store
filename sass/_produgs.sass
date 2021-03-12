@@ -3,6 +3,8 @@
     display: flex
     justify-content: space-between
     margin-bottom: 30px
+  &__control
+    display: flex
   &__title
     text-transform: uppercase
     font-family: $FONT-FAMALI4
@@ -13,15 +15,88 @@
     display: flex
     justify-content: space-between
     margin-bottom: 31px
-  &--product
+  &__item
+    overflow: hidden
+    position: relative
+    &:hover
+      .products-slider__product--hover
+        transform: translateY(0%)
+  &__product
     height: 382px
     width: 262px
     border: 1px solid rgba($COLOR-TEXT ,0.2 )
+    &--hover
+      padding: 20px 20px 20px 20px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 2
+      height: 382px
+      width: 262px
+      border: 3px solid $COLOR-ORANGE
+      background: rgba(#000 ,0.84)
+      transform: translateY(-100%)
+      transition: transform 0.2s linear
+  &--contant
+    display: flex
+    flex-direction: column
+    color: $COLOR-ACCENT
+  &--title
+    font-size: $FONT-SIZE-T2
+    color: $COLOR-ACCENT
+    line-height: $FONT-HEIGHT2
+    font-weight: $FONT-WEIGHT-BOLT
+  &--subtitle
+    color: rgba($COLOR-TEXT ,0.5 )
+    line-height: $FONT-HEIGHT2
+    font-weight: $FONT-WEIGHT-LIGHT
+    font-size: $FONT-SIZE-MENU
+    margin-bottom: 30px
+  
+  &--texts
+    color: $COLOR-ACCENT
+    line-height: $FONT-HEIGHT2
+    font-weight: $FONT-WEIGHT-LIGHT
+    font-size: $FONT-SIZE-MENU
+    &:last-child
+      margin-bottom: 20px
+    &::after
+      display: block 
+      content: attr(data-name)
+      color: $COLOR-ORANGE
+      font-weight: $FONT-WEIGHT-BOLT
+  &--icons
+    margin: 0 auto
+    display: flex
+    height: 60px
+    width: 60px
+    background: $COLOR-ORANGE
+    margin-bottom: 29px
+  &--icon
+    width: 31px
+    height: 31px
   &--inner
     padding: 0 25px
     text-align: left
+  &--titles
+    font-weight: $FONT-WEIGHT-BOLT
+  &--content
+    display: flex
+  &--text
+    position: absolute
+    bottom: 19px
+    left: 10px
+    margin-right: auto
+    color: $COLOR-ORANGE
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-LIGHT
+    background: $COLOR-ACCENT
+    padding: 6px 11px
+    border-radius: 50px
   &--item
+    margin-left: auto
     display: flex
     flex-direction: column
-  &--title
-    font-weight: $FONT-WEIGHT-BOLT
+ 
+
+
