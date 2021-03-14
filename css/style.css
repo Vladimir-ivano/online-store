@@ -1050,3 +1050,45 @@ body {
 .brands__icon:hover {
   fill: #FD8322;
 }
+
+.company {
+  padding: 36px 0;
+}
+.company__body {
+  background-color: #009CB0;
+  padding: 43px 35px;
+}
+.company__title {
+  color: #22B7CA;
+}
+.company__subtitle {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+}
+.company__contant {
+  display: flex;
+}
+.company__icons {
+  height: 15px;
+  width: 15px;
+  fill: #22B7CA;
+  margin-right: 20px;
+}
+.company__text {
+  flex-basis: 48%;
+  text-align: left;
+  margin-right: 50px;
+}
+.company__text:last-child {
+  margin-right: 0;
+}
+.company__texts {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.company__texts:last-child {
+  margin-bottom: 0;
+}
