@@ -701,6 +701,7 @@ body {
   left: 0;
   min-width: 0%;
   height: 100%;
+  overflow: hidden;
 }
 .slider__image::before {
   position: absolute;
@@ -986,4 +987,30 @@ body {
 .products-slider__number_of_pages {
   color: rgba(153, 153, 153, 0.8);
   font-weight: 700;
+}
+
+.brands {
+  border-top: 3px dashed rgba(153, 153, 153, 0.5);
+  border-bottom: 3px dashed rgba(153, 153, 153, 0.5);
+}
+.brands__control {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brands__slider {
+  display: flex;
+  padding: 0 20px;
+}
+.brands__image {
+  display: flex;
+  align-self: center;
+  margin-right: 50px;
+  height: 40px;
+  width: 150px;
+}
+.brands__img {
+  width: 150px;
+  object-fit: cover;
 }
