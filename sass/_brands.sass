@@ -2,21 +2,51 @@
   border-top: 3px dashed rgba($COLOR-TEXT ,0.5 )
   border-bottom: 3px dashed rgba($COLOR-TEXT ,0.5 )
   &__control
+    position: relative
     padding: 40px 0
-    display: flex
-    align-items: center
-    justify-content: space-between
   &__slider
+    padding: 0 40px
+    justify-content: space-between
+    align-items: center
     display: flex
-    padding: 0 20px
   &__image
-    display: flex
-    align-self: center
+   
     margin-right: 50px
-    height: 40px
-    width: 150px
+    min-height: 40px
+    max-width: 150px
   &__img
-    
-    width: 150px
+    cursor: pointer
+    transition: 0.3s linear
+    filter: grayscale(1)
+    -webkit-filter: grayscale(1)
+    -o-object-filter: grayscale(1)
+    -moz-filter: grayscale(1)
+    max-width: 100%
     object-fit: cover
-  
+    &:hover
+      filter: grayscale(0)
+      -webkit-filter: grayscale(0)
+      -o-filter: grayscale(0)
+      -moz-filter: grayscale(0)
+  &__btn
+    background: #fff
+    position: absolute
+    top: 50%
+    z-index: 2
+    transform: translateY(-50%)
+    transition: all 0.2s linear
+    
+  &__btn--next
+    right: 0%
+    
+  &__btn--previous
+    left: 0%
+  &__icon
+    height: 35px
+    width: 30px
+    fill: $COLOR-GREEN
+    transition:  all 0.2s linear
+    &--next
+      transform: rotate(180deg)
+    &:hover
+      fill: $COLOR-ORANGE

@@ -994,23 +994,59 @@ body {
   border-bottom: 3px dashed rgba(153, 153, 153, 0.5);
 }
 .brands__control {
+  position: relative;
   padding: 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .brands__slider {
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
-  padding: 0 20px;
 }
 .brands__image {
-  display: flex;
-  align-self: center;
   margin-right: 50px;
-  height: 40px;
-  width: 150px;
+  min-height: 40px;
+  max-width: 150px;
 }
 .brands__img {
-  width: 150px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -o-object-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  max-width: 100%;
   object-fit: cover;
+}
+.brands__img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+}
+.brands__btn {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  transition: all 0.2s linear;
+}
+.brands__btn--next {
+  right: 0%;
+}
+.brands__btn--previous {
+  left: 0%;
+}
+.brands__icon {
+  height: 35px;
+  width: 30px;
+  fill: #009CB0;
+  transition: all 0.2s linear;
+}
+.brands__icon--next {
+  transform: rotate(180deg);
+}
+.brands__icon:hover {
+  fill: #FD8322;
 }
