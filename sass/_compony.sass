@@ -1,6 +1,8 @@
 .company
-  padding: 36px 0
+  margin: 36px 0
+  position: relative
   &__body
+    
     background-color: $COLOR-GREEN
     padding: 43px 35px
   &__title
@@ -19,9 +21,13 @@
     margin-right: 20px
 
   &__text
+    
     flex-basis: 48%
     text-align: left
     margin-right: 50px
+    color: $COLOR-ACCENT
+    font-size: $FONT-SIZE
+    line-height: $FONT-HEIGHT2
     &:last-child
       margin-right: 0
   &__texts
@@ -30,7 +36,31 @@
     line-height: $FONT-HEIGHT2
     margin-bottom: 30px
     &--three
-    
     &:last-child
       margin-bottom: 0
-
+  &__link
+    &::before
+      font-weight: $FONT-WEIGHT-BOLT
+      margin: 0 17px 0 7px
+      display: inline-block
+      content: ">>"
+      width: 11px
+      height: 11px
+      color: #22B7CA
+    &--four
+      max-width: 300px
+  &__image
+    width: 492px
+    height: auto
+    z-index: 1
+    position: absolute
+    right: 200px
+    bottom: 0px
+  &__img
+    width: 100%
+    height: auto
+    object-fit: cover
+    z-index: 1
+    position: absolute
+    right: -0px
+    bottom: -230px
