@@ -1,18 +1,27 @@
 .footer
-  &__inner
-    display: flex
   &__contant
-    flex-basis: 48%
-  &__contants
     display: flex
+    flex-direction: column
+    padding: 0 0
+    &__grup
+      display: flex
+    &__contants
+      display: flex
+      flex-direction: column
+    &__inner
+      display: flex
+      flex-direction: row
+      margin-bottom: 30px
+    &__item
+      flex-basis: 50%
   &__content
     display: flex
-  &__
-    
-  
+    flex-direction: column
+  &__inner
+    display: flex
   &__item
     flex-basis: 30%
-    
+  &
   &__items
     flex-basis: 70%
     margin-left: 40px
@@ -27,6 +36,7 @@
     font-weight: $FONT-WEIGHT-BOLT
     color: $COLOR-ACCENT
   &__titles
+    text-transform: uppercase
     font-weight: $FONT-WEIGHT-BLACK
     color: rgba($COLOR-TEXT ,0.5 )
   &__link
@@ -46,3 +56,32 @@
   &__tel
     font-weight: $FONT-WEIGHT-BLACK
     line-height: $FONT-HEIGHT1
+  &__payment
+    display: flex
+    margin-top: 40px
+    &__item
+      margin-right: 22px
+      &:last-child
+        margin-right: 0
+    &__icon
+      height: 22px
+      width: 35px
+      
+  &__botton
+    width: 100%
+    border-top: 1px solid rgba($COLOR-TEXT, 0.5)
+    padding: 20px 0
+    display: flex
+    &__icon
+      height: 30px
+      width: 30px
+    &__text
+      font-weight: $FONT-WEIGHT-LIGHT
+      color: rgba($COLOR-TEXT, 0.5)
+      margin-right: auto
+    &__nav
+      display: flex
+    &__item
+      margin-right: 17px
+      &:last-child
+        margin-right: 0
