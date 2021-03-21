@@ -1177,7 +1177,6 @@ body {
 }
 .footer__contant__grup {
   display: flex;
-  flex-direction: row;
 }
 .footer__contant__contants {
   display: flex;
