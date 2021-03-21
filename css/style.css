@@ -1175,9 +1175,6 @@ body {
   flex-direction: column;
   padding: 0 0;
 }
-.footer__contant__grup {
-  display: flex;
-}
 .footer__contant__contants {
   display: flex;
   flex-direction: column;

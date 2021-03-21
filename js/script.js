@@ -7,5 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Изменение состояния списка категорий с развёрнутого на свёрнутый и наоборот:
 	burger.addEventListener('click', function() {
 		categoryList.classList.toggle('activ');
+
+
+
+
+		VK.Widgets.Group("vk_groups", {mode: 3}, 20003922);
+		VK.Widgets.Group("vk_groups", {mode: 3}, 20003922);
 	});
 });
+
