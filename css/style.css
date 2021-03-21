@@ -1177,6 +1177,7 @@ body {
 }
 .footer__contant__grup {
   display: flex;
+  width: 100% !important;
   justify-content: space-between;
 }
 .footer__contant__contants {

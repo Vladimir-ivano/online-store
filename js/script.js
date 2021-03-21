@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		categoryList.classList.toggle('activ');
 
 	});
-	VK.Widgets.Group("vk_groups", {mode: 3, width: "263"}, 20003922);
-	VK.Widgets.Group("vk_groups", {mode: 3, width: "263"}, 20003922);
+	VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
+	VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
 });
 
