@@ -8,11 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	burger.addEventListener('click', function() {
 		categoryList.classList.toggle('activ');
 
-
-
-
-		VK.Widgets.Group("vk_groups", {mode: 3}, 20003922);
-		VK.Widgets.Group("vk_groups", {mode: 3}, 20003922);
 	});
+	VK.Widgets.Group("vk_groups", {mode: 3, width: "263"}, 20003922);
+	VK.Widgets.Group("vk_groups", {mode: 3, width: "263"}, 20003922);
 });
 

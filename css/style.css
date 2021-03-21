@@ -1175,6 +1175,10 @@ body {
   flex-direction: column;
   padding: 0 0;
 }
+.footer__contant__grup {
+  display: flex;
+  justify-content: space-between;
+}
 .footer__contant__contants {
   display: flex;
   flex-direction: column;
