@@ -1,115 +1,119 @@
 
-.submenu
-  opacity: 0
-  position: absolute
-  top: 0
-  left: 0%
-  z-index: 4
-  height: 49.95%
-  width: 280px
-  border: 2px solid $COLOR-GREEN
-  background-color: $COLOR-ACCENT
-  transform: translateX(-100%)
-  
-  &.activ
-    opacity: 1
-    left: 100%
-    transform: translateX(0%)
-  &__inner
-    padding: 33px 0
-    border-bottom: 1px solid rgba($COLOR-TEXT ,0.4 )
-  &__item
-    padding: 12px 40px
-    text-align: left
-    color: $COLOR-GREEN
-    cursor: pointer
-    transition: all 0.2s linear
-    &:hover
-      background-color: rgba($COLOR-GREEN,0.5 )
-      .submenu__link
-        color: $COLOR-ACCENT
-  &__link
-    font-size: $FONT-SIZE
-    color: $COLOR-GREEN
-    font-weight: $FONT-WEIGHT-LIGHT
-    transition: all 0.2s linear
-    line-height: $FONT-HEIGHT2
-.product
-  padding: 13px 25px
-  &__item
-    display: flex
-    flex-wrap: wrap
-    &__laibl
-      margin-right: 15px
-      text-transform: uppercase
-      padding: 6px 15px
-      border-radius: 50px
-      text-align: center
-      transition:  0.2s linear
-      font-size: $FONT-SIZE
-      font-weight: $FONT-WEIGHT-BOLT
-      background-color: $COLOR-ORANGE
-      color: $COLOR-ACCENT
-    &__img
-      width: 200px
-      height: auto
-    &__image
-      margin: 25px 0
-      width: 100%
-      object-fit: cover
-  &__inner
-    text-align: center
-    margin: 0 -25px
-    display: block
-    font-size: $FONT-SIZE-T2
-    color: $COLOR-GREEN
-    cursor: pointer
-    font-weight: $FONT-WEIGHT-LIGHT
-    line-height: $FONT-HEIGHT2
-    transition: all 0.2s linear
-    &:hover
-      background-color: rgba($COLOR-GREEN,0.5 )
-      color: $COLOR-ACCENT
-  &__content
-    margin-top: 30px
-    display: flex
+@keyframes move-decor
+ 50%
+  transform: translateX(50%)
+.catalog
+  color: $COLOR-ACCENT
+  position: relative
+  width: 260px
+  &__control
     align-items: center
-    
-    &__inner
-      
-      height: 41px
-      width: 41px
-      background-color: rgba($COLOR-TEXT, 0.5)
-      border-radius: 100%
-      margin-right: auto
-      transition: all 0.2s linear
-      position: relative
-      &:hover
-        background-color: rgba($COLOR-GREEN, 0.5)
-    &__item
-      text-align: right
-    &__prise
-      font-size: $FONT-SIZE-PRISE
-      font-weight: $FONT-WEIGHT-BLACK
-      color: $COLOR-BLACK
-      line-height: $FONT-HEIGHT
-    &__prises
-      margin-bottom: 8px
-      font-size: $FONT-SIZE-TEL
-      font-weight: $FONT-WEIGHT-LIGHT
-      color: rgba($COLOR-TEXT, 0.5)
-      line-height: $FONT-HEIGHT
-  &__icon
+    display: flex
+    padding: 20px
+  &__title
+    font-size: 30px
+    font-weight: bold
+    line-height: 1.2
+    margin-right: auto
+    text-transform: uppercase
+  &__btn
+    &-line
+    background-color: $COLOR-ACCENT
+    border-radius: 2px
+    display: block
+    height: 2px
+    margin: 0
+    left: auto
+    right: auto
+    width: 24px
+    &-switch
+      background-color: $dark-accent
+      border: none
+      border-radius: 2px
+      cursor: pointer
+      padding: 10px 6px
+      &::before, &::after
+        
+        content: ''
+        width: 100%
+      &::before
+        margin-bottom: 5px
+      &::after
+        margin-top: 5px
+      .catalog.is-visible-list &
+        border-radius: 50%
+        transform: rotate(180deg)
+        &::before, &::after
+          width: 70%
+  &__part
+    background: $COLOR-GREEN
+    position: relative
+    z-index: 2
+  &__category
+    overflow: hidden
+    max-height: 0
+  &__item
+    align-items: center
+    cursor: pointer
+    display: flex
+    padding: 15px 20px
+    &:not(:last-child)
+      border-bottom: 1px solid $light-accent
+    &:hover
+      background-color: $dark-accent
+      .catalog__decor
+        animation-name: move-decor
+  &__text
+    margin-right: auto
+  &__decor
+    animation-duration: 1s
+    animation-timing-function: linear
+    animation-iteration-count: infinite
+    height: auto
+    transform: translateX(0%)
+    width: 14px
+  &__submenu
+    background-color: $COLOR-ACCENT
+    border: 2px solid $dark-accent
+    height: 100%
+    left: 0
+    opacity: 0
     position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
-    z-index: 1
-    margin: 0 auto
-    fill: $COLOR-ACCENT
-    height: 25px
-    width: 25px
-   
-      
-
-    
+    top: 0
+    width: 100%
+    z-index: 4
+    &-item
+      height: auto
+      left: 0
+      opacity: 0
+      pointer-events: none
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
+      &.is-active
+        opacity: 1
+        pointer-events: all
+        z-index: 2
+    &-title
+      background-color: $COLOR-ORANGE
+      border-radius: 20px
+      display: inline-block
+      font-size: 14px
+      font-weight: bold
+      margin: 10px 0 10px 30px
+      padding: 2.5px 10px
+      text-transform: uppercase
+    .catalog.is-visible-submenu &
+      opacity: 1
+      transform: translateX(100%)
+  &__types
+    border-bottom: 1px solid $grey 
+    padding: 20px 0
+  &__type
+    color: $light-accent
+    cursor: pointer
+    padding: 10px 10px 10px 40px
+    &:hover
+      background-color: $light-accent
+      color: $COLOR-ACCENT

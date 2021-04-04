@@ -1,4 +1,12 @@
 .footer
+  &__compani
+    margin-top: 30px
+    &__inner
+      display: flex
+      justify-content: space-between
+      margin-bottom: 25px
+    &__item
+      margin-right: 20px
   &__contant
     display: flex
     flex-direction: column
@@ -7,8 +15,6 @@
       display: flex
       width: 100% !important
       justify-content: space-between
-      
-    
     &__contants
       display: flex
       flex-direction: column
@@ -18,6 +24,8 @@
       margin-bottom: 30px
     &__item
       flex-basis: 50%
+      &:last-child
+        margin-left: 20px
   &__content
     display: flex
     flex-direction: column
@@ -27,7 +35,7 @@
     flex-basis: 30%
   &
   &__items
-    flex-basis: 70%
+    flex-basis: 60%
     margin-left: 40px
   &__logo
     text-align: center
@@ -39,7 +47,9 @@
     font-size: $FONT-SIZE-LOGO
     font-weight: $FONT-WEIGHT-BOLT
     color: $COLOR-ACCENT
+    
   &__titles
+    
     text-transform: uppercase
     font-weight: $FONT-WEIGHT-BLACK
     color: rgba($COLOR-TEXT ,0.5 )
