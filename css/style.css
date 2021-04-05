@@ -539,7 +539,7 @@ body, html {
   margin-right: auto;
   text-transform: uppercase;
 }
-.catalog__btn {
+.catalog__btn-line {
   background-color: #FFFFFF;
   border-radius: 2px;
   display: block;
@@ -617,7 +617,7 @@ body, html {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 1;
 }
 .catalog__submenu-item {
   height: auto;
