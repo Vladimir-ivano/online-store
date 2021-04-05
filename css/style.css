@@ -526,6 +526,7 @@ body, html {
   color: #FFFFFF;
   position: relative;
   width: 260px;
+  z-index: 2;
 }
 .catalog__control {
   align-items: center;
@@ -539,12 +540,12 @@ body, html {
   margin-right: auto;
   text-transform: uppercase;
 }
-.catalog__btn-line {
+.catalog__btn-line, .catalog__btn-switch::before, .catalog__btn-switch::after {
   background-color: #FFFFFF;
   border-radius: 2px;
   display: block;
   height: 2px;
-  margin: 0;
+  margin: auto;
   left: auto;
   right: auto;
   width: 24px;
@@ -666,6 +667,7 @@ body, html {
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 .search__icon {
   fill: #999999;
@@ -725,7 +727,7 @@ body, html {
 .search__categories {
   position: absolute;
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
   width: 100%;
   height: auto;
   transform: translate(0, -118%);
@@ -765,9 +767,9 @@ body, html {
 .slider {
   position: relative;
   margin: 25px 0 75px 0;
+  z-index: 1;
 }
 .slider__image {
-  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
