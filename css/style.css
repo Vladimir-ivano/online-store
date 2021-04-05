@@ -664,6 +664,7 @@ body, html {
 }
 
 .search {
+  overflow: hidden;
   display: flex;
   align-items: center;
   position: relative;
@@ -687,7 +688,6 @@ body, html {
   transition: all 0.3s linear;
 }
 .search__btn {
-  overflow: hidden;
   cursor: pointer;
   color: #999999;
   padding: 0 15px;
