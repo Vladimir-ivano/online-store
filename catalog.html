@@ -902,12 +902,12 @@
                   </div>
                 </div><!-- /filter__inner-->
                 <div class="filter__footer">
-                  <button type="button" class="filter__button">
+                  <a href="#" class="filter__button">
                     <svg class="filter__button__icon">
                       <use xlink:href="#folder"></use>
                     </svg>
                     <span class="filter__button__text">Сравнить</span>
-                  </button>
+                  </a>
                   <button type="button" class="filter__buttons">
                     <svg class="filter__buttons__icons">
                       <use xlink:href="#recal"></use>
@@ -921,36 +921,42 @@
 
           </div>
           <div class="filter__sector filter__sector--spollers">
-            <div class="filter__bodys ">
+            <input class="filter__input" type="checkbox" id="accardeon-1">
+            <label class="filter__bodys" for="accardeon-1">
               <h5 class="filter__title ">Производитель</h5>
               <button class="filter__bodys__btn">
                 <svg class="filter__bodys__icons ">
                   <use xlink:href="#fast-forward"></use>
                 </svg>
               </button>
-              </div>
+              </label>
               <div class="filter__body">
 
                 <div class="filter__accardeon">
-                  <label class="filter__accardeon__label" for="">
-                    <input type="checkbox">
-                    <span>Сlear-fit Diadora Hasttings Carbon-fitness Nordic Track</span>
+                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
+                    <input class= "filter__accardeon__checkbox" type="checkbox">
+                    <span class="filter__accardeon__bef"></span>
+                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
                   </label>
-                  <label class="filter__accardeon__label" for="">
-                    <input type="checkbox">
-                    <span>Сlear-fit Diadora Hasttings Carbon-fitness Nordic Track</span>
+                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
+                    <input class= "filter__accardeon__checkbox" type="checkbox">
+                    <span class="filter__accardeon__bef"></span>
+                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
                   </label>
-                  <label class="filter__accardeon__label" for="">
-                    <input type="checkbox">
-                    <span>Сlear-fit Diadora Hasttings Carbon-fitness Nordic Track</span>
+                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
+                    <input class= "filter__accardeon__checkbox" type="checkbox">
+                    <span class="filter__accardeon__bef"></span>
+                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
                   </label>
-                  <label class="filter__accardeon__label" for="">
-                    <input type="checkbox">
-                    <span>Сlear-fit Diadora Hasttings Carbon-fitness Nordic Track</span>
+                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
+                    <input class= "filter__accardeon__checkbox" type="checkbox">
+                    <span class="filter__accardeon__bef"></span>
+                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
                   </label>
-                  <label class="filter__accardeon__label" for="">
-                    <input type="checkbox">
-                    <span>Сlear-fit Diadora Hasttings Carbon-fitness Nordic Track</span>
+                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
+                    <input class= "filter__accardeon__checkbox" type="checkbox">
+                    <span class="filter__accardeon__bef"></span>
+                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
                   </label>
                 </div>
               </div>
@@ -1062,83 +1068,10 @@
 
         </form><!-- /search-->
 
-        <!-- slider-->
-
-
-        <div class="slider">
-          <div class="slider__body">
-            <picture class="slider__image">
-              <source srcset="" type="image/webp">
-              <img class="slider__img" src="./img/header1.jpg" alt="">
-              <img class="slider__img" src="./img/header.jpg" alt="">
-            </picture>
-            <div class="slider__contant">
-              <h1 class="slider__title"> <span class="slider__titles"> мега </span>распрадажа</h1>
-              <p class="slider__text"> <span class="slider__titles">успейте купить</span> тренажеры <span
-                  class="slider__gray">по старой цене</span> до их <span class="slider__grays">повышения</span> </p>
-              <ul class="slider__footer">
-                <li class="slider__price">от 45 000₽ </li>
-                <li class="slider__btn">
-                  <a class="slider__link" href="">подробнее
-                    <svg class="slider__icon ">
-                      <use xlink:href="#fast-forward"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-          </div>!-- /slider__body-->
-
-
-          <div class="slider__dotts">
-            <picture class="slider__item activ" role="button" data-name="1">
-              <source srcset="" type="image/webp">
-              <img class="slider__links" src="./img/slider/1.jpg" alt="">
-            </picture>
-            <picture class="slider__item " role="button" data-name="2">
-              <source srcset="" type="image/webp">
-              <img class="slider__links" src="./img/slider/2.png" alt="">
-            </picture>
-            <picture class="slider__item" role="button" data-name="3">
-              <source srcset="" type="image/webp">
-              <img class="slider__links" src="./img/slider/3.jpg" alt="">
-            </picture>
-            <picture class="slider__item" role="button" data-name="4">
-              <source srcset="" type="image/webp">
-              <img class="slider__links" src="./img/slider/4.jpg" alt="">
-            </picture>
-            <picture class="slider__item" role="button" data-name="5">
-              <source srcset="" type="image/webp">
-              <img class="slider__links" src="./img/slider/5.jpg" alt="">
-            </picture>
-          </div><!-- slider__dotts-->
-        </div><!-- /slider-->
-
         <!-- products-slider-->
 
         <div class="products products-slider">
-          <!-- products-slider__header-->
-          <div class="products-slider__header">
-            <span class="products-slider__title">Популярные товары </span>
-            <div class="products-slider__control">
-              <button class="products-slider__btn">
-                <svg class="products-slider__icon products-slider__icon--next">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </button>
-              <div сlass="products-slider__info ">
-                <span class="products-slider__activ">3</span>
-
-                <span class="products-slider__number_of_pages">/15</span>
-              </div>
-              <button class="products-slider__btn">
-                <svg class="products-slider__icon products-slider__icon--previous">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </button>
-            </div>
-          </div><!-- /products-slider__header-->
+          
 
           <!-- products-slider__items-->
           <div class="products-slider__items">
@@ -1458,175 +1391,21 @@
         </div><!-- /products-slider-->
 
 
+        
+
+
+
+
       </section><!-- section-->
 
 
 
     </div><!-- /container-->
-    <!-- brands brands__slider-->
-    <div class="brands ">
-      <div class="container">
-        <div class="brands__control">
-          <button class="brands__btn brands__btn--next">
-            <svg class="brands__icon brands__icon--next">
-              <use xlink:href="#arrow"></use>
-            </svg>
-          </button>
-          <div class="brands__slider">
-
-            <picture class="brands__image">
-              <img class="brands__img" src="./img/brands/lotto.jpg" alt="">
-            </picture>
-            <picture class="brands__image">
-
-              <img class="brands__img" src="./img/brands/brooks.jpg" alt="">
-            </picture>
-            <picture class="brands__image">
-
-              <img class="brands__img" src="./img/brands/lotto.jpg" alt="">
-            </picture>
-            <picture class="brands__image">
-
-              <img class="brands__img" src="./img/brands/lotto.jpg" alt="">
-            </picture>
-            <picture class="brands__image">
-
-              <img class="brands__img" src="./img/brands/lotto.jpg" alt="">
-            </picture>
-          </div>
-          <button class="brands__btn brands__btn--previous">
-            <svg class="brands__icon brands--previous">
-              <use xlink:href="#arrow"></use>
-            </svg>
-          </button>
-
-        </div>
-
-      </div>
-    </div><!-- /brands brands__slider-->
+    
 
 
 
-    <article class="company">
-      <!-- company-->
-      <div class="container company__body">
-        <h2 class="reviews__title company__title">о компании</h2>
-        <div class="company__contant">
-          <div class="company__text">
-            <p class="company__texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-            </p>
-            <p class="company__texts company__texts--two"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-              inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur aliquid!
-              Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-            </p>
-          </div>
-          <div class="company__text">
-            <span class="company__subtitle"> Концепция CLEAR FIT строится на следующих тезисах: </span>
-            <ul class="company__list">
-              <li class=" company__item">
-                <p class="company__link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                </p>
-
-              </li>
-              <li class="company__text company__item">
-                <p class="company__link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                </p>
-              </li>
-              <li class="company__text company__item">
-                <p class="company__link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                </p>
-              </li>
-              <li class="company__text company__item">
-                <p class="company__link">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                </p>
-              </li>
-              <li class="company__item">
-                <p class="company__link company__link--four">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore
-                  inventore, eos, cumque voluptatibus iusto nesciunt pariatur atque eaque architecto, aspernatur
-                  aliquid!
-                  Eius impedit tempora ipsa harum. Cumque, voluptates numquam.
-                </p>
-
-              </li>
-            </ul>
-            <div class="company__image">
-              <img class="company__img" src="./img/Bez_imeni-1.png" alt="">
-            </div>
-          </div><!-- /company__text-->
-
-        </div>
-      </div><!-- /container company__body-->
-    </article><!-- /company-->
+    
 
     <div class="info">
       <div class="container info__content">

@@ -10,8 +10,7 @@
     &--spollers
       display: flex
       flex-direction: column
-      
-      a
+      position: relative
     &--one
     padding: 0 12px 25px 12px
   &__title
@@ -118,19 +117,32 @@
       fill: $COLOR-GREEN
     &:hover
       background: $COLOR-GREEN
+  &__input
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    
+    &:checked ~ .filter__bodys
+      .filter__title
+        color: $COLOR-BLACK
+        transition: all .2s linear
+      .filter__bodys__btn
+        border: 1px solid rgba($COLOR-TEXT, 0.3)
+        transition: all .2s linear
+      .filter__bodys__icons
+        fill: rgba($COLOR-TEXT, 0.3)
+        transform: rotate(90deg)
+        transition: all .2s linear
+    &:checked ~ .filter__accardeon
+      display: block
   &__bodys
     cursor: pointer
     display: flex
     align-items: center
     justify-content: space-between
-    &--active
-      .filter__title--spoller
-        color: $COLOR-BLACK
-      .filter__bodys__btn
-        border: 1px solid rgba($COLOR-TEXT, 0.3)
-      .filter__bodys__icons
-        fill: rgba($COLOR-TEXT, 0.3)
-        transform: rotate(90deg)
+    
+     
     &__btn
       background: $COLOR-ACCENT
       width: 30px
@@ -146,6 +158,37 @@
     &__label
       display: flex
       margin-bottom: 15px
+      align-items: center
+    &__checkbox
+      display: none
+      &:checked + .filter__accardeon__bef::before
+        opacity: 1
+      &:checked + .filter__accardeon__bef
+        border: 2px solid $COLOR-GREEN
+        
+    &__bef
+      position: relative
+      margin-right: 10px
+      width: 16px
+      height: 16px
+      border: 1px solid rgba($COLOR-TEXT, 0.3)
+      &::before
+        opacity: 0
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        display: block
+        width: 9px
+        height: 9px
+        background: $light-accent
+        transition: all .2s linear
+    &__title
+      width: 88px
+      font-size: $FONT-SIZE
+      font-weight: $FONT-WEIGHT-LIGHT
+      color: $COLOR-TEXT
 .noUi-target
   background: rgba($COLOR-TEXT, 0.3)
   border: none

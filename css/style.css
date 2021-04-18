@@ -1369,6 +1369,7 @@ body, html {
 .filter__sector--spollers {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .filter__title {
   margin-top: 30px;
@@ -1485,21 +1486,33 @@ body, html {
 .filter__buttons:hover {
   background: #009CB0;
 }
+.filter__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.filter__input:checked ~ .filter__bodys .filter__title {
+  color: #333333;
+  transition: all 0.2s linear;
+}
+.filter__input:checked ~ .filter__bodys .filter__bodys__btn {
+  border: 1px solid rgba(153, 153, 153, 0.3);
+  transition: all 0.2s linear;
+}
+.filter__input:checked ~ .filter__bodys .filter__bodys__icons {
+  fill: rgba(153, 153, 153, 0.3);
+  transform: rotate(90deg);
+  transition: all 0.2s linear;
+}
+.filter__input:checked ~ .filter__accardeon {
+  display: block;
+}
 .filter__bodys {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.filter__bodys--active .filter__title--spoller {
-  color: #333333;
-}
-.filter__bodys--active .filter__bodys__btn {
-  border: 1px solid rgba(153, 153, 153, 0.3);
-}
-.filter__bodys--active .filter__bodys__icons {
-  fill: rgba(153, 153, 153, 0.3);
-  transform: rotate(90deg);
 }
 .filter__bodys__btn {
   background: #FFFFFF;
@@ -1519,6 +1532,42 @@ body, html {
 .filter__accardeon__label {
   display: flex;
   margin-bottom: 15px;
+  align-items: center;
+}
+.filter__accardeon__checkbox {
+  display: none;
+}
+.filter__accardeon__checkbox:checked + .filter__accardeon__bef::before {
+  opacity: 1;
+}
+.filter__accardeon__checkbox:checked + .filter__accardeon__bef {
+  border: 2px solid #009CB0;
+}
+.filter__accardeon__bef {
+  position: relative;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(153, 153, 153, 0.3);
+}
+.filter__accardeon__bef::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #00b3ca;
+  transition: all 0.2s linear;
+}
+.filter__accardeon__title {
+  width: 88px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999999;
 }
 
 .noUi-target {
