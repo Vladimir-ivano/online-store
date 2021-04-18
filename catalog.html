@@ -850,125 +850,202 @@
         <div class="filter">
 
           <h2 class="catalog__title catalog__title--filter ">фильтер товаров</h2>
-          <div class="filter__sector filter__sector--one">
-            <h5 class="filter__title">Цена(руб):</h2>
-              <div class="filter__body">
-                <div class="filter__slider" id="filter-slider"></div>
-                <div class="filter__inputs">
-                  <label class="filter__label filter__label--left">
-                    <span class="filter__text"> от</span>
-                    <input type="number" min="500" max="1000000" placeholder="500" class="filter__price" id="input-0">
-                  </label>
+          <form action="">
+            <div class="filter__section">
+              <div class="filter__sector filter__sector--one">
+                <h5 class="filter__title">Цена(руб):</h2>
+                  <div class="filter__body">
+                    <div class="filter__slider" id="filter-slider"></div>
+                    <div class="filter__inputs">
+                      <label class="filter__label filter__label--left">
+                        <span class="filter__text"> от</span>
+                        <input type="number" min="500" max="1000000" placeholder="500" class="filter__price"
+                          id="input-0">
+                      </label>
 
-                  <label class="filter__label">
-                    <span class="filter__text"> до</span>
-                    <input type="number" min="500" max="1000000" placeholder="1000000" class="filter__price"
-                      id="input-1">
-                  </label>
+                      <label class="filter__label">
+                        <span class="filter__text"> до</span>
+                        <input type="number" min="500" max="1000000" placeholder="1000000" class="filter__price"
+                          id="input-1">
+                      </label>
+
+                    </div>
+
+                  </div>
+              </div>
+
+              <div class="filter__sector filter__sector--one">
+                <h5 class="filter__title filter__title--black">Товары для сравнения</h5>
+                <div class="filter__body">
+                  <div class="filter__compare">
+                    <div class="filter__inner">
+                      <div class="filter__item">
+                        <a class=" filter__link" href="#">NordicTrack C100 Clear Fit Luxury LT.20 Ammity ATM 720
+                          TFT+</a>
+                        <a class="filter__remove" href="#">
+                          <svg class="filter__icon">
+                            <use xlink:href="#cross"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="filter__item">
+                        <a class=" filter__link" href="#">NordicTrack C100 </a>
+                        <a class="filter__remove" href="#">
+                          <svg class="filter__icon">
+                            <use xlink:href="#cross"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="filter__item">
+                        <a class=" filter__link" href="#">NordicTrack C100 </a>
+                        <a class="filter__remove" href="#">
+                          <svg class="filter__icon">
+                            <use xlink:href="#cross"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div><!-- /filter__inner-->
+                    <div class="filter__footer">
+                      <a href="#" class="filter__button">
+                        <svg class="filter__button__icon">
+                          <use xlink:href="#folder"></use>
+                        </svg>
+                        <span class="filter__button__text">Сравнить</span>
+                      </a>
+                      <button type="button" class="filter__buttons">
+                        <svg class="filter__buttons__icons">
+                          <use xlink:href="#recal"></use>
+                        </svg>
+
+                      </button>
+                    </div>
+                  </div>
 
                 </div>
 
               </div>
-          </div>
-
-          <div class="filter__sector filter__sector--one">
-            <h5 class="filter__title filter__title--black">Товары для сравнения</h5>
-            <div class="filter__body">
-              <div class="filter__compare">
-                <div class="filter__inner">
-                  <div class="filter__item">
-                    <a class=" filter__link" href="#">NordicTrack C100 Clear Fit Luxury LT.20 Ammity ATM 720 TFT+</a>
-                    <a class="filter__remove" href="#">
-                      <svg class="filter__icon">
-                        <use xlink:href="#cross"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="filter__item">
-                    <a class=" filter__link" href="#">NordicTrack C100 </a>
-                    <a class="filter__remove" href="#">
-                      <svg class="filter__icon">
-                        <use xlink:href="#cross"></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="filter__item">
-                    <a class=" filter__link" href="#">NordicTrack C100 </a>
-                    <a class="filter__remove" href="#">
-                      <svg class="filter__icon">
-                        <use xlink:href="#cross"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div><!-- /filter__inner-->
-                <div class="filter__footer">
-                  <a href="#" class="filter__button">
-                    <svg class="filter__button__icon">
-                      <use xlink:href="#folder"></use>
+              <div class="filter__sector filter__sector--spollers">
+                <input class="filter__input" type="checkbox" id="accardeon-2">
+                <label class="filter__bodys" for="accardeon-2">
+                  <h5 class="filter__title ">Производитель</h5>
+                  <button class="filter__bodys__btn">
+                    <svg class="filter__bodys__icons ">
+                      <use xlink:href="#fast-forward"></use>
                     </svg>
-                    <span class="filter__button__text">Сравнить</span>
-                  </a>
-                  <button type="button" class="filter__buttons">
-                    <svg class="filter__buttons__icons">
-                      <use xlink:href="#recal"></use>
-                    </svg>
-
                   </button>
+                </label>
+                <div class="filter__body">
+
+                  <div class="filter__accardeon">
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">Сlear-fit Diadora</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">Сlear-fit Diadora</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">Сlear-fit Diadora</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">Сlear-fit Diadora</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">Сlear-fit Diadora</span>
+                    </label>
+                  </div>
                 </div>
+
               </div>
 
-            </div>
 
-          </div>
-          <div class="filter__sector filter__sector--spollers">
-            <input class="filter__input" type="checkbox" id="accardeon-1">
-            <label class="filter__bodys" for="accardeon-1">
-              <h5 class="filter__title ">Производитель</h5>
-              <button class="filter__bodys__btn">
-                <svg class="filter__bodys__icons ">
-                  <use xlink:href="#fast-forward"></use>
-                </svg>
-              </button>
-              </label>
-              <div class="filter__body">
+              <div class="filter__sector filter__sector--spollers">
+                <input class="filter__input" type="checkbox" id="accardeon-1">
+                <label class="filter__bodys" for="accardeon-1">
+                  <h5 class="filter__title ">Мощность двигaтеля</h5>
+                  <button class="filter__bodys__btn">
+                    <svg class="filter__bodys__icons ">
+                      <use xlink:href="#fast-forward"></use>
+                    </svg>
+                  </button>
+                </label>
+                <div class="filter__body">
 
-                <div class="filter__accardeon">
-                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
-                    <input class= "filter__accardeon__checkbox" type="checkbox">
-                    <span class="filter__accardeon__bef"></span>
-                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
-                  </label>
-                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
-                    <input class= "filter__accardeon__checkbox" type="checkbox">
-                    <span class="filter__accardeon__bef"></span>
-                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
-                  </label>
-                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
-                    <input class= "filter__accardeon__checkbox" type="checkbox">
-                    <span class="filter__accardeon__bef"></span>
-                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
-                  </label>
-                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
-                    <input class= "filter__accardeon__checkbox" type="checkbox">
-                    <span class="filter__accardeon__bef"></span>
-                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
-                  </label>
-                  <label data-error="Ошибка" value= "1" class="filter__accardeon__label" >
-                    <input class= "filter__accardeon__checkbox" type="checkbox">
-                    <span class="filter__accardeon__bef"></span>
-                    <span class="filter__accardeon__title">Сlear-fit Diadora</span>
-                  </label>
+                  <div class="filter__accardeon">
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">12</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">14</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">16</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">18</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__title">20</span>
+                    </label>
+                  </div>
                 </div>
+
               </div>
 
+              <div class="filter__sector filter__sector--one">
+                <h5 class="filter__title ">угол наклонов</h5>
+
+                <div class="filter__body">
+
+                  <div class="filter__accardeo">
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__titles "> нет регулировки</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__titles">механическая</span>
+                    </label>
+                    <label data-error="Ошибка" value="1" class="filter__accardeon__label">
+                      <input class="filter__accardeon__checkbox" type="checkbox">
+                      <span class="filter__accardeon__bef"></span>
+                      <span class="filter__accardeon__titles">электроная</span>
+                    </label>
+
+                  </div>
+
+
+                </div>
+
+              </div>
             </div>
-
-
-
-
-
-
-          </div><!-- /filter-->
+            <div class="filter__footers">
+              <button class="filter__footers__btn" type="submit">Подобрать</button>
+              <button class="filter__footers__btn filter__footers__btn--left" type="reset"> Сбросить</button>
+            </div>
+          </form>
+        </div><!-- /filter-->
 
 
 
@@ -1071,7 +1148,7 @@
         <!-- products-slider-->
 
         <div class="products products-slider">
-          
+
 
           <!-- products-slider__items-->
           <div class="products-slider__items">
@@ -1391,7 +1468,7 @@
         </div><!-- /products-slider-->
 
 
-        
+
 
 
 
@@ -1401,11 +1478,11 @@
 
 
     </div><!-- /container-->
-    
 
 
 
-    
+
+
 
     <div class="info">
       <div class="container info__content">

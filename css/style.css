@@ -696,6 +696,9 @@ body, html {
   font-weight: 900;
   transition: all 0.3s linear;
 }
+.search__btns:hover {
+  background: #e96d07;
+}
 .search__input {
   z-index: 3;
   width: calc(100% - (116px+87px) );
@@ -1366,10 +1369,14 @@ body, html {
   border-bottom: 1px solid #00b3ca;
   padding: 0 12px 25px 12px;
 }
+.filter__sector:last-child {
+  border-bottom: none;
+}
 .filter__sector--spollers {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 0 12px 0px 12px;
 }
 .filter__title {
   margin-top: 30px;
@@ -1505,7 +1512,7 @@ body, html {
   transform: rotate(90deg);
   transition: all 0.2s linear;
 }
-.filter__input:checked ~ .filter__accardeon {
+.filter__input:checked ~ .filter__body .filter__accardeon {
   display: block;
 }
 .filter__bodys {
@@ -1568,6 +1575,40 @@ body, html {
   font-size: 12px;
   font-weight: 300;
   color: #999999;
+}
+.filter__accardeon__titles {
+  width: 100px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999999;
+}
+.filter__footers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.filter__footers__btn {
+  border-radius: 2px;
+  cursor: pointer;
+  height: 40px;
+  width: 95px;
+  background: #FD8322;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 900;
+  transition: all 0.3s linear;
+}
+.filter__footers__btn:hover {
+  background: #e96d07;
+}
+.filter__footers__btn--left {
+  background: rgba(153, 153, 153, 0.3);
+  color: #333333;
+  margin-left: 30px;
+  transition: all 0.3s linear;
+}
+.filter__footers__btn--left:hover {
+  background: #999999;
 }
 
 .noUi-target {

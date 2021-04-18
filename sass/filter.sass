@@ -4,13 +4,15 @@
   height: auto
   display: flex
   flex-direction: column
-  
   &__sector
     border-bottom: 1px solid $light-accent
+    &:last-child
+      border-bottom: none
     &--spollers
       display: flex
       flex-direction: column
       position: relative
+      padding: 0 12px 0px 12px
     &--one
     padding: 0 12px 25px 12px
   &__title
@@ -19,20 +21,14 @@
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-T2
     color: $COLOR-GREEN
-    &--black
-      
-      
   &__slider
-    
     margin-bottom: 40px
   &__inputs
     display: flex
     justify-content: space-between
-    
   &__label
     display: flex
     align-items: center
-    
   &__text
     font-size: $FONT-SIZE
     font-weight: $FONT-WEIGHT-LIGHT
@@ -52,8 +48,6 @@
     display: flex
     flex-direction: column
     margin-bottom: 25px
-    
-    
   &__item
     overflow: hidden
     padding-right: 32px
@@ -100,7 +94,6 @@
       width: 20px
       height: 20px
       fill: $COLOR-ACCENT
-    
     &__text
       line-height: $FONT-HEIGHT1
       font-weight: $FONT-WEIGHT-BLACK
@@ -122,7 +115,6 @@
     top: 0
     left: 0
     opacity: 0
-    
     &:checked ~ .filter__bodys
       .filter__title
         color: $COLOR-BLACK
@@ -134,15 +126,13 @@
         fill: rgba($COLOR-TEXT, 0.3)
         transform: rotate(90deg)
         transition: all .2s linear
-    &:checked ~ .filter__accardeon
+    &:checked ~ .filter__body  .filter__accardeon
       display: block
   &__bodys
     cursor: pointer
     display: flex
     align-items: center
     justify-content: space-between
-    
-     
     &__btn
       background: $COLOR-ACCENT
       width: 30px
@@ -165,7 +155,6 @@
         opacity: 1
       &:checked + .filter__accardeon__bef
         border: 2px solid $COLOR-GREEN
-        
     &__bef
       position: relative
       margin-right: 10px
@@ -189,6 +178,34 @@
       font-size: $FONT-SIZE
       font-weight: $FONT-WEIGHT-LIGHT
       color: $COLOR-TEXT
+    &__titles
+      width: 100px
+      font-size: $FONT-SIZE
+      font-weight: $FONT-WEIGHT-LIGHT
+      color: $COLOR-TEXT
+  &__footers
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+    &__btn
+      border-radius: 2px
+      cursor: pointer
+      height: 40px
+      width: 95px
+      background: $COLOR-ORANGE
+      color: $COLOR-ACCENT
+      font-size: $FONT-SIZE
+      font-weight: $FONT-WEIGHT-BLACK
+      transition: all .3s linear
+      &:hover
+        background: #e96d07
+      &--left
+        background: rgba($COLOR-TEXT, 0.3)
+        color: $COLOR-BLACK
+        margin-left: 30px
+        transition: all .3s linear
+        &:hover
+          background: $COLOR-TEXT
 .noUi-target
   background: rgba($COLOR-TEXT, 0.3)
   border: none
@@ -219,6 +236,7 @@
     left: 48.5%
     transform: translate(-48.5%, -48.5%)
     background: $COLOR-ORANGE
+  
 .noUi-horizontal .noUi-handle
   height: 23px
   top: -10px
