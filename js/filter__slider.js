@@ -3,7 +3,7 @@ if(filterSlider){
   noUiSlider.create(filterSlider, {
     start: [500, 300000],
     connect: true,
-    tooltips: [ wNumb({decimals: 1}), wNumb({decimals: 1})],
+    tooltips: [ true, true],
     step:1,
     range: {
         'min': [500],

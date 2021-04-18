@@ -7,6 +7,11 @@
   
   &__sector
     border-bottom: 1px solid $light-accent
+    &--spollers
+      display: flex
+      flex-direction: column
+      
+      a
     &--one
     padding: 0 12px 25px 12px
   &__title
@@ -64,7 +69,6 @@
         transition: 0.2s linear
         fill: $COLOR-GREEN
   &__link
-    
     overflow: hidden
     width: 129px
     overflow: hidden
@@ -74,6 +78,7 @@
     font-weight: $FONT-WEIGHT-LIGHT
     line-height: $FONT-HEIGHT1
   &__icon
+    align-items: center
     height: 14px
     width: 14px
     fill: $COLOR-TEXT
@@ -113,6 +118,34 @@
       fill: $COLOR-GREEN
     &:hover
       background: $COLOR-GREEN
+  &__bodys
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &--active
+      .filter__title--spoller
+        color: $COLOR-BLACK
+      .filter__bodys__btn
+        border: 1px solid rgba($COLOR-TEXT, 0.3)
+      .filter__bodys__icons
+        fill: rgba($COLOR-TEXT, 0.3)
+        transform: rotate(90deg)
+    &__btn
+      background: $COLOR-ACCENT
+      width: 30px
+      height: 30px
+      border: 1px solid $light-accent
+      border-radius: 100%
+    &__icons
+      fill: $light-accent
+      width: 12px
+      height: 12px
+  &__accardeon
+    display: none
+    &__label
+      display: flex
+      margin-bottom: 15px
 .noUi-target
   background: rgba($COLOR-TEXT, 0.3)
   border: none

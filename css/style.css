@@ -1366,6 +1366,10 @@ body, html {
   border-bottom: 1px solid #00b3ca;
   padding: 0 12px 25px 12px;
 }
+.filter__sector--spollers {
+  display: flex;
+  flex-direction: column;
+}
 .filter__title {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -1433,6 +1437,7 @@ body, html {
   line-height: 1.3;
 }
 .filter__icon {
+  align-items: center;
   height: 14px;
   width: 14px;
   fill: #999999;
@@ -1479,6 +1484,41 @@ body, html {
 }
 .filter__buttons:hover {
   background: #009CB0;
+}
+.filter__bodys {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter__bodys--active .filter__title--spoller {
+  color: #333333;
+}
+.filter__bodys--active .filter__bodys__btn {
+  border: 1px solid rgba(153, 153, 153, 0.3);
+}
+.filter__bodys--active .filter__bodys__icons {
+  fill: rgba(153, 153, 153, 0.3);
+  transform: rotate(90deg);
+}
+.filter__bodys__btn {
+  background: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #00b3ca;
+  border-radius: 100%;
+}
+.filter__bodys__icons {
+  fill: #00b3ca;
+  width: 12px;
+  height: 12px;
+}
+.filter__accardeon {
+  display: none;
+}
+.filter__accardeon__label {
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .noUi-target {
