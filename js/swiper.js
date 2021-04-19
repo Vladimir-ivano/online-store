@@ -1,18 +1,17 @@
-const swiper = new Swiper('.slider__slider', {
+const Slider = new Swiper('.slider__body', {
   // Optional parameters
-  direction: 'vertical',
-  loop: true,
+  observer: true,
+  observeParenrs: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  speed: 800,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.slider__dotts',
+    clickable: true,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
   // And if we need scrollbar
   scrollbar: {
