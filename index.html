@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="online store" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
 
   <title>online store</title>
@@ -943,12 +944,8 @@
 
 
         <div class="slider">
-          <div class="slider__body">
-            <picture class="slider__image">
-              <source srcset="" type="image/webp">
-              <img class="slider__img" src="./img/header1.jpg" alt="">
-              <img class="slider__img" src="./img/header.jpg" alt="">
-            </picture>
+          <div class="slider__body _swiper">
+            <div class="slider__slider">
             <div class="slider__contant">
               <h1 class="slider__title"> <span class="slider__titles"> мега </span>распрадажа</h1>
               <p class="slider__text"> <span class="slider__titles">успейте купить</span> тренажеры <span
@@ -964,9 +961,13 @@
                 </li>
               </ul>
             </div>
-
+            <picture class="slider__image">
+              <source srcset="" type="image/webp">
+              <img class="slider__img" src="./img/header1.jpg" alt="">
+              <img class="slider__img" src="./img/header.jpg" alt="">
+            </picture>
+          </div>
           </div>!-- /slider__body-->
-
 
           <div class="slider__dotts">
             <picture class="slider__item activ" role="button" data-name="1">
@@ -1704,6 +1705,8 @@
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
   <script src="./js/script.js"></script>
   <script src="./js/wNumb.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>
