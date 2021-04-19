@@ -1,0 +1,89 @@
+.navs
+  padding: 35px 0 26px 0
+  &__inner
+    display: flex
+  &__item--activ
+    margin-right: 20px
+
+    &::after 
+        margin-left: 20px
+        font-weight: $FONT-WEIGHT-BOLT
+        display: inline-block
+        content: ">>"
+        width: 11px
+        height: 11px
+        color: #22B7CA
+  &__link
+    font-size: $FONT-SIZE-MENU
+    font-weight: $COLOR-BLACK
+    color: $COLOR-TEXT
+    &--activ
+      color: $light-accent
+      text-decoration: underline
+.catalogs
+  &__body
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 20px
+    margin: 15px 0 15px 0
+    background-color: rgba($COLOR-TEXT,0.4 )
+  &__item
+    display: flex
+    align-items: center
+  &__title
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-BLACK
+    line-height: $FONT-HEIGHT1
+    margin-right: 18px
+  &__form
+    display: flex
+    width: 100%
+    color: $light-accent
+    padding: 10px 30px 10px 10px
+    border: none
+    -webkit-appearance: none
+    appearance: none
+    font-family: inherit
+    font-weight: $FONT-WEIGHT-LIGHT
+    font-size: $FONT-SIZE-MENU
+  &__select
+    position: relative
+    &::after
+      margin-right: 6px
+      content: ""
+      display: block
+      border-style: solid
+      border-width: 8px 7px 0 7px
+      border-color: rgba($COLOR-TEXT,0.4 ) transparent transparent transparent
+      position: absolute
+      top: 50%
+      right: 1px
+      z-index: 1
+      transform: translateY(-50%)
+  &__link
+    color: $COLOR-BLACK
+  &__view
+    display: flex
+  &__btn
+    justify-content: center
+    align-items: center
+    border-radius: 2px
+    display: flex
+    width: 36px
+    height: 36px
+    background: $COLOR-GREEN
+    margin-right: 10px
+    &:hover
+      background: $light-accent
+      
+  &__icon
+    
+    width: 24px
+    height: 24px
+    fill: $COLOR-ACCENT
+      
+
+      
+      
+      
