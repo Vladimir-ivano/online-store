@@ -1,0 +1,241 @@
+.checkout
+  &__title
+    font-size: $FONT-SIZE-CAT
+    color: rgba($COLOR-TEXT , 0.5 )
+    line-height: $FONT-HEIGHT2
+    font-weight: $FONT-WEIGHT-BOLT
+    text-transform: uppercase
+    margin-bottom: 25px
+  &__body
+    padding: 15px 15px 20px 
+    position: relative
+    background: rgba($COLOR-TEXT , 0.2 )
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 40px
+  &__input
+    opacity: 0
+    top: 0
+    left: 0
+    position: absolute
+  &__label
+    margin-right: auto
+    padding: 15px 23px
+    margin-bottom: 50px
+  &__labels
+    cursor: pointer
+    margin-right: auto
+    text-transform: uppercase
+    border-bottom: 2px dashed $light-accent
+    font-size: $FONT-SIZE-MENU
+    color: $light-accent
+  &__form
+    display: none
+    width: 100%
+  &__inner
+    margin: 0 40px 0 30px
+    display: flex
+  &__forms
+    width: 400px
+  &__line 
+    display: flex
+    margin-bottom: 10px
+    align-items: center
+    justify-content: space-between
+    
+    &--lines
+      margin-left: 100px
+    &__titles
+      width: 100%
+      font-size: $FONT-SIZE
+      color: $COLOR-TEXT 
+      order: 1
+    &__title
+      font-size: $FONT-SIZE-MENU
+      font-weight: $FONT-WEIGHT-BLACK
+      display: flex
+      line-height: $FONT-HEIGHT2
+      color: $COLOR-BLACK
+      span
+        margin-left: 2px
+        color: red
+    &__inputs
+      width: 213px
+    &__input
+      color: rgba($COLOR-TEXT , 0.9 )
+      width: 100%
+      padding: 10px 10px
+      &--input
+        display: flex
+        justify-content: flex-end
+      &--texter
+        resize: none
+        padding: 5px 5px
+        width: 216px
+        height: 120px
+    &__selects
+      color: rgba($COLOR-TEXT , 0.9 )
+      min-width: 213px
+  &__texts
+    margin-left: 40px
+    width: calc( 100% - 400px  )
+  &__text
+    margin-bottom: 15px
+    font-weight: $FONT-WEIGHT-LIGHT
+    font-size: $FONT-SIZE
+    color: $COLOR-TEXT
+    line-height: $FONT-HEIGHT1
+    &:last-child
+      margin-bottom: 0
+    span
+      color: red
+      margin-right: 6px
+.order
+  &__body
+    display: flex
+    flex-direction: column
+  &__items
+    margin-bottom: 25px
+    border-top: 1px solid rgba($COLOR-TEXT , 0.9 )
+    border-bottom: 1px solid rgba($COLOR-TEXT , 0.9 )
+  &__item
+    position: relative
+    padding: 10px 10px
+    display: flex
+    align-items: center
+  &__contant
+    display: flex
+    align-items: center
+    
+  &__contents
+    display: flex
+    flex-direction: column
+    margin-right: 50px
+  &__titles
+    font-size: $FONT-SIZE-MENU
+    color: $dark-accent
+    font-weight: $FONT-WEIGHT-BLACK
+    margin-bottom: 15px
+    span
+      font-weight: $FONT-WEIGHT-LIGHT
+  &__price
+    font-weight: $FONT-WEIGHT-BLACK
+    color: $COLOR-BLACK
+    font-size: $FONT-SIZE-TEL
+    
+  &__image
+    margin-right: 5px
+  &__img
+    display: block
+    width: 139px
+    height: 141px
+    object-fit: cover
+  &__total
+    display: flex
+    flex-direction: column
+    &__title
+      font-weight: $FONT-WEIGHT-LIGHT
+      color: $COLOR-TEXT
+      font-size: $FONT-SIZE-T2
+      line-height: $FONT-HEIGHT1
+      margin-bottom: 10px
+    &__prise
+      color: $COLOR-BLACK
+      font-weight: $FONT-WEIGHT-BLACK
+      font-size: $FONT-SIZE-PRISE
+  &__btn
+    position: absolute
+    background: none
+    top: 10px
+    right: 10px
+    &:hover
+      .order__button
+        fill: $COLOR-ORANGE
+  &__button
+    fill: $COLOR-TEXT
+    width: 17px
+    height: 17px
+  &__totals
+    &__body
+      align-items: flex-end
+      display: flex
+      flex-direction: column
+    &__title
+      margin-bottom: 25px
+      font-size: $FONT-SIZE-PRISE
+      text-transform: uppercase
+      font-weight: $FONT-WEIGHT-BLACK
+      span
+        font-size: $FONT-SIZE-price
+        margin-left: 10px
+        color: $COLOR-ORANGE
+    &__btns
+      display: flex
+      justify-content: flex-end
+      
+    &__btn
+      width: 165px
+      font-weight: $FONT-WEIGHT-BLACK
+      border-radius: 50px
+      text-transform: uppercase
+      color: $COLOR-ACCENT
+      padding: 10px 0 
+      width: 165px
+      background: $COLOR-ORANGE
+      transition: background 0.3s linear
+      &:hover
+        background: #e27215
+.quantity
+  display: flex
+  margin-right: 60px
+  &__order
+    display: flex
+  &__input
+    margin: 0 5px
+    width: 55px
+    height: 32px
+  &__inputs
+    text-align: center
+    width: 100%
+    padding: 5px 5px 
+    border: 1px solid rgba($COLOR-TEXT , 0.5 )
+    color: $COLOR-TEXT
+  &__button
+    background: none
+    &:hover
+      .quantity__button__icon
+        fill: $COLOR-ORANGE
+    &__icon
+      fill: $light-accent
+      width: 17px
+      height: 23px
+      &--next
+        transform: rotate(180deg)
+  
+#tab-1:checked ~ .checkout__label-1 .checkout__labels
+  background: $light-accent
+  border-bottom: none
+  color: #fff
+  padding: 15px 23px
+#tab-2:checked ~ .checkout__label-2 .checkout__labels
+  background: $light-accent
+  border-bottom: none
+  color: #fff
+  padding: 15px 23px
+#tab-3:checked ~ .checkout__label-3 .checkout__labels
+  background: $light-accent
+  border-bottom: none
+  color: #fff
+  padding: 15px 23px
+#tab-3:checked ~.checkout__form-3
+  display: block
+#tab-2:checked ~.checkout__form-2
+  display: block
+#tab-1:checked ~.checkout__form-1
+  display: block
+  
+    
+    
+    
+  
+      

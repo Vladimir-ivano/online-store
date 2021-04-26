@@ -37,7 +37,7 @@
       width: 262px
       border: 3px solid $COLOR-ORANGE
       background: rgba(#000 ,0.84)
-      transform: translateY(-100%)
+      transform: translateY(0%)
       transition: transform 0.2s linear
   &--contant
     display: flex
@@ -54,6 +54,9 @@
     font-weight: $FONT-WEIGHT-LIGHT
     font-size: $FONT-SIZE-MENU
     margin-bottom: 30px
+  &__option
+    display: flex
+    flex-direction: column
   &--pris
     color: $COLOR-ACCENT
   &--texts
@@ -75,6 +78,13 @@
     width: 60px
     background: $COLOR-ORANGE
     margin-bottom: 29px
+  &--iconss
+    margin: 0 auto
+    display: flex
+    height: 60px
+    width: 60px
+    background: $COLOR-ORANGE
+    margin-bottom: 5px
   &--icon
     width: 31px
     height: 31px
@@ -86,6 +96,7 @@
   &--content
     display: flex
   &--text
+    display: block
     position: absolute
     bottom: 19px
     left: 10px

@@ -28,9 +28,23 @@
     padding: 10px 20px
     margin: 15px 0 15px 0
     background-color: rgba($COLOR-TEXT,0.4 )
+  &__navs
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 20px
+    margin: 15px 0 
+    border: 1px solid rgba($COLOR-TEXT,0.4 )
+    &--navs
+      margin: -15px 0
+  &__show
+    display: flex
+    align-items: center
+    width: 30%
   &__item
     display: flex
     align-items: center
+    width: 50%
   &__title
     font-size: $FONT-SIZE-MENU
     font-weight: $FONT-WEIGHT-BLACK
@@ -38,15 +52,19 @@
     margin-right: 18px
   &__form
     display: flex
-    width: 100%
+    min-width: 163px
     color: $light-accent
-    padding: 10px 30px 10px 10px
+    padding: 5px 30px 5px 10px
     border: none
     -webkit-appearance: none
     appearance: none
     font-family: inherit
     font-weight: $FONT-WEIGHT-LIGHT
     font-size: $FONT-SIZE-MENU
+    &--shows
+      min-width: 50px
+      border: 1px solid rgba($COLOR-TEXT,0.4 )
+
   &__select
     position: relative
     &::after
@@ -74,16 +92,46 @@
     height: 36px
     background: $COLOR-GREEN
     margin-right: 10px
+    &_activ
+      background: $COLOR-ACCENT
     &:hover
-      background: $light-accent
-      
+      background: $light-accent  
   &__icon
-    
     width: 24px
     height: 24px
     fill: $COLOR-ACCENT
-      
+  &__pagging
+    display: flex
+  &__list
+    display: flex
+  &__item 
+    
 
+    &:first-child
+  &__links
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 15px
+    font-weight: $FONT-WEIGHT-BLACK
+    font-size: $FONT-SIZE-TEL
+    line-height: $FONT-HEIGHT1
+    color: $COLOR-BLACK
+    &--activ
+      color: $COLOR-ACCENT
+      width: 28px
+      height: 28px
+      border-radius: 100%
+      background: $COLOR-ORANGE
+  &__products
+    display: block
+    margin-bottom: 40px
+    display: flex
+  &__icons
+    margin-right: 10px
+    width: 25px
+    height: 25px
+    fill: $COLOR-ACCENT
       
       
       
