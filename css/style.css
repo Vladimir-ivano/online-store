@@ -113,6 +113,20 @@ body, html {
     display: none;
   }
 }
+@media (max-width: 980px) {
+  .nav__navv {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+}
+.nav__navv--activ {
+  display: block;
+}
 .nav__item {
   margin-bottom: 13px;
 }
@@ -153,8 +167,11 @@ body, html {
 }
 .nav__con {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .nav__grup {
+  width: 50%;
   align-self: center;
   position: relative;
   padding: 0 14px 0 30px;
@@ -162,12 +179,20 @@ body, html {
 }
 @media (max-width: 980px) {
   .nav__grup {
-    padding: 0 10px 0 30px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5px;
+    border-right: none;
   }
 }
 .nav__grup:last-child {
   border-right: 0;
   padding: 0 0 0 14px;
+}
+@media (max-width: 980px) {
+  .nav__grup:last-child {
+    padding: 0;
+  }
 }
 .nav__grup__icon {
   position: absolute;
@@ -177,7 +202,13 @@ body, html {
   height: 20px;
   fill: #FFFFFF;
 }
+@media (max-width: 980px) {
+  .nav__grup__icon {
+    display: none;
+  }
+}
 .nav__citi {
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 300;
@@ -186,7 +217,7 @@ body, html {
 .nav__tel {
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 14px;
 }
 @media (max-width: 1080px) {
   .nav__tel {
@@ -199,9 +230,15 @@ body, html {
   padding-top: 40px;
   background: white;
 }
+@media (max-width: 980px) {
+  .profil {
+    padding-top: 20px;
+  }
+}
 .profil__nav {
   padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .profil__navs {
@@ -213,6 +250,11 @@ body, html {
 @media (max-width: 980px) {
   .profil__navs {
     flex-basis: calc( 50% - 10px );
+  }
+}
+@media (max-width: 780px) {
+  .profil__navs {
+    flex-basis: 100%;
   }
 }
 .profil__navs:last-child {
@@ -309,6 +351,7 @@ body, html {
 }
 
 .burger {
+  cursor: pointer;
   margin-right: auto;
   display: none;
   background: none;
@@ -324,7 +367,7 @@ body, html {
 .burger__nav {
   top: 50%;
   left: 20px;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   border-radius: 4px;
   display: block;
   width: 100%;

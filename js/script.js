@@ -60,8 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
    selectedItemNumber === li ? item.classList.add(classActive) : item.classList.remove(classActive);
   };
  };
+ VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
+VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
 });
-VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
-VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
+
 
 
