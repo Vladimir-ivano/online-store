@@ -29,6 +29,7 @@
     border-bottom: 2px dashed $light-accent
     font-size: $FONT-SIZE-MENU
     color: $light-accent
+    font-weight: $FONT-WEIGHT-BLACK
   &__form
     display: none
     width: 100%
@@ -148,6 +149,7 @@
     background: none
     top: 10px
     right: 10px
+    transition: background 0.3s linear
     &:hover
       .order__button
         fill: $COLOR-ORANGE
@@ -188,6 +190,9 @@
 .quantity
   display: flex
   margin-right: 60px
+  &--quantity
+    
+    margin-right: auto
   &__order
     display: flex
   &__input
