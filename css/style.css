@@ -115,8 +115,14 @@ body, html {
   display: flex;
 }
 @media (max-width: 980px) {
+  .nav__nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 980px) {
   .nav__navv {
-    display: none;
+    display: block;
     z-index: 6;
     background-color: rgba(0, 179, 202, 0.5);
     position: fixed;
@@ -136,6 +142,16 @@ body, html {
 }
 .nav__item:nth-last-child(2n+1) {
   margin-bottom: 0;
+}
+@media (max-width: 980px) {
+  .nav__item {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 980px) {
+  .nav__inner {
+    margin-bottom: 15px;
+  }
 }
 .nav__link {
   text-align: left;
@@ -294,6 +310,11 @@ body, html {
 @media (max-width: 980px) {
   .profil__navs {
     flex-basis: calc( 50% - 50px );
+  }
+}
+@media (max-width: 980px) {
+  .profil__navs {
+    flex-basis: calc( 50% - 10px );
   }
 }
 @media (max-width: 780px) {
