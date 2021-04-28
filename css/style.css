@@ -427,7 +427,7 @@ body, html {
   top: 8px;
 }
 .burger__nav::after {
-  top: 10px;
+  top: 15px;
 }
 @media (max-width: 980px) {
   .burger {
