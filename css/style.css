@@ -116,7 +116,7 @@ body, html {
 }
 @media (max-width: 980px) {
   .nav__navv {
-    display: block;
+    display: none;
     z-index: 6;
     background-color: rgba(0, 179, 202, 0.5);
     position: fixed;
