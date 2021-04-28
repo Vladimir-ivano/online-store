@@ -290,7 +290,7 @@ body, html {
 }
 @media (max-width: 980px) {
   .profil__navs {
-    flex-basis: calc( 50% - 10px );
+    flex-basis: calc( 50% - 50px );
   }
 }
 @media (max-width: 780px) {
