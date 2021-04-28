@@ -48,8 +48,10 @@ body, html
   &__items
     
     flex-basis: calc( 100% /3  )
-    @media (max-width: 980px)
-      
+    &--grups
+      @media (max-width: 980px)
+        display: flex
+        justify-content: center
   &__nav
     margin-right: auto
     display: flex
@@ -64,7 +66,7 @@ body, html
       top: 0
       left: 0
       overflow: auto
-    &--activ
+    & activ
       display: block
       
   &__item
@@ -91,12 +93,15 @@ body, html
     z-index: 5
     align-items: flex-end
     margin-bottom: 10px
-    
+    @media (max-width: 750px)
+      margin-right: 15px
     &__item
       font-family: $FONT-FAMALI2
       font-size: $FONT-SIZE-LOGO
       font-weight: $FONT-WEIGHT-BOLT
       color: $COLOR-ACCENT
+      @media (max-width: 680px)
+        font-size: $FONT-SIZE-price
     &__link
       font-size: $FONT-SIZE
       font-family: $FONT-FAMALI1
@@ -105,6 +110,8 @@ body, html
     display: flex
     flex-wrap: wrap
     justify-content: center
+    @media (max-width: 980px)
+      
   &__grup
     width: 50%
     align-self: center
@@ -113,9 +120,13 @@ body, html
     border-right: 1px solid $COLOR-ACCENT
     @media (max-width: 980px)
       padding: 0
-      width: 100%
+      width: 50%
       margin-bottom: 5px
       border-right: none
+      @media (max-width: 750px)
+        width: 52%
+      @media (max-width: 750px)
+        width: 100%
     &--grup
       @media (max-width: 980px)
     &:last-child

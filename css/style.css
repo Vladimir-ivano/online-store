@@ -104,6 +104,12 @@ body, html {
 .nav__items {
   flex-basis: calc( 100% /3  );
 }
+@media (max-width: 980px) {
+  .nav__items--grups {
+    display: flex;
+    justify-content: center;
+  }
+}
 .nav__nav {
   margin-right: auto;
   display: flex;
@@ -124,7 +130,7 @@ body, html {
     overflow: auto;
   }
 }
-.nav__navv--activ {
+.nav__navv activ {
   display: block;
 }
 .nav__item {
@@ -154,11 +160,21 @@ body, html {
   align-items: flex-end;
   margin-bottom: 10px;
 }
+@media (max-width: 750px) {
+  .nav__logo {
+    margin-right: 15px;
+  }
+}
 .nav__logo__item {
   font-family: "Play", sans-serif;
   font-size: 48px;
   font-weight: 700;
   color: #FFFFFF;
+}
+@media (max-width: 680px) {
+  .nav__logo__item {
+    font-size: 36px;
+  }
 }
 .nav__logo__link {
   font-size: 12px;
@@ -180,11 +196,22 @@ body, html {
 @media (max-width: 980px) {
   .nav__grup {
     padding: 0;
-    width: 100%;
+    width: 50%;
     margin-bottom: 5px;
     border-right: none;
   }
 }
+@media (max-width: 980px) and (max-width: 750px) {
+  .nav__grup {
+    width: 52%;
+  }
+}
+@media (max-width: 980px) and (max-width: 750px) {
+  .nav__grup {
+    width: 100%;
+  }
+}
+
 .nav__grup:last-child {
   border-right: 0;
   padding: 0 0 0 14px;
