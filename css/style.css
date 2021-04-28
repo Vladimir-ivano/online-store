@@ -187,31 +187,32 @@ body, html {
   justify-content: center;
 }
 .nav__grup {
+  display: block;
   width: 50%;
   align-self: center;
   position: relative;
-  padding: 0 14px 0 30px;
+  padding: 0 14px 0px 30px;
   border-right: 1px solid #FFFFFF;
 }
-@media (max-width: 980px) {
+@media (max-width: 990px) {
   .nav__grup {
-    padding: 0;
-    width: 50%;
+    padding: 0 0px 0px 30px;
+    width: 86%;
     margin-bottom: 5px;
     border-right: none;
   }
 }
-@media (max-width: 980px) and (max-width: 750px) {
+@media (max-width: 990px) and (max-width: 531px) {
   .nav__grup {
-    width: 52%;
-  }
-}
-@media (max-width: 980px) and (max-width: 750px) {
-  .nav__grup {
-    width: 100%;
+    width: 10%;
   }
 }
 
+@media (max-width: 980px) {
+  .nav__grup--grup {
+    display: none;
+  }
+}
 .nav__grup:last-child {
   border-right: 0;
   padding: 0 0 0 14px;
@@ -229,9 +230,11 @@ body, html {
   height: 20px;
   fill: #FFFFFF;
 }
-@media (max-width: 980px) {
+@media (max-width: 531px) {
   .nav__grup__icon {
-    display: none;
+    bottom: -10px;
+    width: 25px;
+    height: 25px;
   }
 }
 .nav__citi {
@@ -241,6 +244,11 @@ body, html {
   font-weight: 300;
   line-height: 1.5;
 }
+@media (max-width: 531px) {
+  .nav__citi {
+    display: none;
+  }
+}
 .nav__tel {
   color: #FFFFFF;
   font-weight: 900;
@@ -249,6 +257,11 @@ body, html {
 @media (max-width: 1080px) {
   .nav__tel {
     font-size: 14px;
+  }
+}
+@media (max-width: 531px) {
+  .nav__tel {
+    display: none;
   }
 }
 
