@@ -113,8 +113,8 @@ body, html {
 }
 @media (max-width: 980px) {
   .navigation__nav {
-    display: none;
-    z-index: 1;
+    opacity: 0;
+    z-index: 2;
     background-color: #FFFFFF;
     position: fixed;
     height: 100%;
@@ -123,10 +123,11 @@ body, html {
     left: 0;
     overflow: auto;
     padding: 100px 20px 30px 20px;
+    transition: all 0.2s ease 0.1s;
   }
   .navigation__nav::before {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     content: "";
     height: 90px;
@@ -135,7 +136,7 @@ body, html {
     background-color: #009CB0;
   }
   .navigation__nav.activ {
-    display: flex;
+    opacity: 1;
   }
 }
 @media (max-width: 980px) {
@@ -224,6 +225,11 @@ body, html {
   align-items: center;
   display: flex;
 }
+@media (max-width: 880px) {
+  .navigation__telephone {
+    align-items: flex-end;
+  }
+}
 .navigation__grup {
   border-right: 1px solid #FFFFFF;
   display: flex;
@@ -234,6 +240,12 @@ body, html {
     border-right: none;
   }
 }
+@media (max-width: 880px) {
+  .navigation__grup {
+    display: flex;
+    align-items: center;
+  }
+}
 .navigation__grup:last-child {
   border-right: none;
 }
@@ -241,7 +253,7 @@ body, html {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 980px) {
+@media (max-width: 880px) {
   .navigation__grup--right {
     display: none;
   }
@@ -258,7 +270,7 @@ body, html {
   font-weight: 300;
   line-height: 1.1;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .navigation__citi {
     display: none;
   }
@@ -268,7 +280,7 @@ body, html {
   font-weight: 900;
   font-size: 14px;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .navigation__tel {
     display: none;
   }
@@ -336,6 +348,14 @@ body, html {
   background: #009CB0;
   border-radius: 100%;
 }
+@media (max-width: 880px) {
+  .profil__item--items {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+}
 .profil__item:last-child {
   margin-right: 0;
 }
@@ -378,6 +398,11 @@ body, html {
   align-self: center;
   justify-content: center;
 }
+@media (max-width: 880px) {
+  .profil__icon--icon {
+    fill: #009CB0;
+  }
+}
 .profil__grup {
   display: flex;
   flex-direction: column;
@@ -398,6 +423,12 @@ body, html {
   padding: 2px 7px;
   background: #FD8322;
   border-radius: 50px;
+}
+@media (max-width: 880px) {
+  .profil__col {
+    top: 10%;
+    transform: translateY(-10%);
+  }
 }
 
 .burger {
