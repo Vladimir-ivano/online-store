@@ -15,51 +15,44 @@ body, html
   padding: 0 10px
   margin: 0 auto
   
-.headar
+.header
   position: fixed
-  top: 0
-  width: 100%
-  left: 0
-  z-index: 7
-  &:before
-    background-color: $COLOR-GREEN
-    border-radius: 50%
-    bottom: 60px
-    content: ''
-    z-index: 1
-    display: block
-    height: 350px
-    left: 50%
-    pointer-events: none
-    position: absolute
-    transform: translateX(-50%,)
-    width: 350px
-    @media (max-width: 980px)
-      display: none
-.navigation
-  
-  color: $COLOR-ACCENT
-  background: linear-gradient(90deg, rgba(0,156,176,1) 1%, rgba(0,156,176,1) 37%, rgba(0,156,176,1) 70%, rgba(0,156,176,1) 92%)
-  box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
-.nav
-  padding: 20px 0 0 0
+  height: auto
   display: flex
-  align-items: center
-  &__items
+  flex-direction: column
+  &__top
     
-    flex-basis: calc( 100% /3  )
-    &--grups
-      @media (max-width: 980px)
-        display: flex
-        justify-content: center
-  &__nav
-    margin-right: auto
-    display: flex
-    @media (max-width: 980px)
-      display: flex
-      flex-direction: column
-        
+    position: fixed
+    top: 0
+    width: 100%
+    left: 0
+    z-index: 6
+    background-color: $COLOR-GREEN
+    color: $COLOR-ACCENT
+    background: linear-gradient(90deg, rgba(0,156,176,1) 1%, rgba(0,156,176,1) 37%, rgba(0,156,176,1) 70%, rgba(0,156,176,1) 92%)
+    box-shadow: 4px 6px 10px rgba($COLOR-GREEN, 0.25 )
+  &__botton
+    
+    position: fixed
+    top: 75px
+    width: 100%
+    left: 0
+    z-index: 4
+    background-color: $COLOR-ACCENT
+    
+.navigation
+  padding: 20px 0
+  position: relative
+  display: flex
+  color: $COLOR-ACCENT
+  align-items: center
+  justify-content: space-between
   &__navigation
+  &__items
+    display: flex
+    align-self: center
+  &__nav
+    display: flex
     @media (max-width: 980px)
       display: none
       z-index: 6
@@ -70,22 +63,14 @@ body, html
       top: 0
       left: 0
       overflow: auto
-      padding: 80px 20px 30px 20px
+      padding: 100px 20px 30px 20px
       &.activ
-        display: block
-      
-    
-      
+        display: flex
   &__item
-    
+    margin-right: auto
     margin-bottom: 13px
     &:nth-last-child(2n+1)
       margin-bottom: 0
-    @media (max-width: 980px)
-      margin-bottom: 15px
-  &__inner
-    @media (max-width: 980px)
-      margin-bottom: 15px
   &__link
     text-align: left
     line-height: $FONT-HEIGHT1
@@ -99,185 +84,169 @@ body, html
     transition: 0.2s linear
     &:hover
       background: #068292
-
   &__logo
+    
+    top: 50%
+    position: absolute
+    right: 50%
+    transform: translate(50%,-50%)
+    z-index: 3
+    &::before
+      z-index: -2
+      position: absolute
+      top: 50%
+      right: 50%
+      display: block
+      content: ''
+      width: 250px
+      height: 150px
+      border-radius: 100%
+      background: linear-gradient(90deg, rgba(0,156,176,1) 1%, rgba(0,156,176,1) 37%, rgba(0,156,176,1) 70%, rgba(0,156,176,1) 92%)
+      transform: translate(50%,-50%)
+      @media (max-width: 600px)
+        display: none
+
+  &__logos
     text-align: center
-    z-index: 5
-    align-items: flex-end
-    margin-bottom: 10px
-    @media (max-width: 750px)
-      margin-right: 15px
-    &__item
-      font-family: $FONT-FAMALI2
-      font-size: $FONT-SIZE-LOGO
-      font-weight: $FONT-WEIGHT-BOLT
-      color: $COLOR-ACCENT
-      @media (max-width: 680px)
-        font-size: $FONT-SIZE-price
-    &__link
-      font-size: $FONT-SIZE
-      font-family: $FONT-FAMALI1
-      font-weight: $FONT-WEIGHT-LIGHT
-  &__con
+   
+  &__title
+    font-family: $FONT-FAMALI2
+    font-size: $FONT-SIZE-LOGO
+    font-weight: $FONT-WEIGHT-BOLT
+    color: $COLOR-ACCENT
+  &__subtitle
+    font-size: $FONT-SIZE
+    font-family: $FONT-FAMALI1
+    font-weight: $FONT-WEIGHT-LIGHT
+  &__telephone
+    align-items: center
     display: flex
-    flex-wrap: wrap
-    justify-content: center
-    @media (max-width: 980px)
-      
   &__grup
-    display: block
-    width: 50%
-    align-self: center
-    position: relative
-    padding: 0 14px 0px 30px
     border-right: 1px solid $COLOR-ACCENT
-    @media (max-width: 990px)
-      padding: 0 0px 0px 30px
-      width: 63%
-      margin-bottom: 5px
+    display: flex
+    padding: 0 14px 0px 30px
+    @media (max-width: 980px)
+        border-right: none
+    &:last-child
       border-right: none
-      @media (max-width: 713px)
-        width: 100%
-      @media (max-width: 531px)
-        width: 10%
-        
-    &--grup
+    &--right
+      display: flex
+      flex-direction: column
       @media (max-width: 980px)
         display: none
-    &:last-child
-      border-right: 0
-      padding: 0 0  0 14px
-      @media (max-width: 980px)
-        padding: 0
-    &__icon
-      position: absolute
-      bottom: 3px
-      left: 5px
-      width: 20px
-      height: 20px
-      fill: $COLOR-ACCENT
-      @media (max-width: 531px)
-        bottom: -10px
-        width: 25px
-        height: 25px
-  &__citi
-    color: $COLOR-ACCENT
+  &__grups
     text-align: left
+    color: $COLOR-ACCENT
+  &__citi
     font-family: $FONT-FAMALI1
     font-size: $FONT-SIZE
     font-weight: $FONT-WEIGHT-LIGHT
-    line-height: $FONT-HEIGHT2
-    @media (max-width: 531px)
-      display: none
+    line-height: $FONT-HEIGHT
+    @media (max-width: 600px)
+        display: none
   &__tel
     color: $COLOR-ACCENT
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-MENU
-    @media (max-width: 1080px)
-      font-size: $FONT-SIZE-MENU
-    @media (max-width: 531px)
-      display: none
-//  ---------profil
+    @media (max-width: 600px)
+        display: none
+  &__icon
+    margin-right: 5px
+    width: 20px
+    height: 20px
+    fill: $COLOR-ACCENT
+    @media (max-width: 600px)
+      width: 25px
+      height: 25px
+// ====== burger======//
 .profil
-  z-index: 4
-  padding-top: 40px
-  background: rgba($COLOR-ACCENT,1 )
-  @media (max-width: 980px)
-    padding-top: 20px
-  &__nav
-    padding: 0 20px
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-  &__navs
-    display: flex
+  padding: 30px 0 36px 0
+  display: flex
+  justify-content: space-between
+  @media (max-width: 796px)
+    padding: 40px 0 0px 0
+  @media (max-width: 600px)
+    padding: 20px 0 0 0
+  &__items
     flex-basis: calc( 50% - 105px )
+    @media (max-width: 980px)
+      flex-basis: calc( 50% - 20px )
+    @media (max-width: 796px)
+      display: none
+    &__right
+      position: relative
+      display: flex
+      margin-left: 100px
+  &__nav
+    display: flex
+    justify-content: space-between
+    &:last-child
+      
+  &__item
+    display: flex
     justify-content: space-between
     margin-right: auto
-    @media (max-width: 980px)
-      flex-basis: calc( 50% - 50px )
-    @media (max-width: 980px)
-      flex-basis: calc( 50% - 10px )
-    @media (max-width: 780px)
-      flex-basis: 100%
+    &--calendar
+      margin: auto
+    &--items
+      position: relative
+      z-index: 2
+      width: 40px
+      height: 40px 
+      background: $COLOR-GREEN
+      border-radius: 100%
+  
     &:last-child
       margin-right: 0
-  &__inner--calendar
-    display: flex
-    align-self: center
-    fill: rgba($COLOR-TEXT,0.9 )
   &__link
     display: flex
-    width: 100%
-    height: 100%
     align-items: center
     fill: rgba($COLOR-TEXT,0.9 )
     color: rgba($COLOR-TEXT,0.9 )
     transition: 0.2s linear
+    
+      
     &:hover
+      .profil__title
+        border-bottom: 1px dotted rgba($COLOR-GREEN,0.9 )
       fill: $COLOR-GREEN
       color: $COLOR-GREEN
-  &__link--shop
-    &:hover
-      fill: $COLOR-ACCENT
-      color: $COLOR-GREEN
-  &__inner--shop
-    position: relative
-    display: flex
-    width: 44px
-    height: 44px
-    border-radius: 100%
-    align-items: center
-    justify-content: center
-    
-    &:hover
-      background: $COLOR-GREEN
-      fill: $COLOR-ACCENT
-  &__item
-    margin: auto
+      
+  &__title
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-LIGHT
+    border-bottom: 1px dotted rgba($COLOR-TEXT,0.9 )
   &__icon
     padding-right: 4px
     width: 27px
     height: 35px
-    
-    &--shop
-      margin: 0 auto
-  &__items
-    opacity: 0
-  &__items--active
-    opacity: 100
+    &--icon
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      fill: $COLOR-ACCENT
+      display: flex
+      align-self: center
+      justify-content: center
+  &__grup
+    display: flex
+    flex-direction: column
+  &__links
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-BLACK
+  &__col
+    opacity: 1
     position: absolute
-    top: 5px
+    right: -20%
     color: $COLOR-ACCENT
-    right: -19px
+    transform: translateX(20%)
+    z-index: 4
     font-size: $FONT-SIZE-MENU
     font-weight: $FONT-WEIGHT-BOLT
     padding: 2px 7px
     background: $COLOR-ORANGE
     border-radius: 50px
-  &__links
-    font-size: $FONT-SIZE-MENU
-    font-weight: $FONT-WEIGHT-LIGHT
-    border-bottom: 1px dotted rgba($COLOR-TEXT,0.9 )
-    &--no
-      color: rgba($COLOR-TEXT,0.9 )
-      font-size: $FONT-SIZE-MENU
-      font-weight: $FONT-WEIGHT-LIGHT
-      border-bottom: none
-  
-.page
-  height: 100%
-  padding-top: 190px
-.wrapper
-  display: flex
-  
-.section
-  flex-basis: calc( 100% - 260px )
-.wrapper
-  padding-bottom: 50px
-
-
-
 // ====== burger======//
 .burger
   z-index: 6
@@ -289,9 +258,9 @@ body, html
   padding: 5px
   height: 100%
   position: absolute
-  top: 50%
+  top: 20%
   left: 20px
-  transform: translateY(-50%)
+  transform: translateY(-20%)
   border: none
   &::before,&::after
   &__nav
@@ -319,7 +288,7 @@ body, html
      
   @media (max-width: 980px)
     display: flex
-    align-self: flex-end
+    align-items: flex-start
 
 @import "aside.sass"
 @import "burger.sass"
