@@ -16,6 +16,7 @@ body, html
   margin: 0 auto
   
 .header
+  z-index: 4
   position: fixed
   height: auto
   display: flex
@@ -26,7 +27,7 @@ body, html
     top: 0
     width: 100%
     left: 0
-    z-index: 7
+    z-index: 6
     background-color: $COLOR-GREEN
     color: $COLOR-ACCENT
     background: linear-gradient(90deg, rgba(0,156,176,1) 1%, rgba(0,156,176,1) 37%, rgba(0,156,176,1) 70%, rgba(0,156,176,1) 92%)
@@ -36,7 +37,7 @@ body, html
     top: 75px
     width: 100%
     left: 0
-    z-index: 6
+    z-index: 5
     background-color: $COLOR-ACCENT
     
 .navigation
@@ -53,19 +54,18 @@ body, html
   &__nav
     display: flex
     @media (max-width: 980px)
-        display: flex
-        flex-direction: column
-         
+      display: flex
+      flex-direction: column
     @media (max-width: 980px)
       opacity: 0
-      z-index: 7
+      z-index: -1
       background-color: $COLOR-ACCENT
       position: fixed
       height: 100%
       width: 100%
-  
       top: 0
       left: 0
+      
       overflow: auto
       padding: 100px 20px 30px 20px
       transition: all 0.2s ease 0.1s
@@ -80,8 +80,7 @@ body, html
         background-color: $COLOR-GREEN
       &.activ
         opacity: 1
-        
-        
+            
   &__inner
     @media (max-width: 980px)
       margin-bottom: 5px
@@ -115,14 +114,13 @@ body, html
         background: #068292
         color: $COLOR-ACCENT
   &__logo
-    
     top: 50%
     position: absolute
     right: 50%
     transform: translate(50%,-50%)
-    z-index: 15
+    z-index: 10
     &::before
-      z-index: 7
+      z-index: 1
       position: absolute
       top: 50%
       right: 50%
@@ -138,7 +136,8 @@ body, html
 
   &__logos
     text-align: center
-    
+    position: relative
+    z-index: 15
   &__title
     
     font-family: $FONT-FAMALI2
@@ -184,6 +183,8 @@ body, html
     @media (max-width: 885px)
       display: none
   &__tel
+    position: relative
+    z-index: 7
     color: $COLOR-ACCENT
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-MENU
@@ -197,7 +198,6 @@ body, html
     height: 20px
     fill: $COLOR-ACCENT
     @media (max-width: 600px)
-      
       width: 25px
       height: 25px
 // ====== burger======//
@@ -292,7 +292,7 @@ body, html
     right: -20%
     color: $COLOR-ACCENT
     transform: translateX(20%)
-    z-index: 7
+    z-index: 14
     font-size: $FONT-SIZE-MENU
     font-weight: $FONT-WEIGHT-BOLT
     padding: 2px 7px
@@ -303,7 +303,7 @@ body, html
       transform: translateY(-10%)
 // ====== burger======//
 .burger
-  z-index: 7
+  z-index: 16
   cursor: pointer
   margin-right: auto
   display: none
@@ -311,7 +311,7 @@ body, html
   width: 50px
   padding: 5px
   height: 100%
-  position: absolute
+  
   top: 20%
   left: 20px
   transform: translateY(-15%)
@@ -344,13 +344,10 @@ body, html
     display: flex
     align-items: flex-start
 .page
-  position: relative
-  height: 100%
   padding-top: 190px
-  z-index: 1
+  
 .wrapper
   display: flex
-  
 .section
   flex-basis: calc( 100% - 260px )
 .wrapper
