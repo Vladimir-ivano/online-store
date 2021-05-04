@@ -1,9 +1,9 @@
 .search
-  overflow: hidden
   display: flex
   align-items: center
   position: relative
   z-index: 1
+  
   &__icon
     fill: $COLOR-TEXT
     height: 17px
@@ -15,16 +15,8 @@
     width: 11px
     transition: all .3s linear
     transform: rotate(90deg)
-  &__box
-    overflow: hidden
-    transition: all .3s linear
-    &:hover
-      .search__btn,.search__icons, .search__icon
-        
-        
-        
   &__btn
-    
+    position: relative
     cursor: pointer
     color: $COLOR-TEXT
     padding: 0 15px
@@ -38,6 +30,9 @@
     background: #F3F3F3
     transition: all .3s linear
   &__btns
+    display: inline-flex
+    align-items: center
+    justify-content: center
     z-index: 3
     cursor: pointer
     height: 40px
@@ -50,12 +45,15 @@
     &:hover
       background: #e96d07
   &__input
+    display: flex
+    align-items: flex-start
     z-index: 3
     width: calc(100% - (116px+87px) )
     height: 40px
     border-bottom: 2px solid rgba($COLOR-TEXT, 0.3)
     border-top: 2px solid rgba($COLOR-TEXT, 0.3)
   &__inputs
+    padding: 5px 5px 
     color: $COLOR-TEXT
     width: 100%
     height: 100%
@@ -65,16 +63,15 @@
     opacity: 0
     width: 100%
     height: auto
-    transform: translate(0,-118%)
+    transform: translateY(-118%)
     background: $COLOR-ACCENT
     display: flex
     border-bottom: 4px solid $COLOR-ORANGE
-    transition: translate 0.3s linear
+    transition: translate 0.9s linear
     &.activ
-      
       opacity: 1
-      transform: translateX(0%)
-  
+      transform: translateY(0%)
+    
   &__column
     padding: 27px 40px 0 40px
     border-right: 1px solid rgba($COLOR-TEXT, 0.3)
@@ -90,12 +87,7 @@
     font-weight: $FONT-WEIGHT-LIGHT
     color: $COLOR-TEXT
     line-height: $FONT-HEIGHT2
-    &:hover
-      color: $COLOR-ORANGE
-  
-  
-  
-
-   
-    
-    
+  &__checkbox
+    position: absolute
+  &__labal:checked + .search__link
+    color: $COLOR-ORANGE
