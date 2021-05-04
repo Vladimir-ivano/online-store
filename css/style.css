@@ -965,7 +965,7 @@ body, html {
 .search__item {
   padding-bottom: 20px;
 }
-.search__item::last-child {
+.search__item:last-child {
   padding-bottom: 0;
 }
 .search__link {
@@ -978,7 +978,7 @@ body, html {
 .search__checkbox {
   position: absolute;
 }
-.search__labal:checked + .search__link {
+.search__checkbox:checked + .search__link {
   color: #FD8322;
 }
 
