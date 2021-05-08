@@ -990,6 +990,11 @@ body, html {
   color: #FD8322;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 .products-slider__header {
   display: flex;
   justify-content: space-between;
