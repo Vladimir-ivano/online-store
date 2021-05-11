@@ -15,8 +15,8 @@ let sliderBody = new Swiper('.swiper-container', {
     slidesPerView: 1,
     autoHeight: true,
     speed: 800,
-    spaceBetween: 0,
-    loop: true,
+    //spaceBetween: 0,
+    //loop: true,
     //touchRatio: 0 ,
     //simuLateTouch: false,
     //Lazy: true
