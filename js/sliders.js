@@ -2,6 +2,8 @@
 
 
 
+
+
 let sliderBody = new Swiper('.swiper-container', {
   /*
     effect: 'fade',
