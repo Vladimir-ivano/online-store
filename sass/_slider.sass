@@ -1,8 +1,137 @@
-.swiper
-  &-container
-    width: 600px
-    height: 300px
-  
+.slider
+  position: relative
+  margin: 25px 0 75px 0 
+  z-index: 1
+  width: 100% 
+  &__image
+    width: 850px
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      display: block
+      z-index: 2
+      content: ""
+      width: 100%
+      height: 100%
+      background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 10%, rgba(255,255,255,0.3) 20%, rgba(255,255,255,0) 30%)
+ 
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__contant
     
+    position: relative
+    z-index: 2
+    padding: 20px 35px 60px 35px
+    
+  &__title
+    max-width: 380px
+    font-size: $FONT-SIZE-LOGO
+    font-weight: $FONT-WEIGHT-BLACK
+    color: $COLOR-BLACK
+    text-transform: uppercase
+    margin-bottom: 60px
+  &__titles
+    color: $COLOR-ORANGE
+  &__text
+    max-width: 215px
+    text-transform: uppercase
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-BLACK
+    line-height: $FONT-HEIGHT1
+    color: $COLOR-BLACK
+    margin-bottom: 15px
+  &__grays
+    color: $COLOR-TEXT
+  &__gray
+    padding: 2px 3px
+    background-color: $COLOR-TEXT
+    color: $COLOR-ACCENT
+  &__footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: $COLOR-ACCENT
+
+  &__price
+    font-size: $FONT-SIZE-price
+    font-weight: $FONT-WEIGHT-BLACK
+    margin-bottom: 20px
+  &__btn
+    margin-right: -35px
+    cursor: pointer
+    display: flex
+    width: 144px
+    height: 35px
+    justify-content: center
+    border-radius: 50px
+    border: 2px solid $COLOR-ACCENT
+  &__link
+    display: flex
+    align-self: center
+    font-weight: $FONT-WEIGHT-BLACK
+    text-transform: uppercase
+    font-size: $FONT-SIZE-MENU
+    color: $COLOR-ACCENT
+  &__icon
+    margin-left: 5px
+    fill: $COLOR-ACCENT
+    height: 17px
+    width: 17px
+  &__dotts
+    max-width: 600px
+    position: absolute
+    z-index: 3
+    left: 50%
+    margin-top: -27.5px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    transform: translateX(-50%)
+  &__item
+    display: flex
+    margin-right: 35px
+    width: 55px
+    height: 55px
+    position: relative
+    transition: all 0.4s ease
+    &:last-child
+      margin-right: 0
+    &.activ
+      &::before
+        position: absolute
+        border-radius: 50%
+        display: block
+        opacity: 1
+        content: attr(data-name)
+        color: $COLOR-ACCENT
+        width: 100%
+        height: 100%
+        border: 2px solid $COLOR-ACCENT
+        top: 0
+        left: 0
+        background: $COLOR-ORANGE
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: $FONT-SIZE-T2
+        font-weight: $FONT-WEIGHT-BLACK
+  &__links
+    cursor: pointer
+    border-radius: 100%
+    border: 2px solid $COLOR-ACCENT
+    width: 100%
+    height: 100%
+    object-fit: cover
+    
+    &:hover
+      
+      background-color: $COLOR-ORANGE
     
 
