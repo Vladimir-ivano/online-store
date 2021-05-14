@@ -85,53 +85,42 @@
     height: 17px
     width: 17px
   &__dotts
-    max-width: 600px
-    position: absolute
-    z-index: 3
-    left: 50%
-    margin-top: -27.5px
     display: flex
-    align-items: center
-    justify-content: space-around
-    transform: translateX(-50%)
-  &__item
-    display: flex
-    margin-right: 35px
-    width: 55px
-    height: 55px
+    justify-content: center 
     position: relative
-    transition: all 0.4s ease
-    &:last-child
-      margin-right: 0
-    &.activ
-      &::before
+    margin-top: -27.5px
+    counter-reset: item
+    z-index: 3
+    .swiper-pagination-bullet
+      position: relative
+      border: 2px solid $COLOR-ACCENT
+      background-size: cover
+      background-repeat: no-repeat
+      border-radius: 50%
+      width: 55px
+      height: 55px
+      overflow: hidden
+      margin-right: 35px
+      &:last-child
+        margin-right: 0
+      &::after
+        transition: all 0.3s ease 0s
         position: absolute
-        border-radius: 50%
-        display: block
-        opacity: 1
-        content: attr(data-name)
-        color: $COLOR-ACCENT
         width: 100%
         height: 100%
-        border: 2px solid $COLOR-ACCENT
         top: 0
         left: 0
-        background: $COLOR-ORANGE
         display: flex
         align-items: center
         justify-content: center
+        background-color: $COLOR-ORANGE
+        color: $COLOR-ACCENT
         font-size: $FONT-SIZE-T2
         font-weight: $FONT-WEIGHT-BLACK
-  &__links
-    cursor: pointer
-    border-radius: 100%
-    border: 2px solid $COLOR-ACCENT
-    width: 100%
-    height: 100%
-    object-fit: cover
-    
-    &:hover
-      
-      background-color: $COLOR-ORANGE
-    
+        counter-increment: item
+        content: counter(item)
+        opacity: 0 
+    .swiper-pagination-bullet-active
+      &::after
+        opacity: 1
 

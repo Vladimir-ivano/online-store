@@ -1,6 +1,10 @@
 .menu
-  width: 260px
+  position: relative
+  z-index: 4
+  flex-basis: 260px
   margin-right: 30px
+  @media (max-width: 990px)
+    flex-basis: 100%
 .product
   padding: 13px 25px
   &__item

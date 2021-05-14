@@ -1,24 +1,52 @@
+let sliders = document.querySelectorAll('._swiper');
+if(sliders) {
+  for (let index = 0 ; index < sliders.length; index++ ){
+    let slider = sliders[index];
+    if(!slider.classList.contains('swiper-bild')){
+    let  slider_items = slider.children;
+      if(slider_items) {
+        for(let index = 0;index < slider_items.length; index++){
+          let el = slider_items[index];
+          el.classList.add('swiper-slide');
+        }
+      }
+      let slider_content = slider.innerHTML;
+      let slider_wrapper = document.createElement('div');
+      slider_wrapper.classList.add('swiper-wrapper');
+      slider_wrapper.innerHTML = slider_content;
+      slider.innerHTML = '';
+      slider.appendChild(slider_wrapper);
+      slider.classList.add('swiper-bild');
+    }
+    if(slider.classList.contains('_gallery')){
+    //slider.data('lidhtGallery').destroy(true);
+    }
+  }
+
+  sliders_bild_callback();
+
+}
+function sliders_bild_callback(params) { }
 
 
 
 
-
-
-let sliderBody = new Swiper('.swiper-container', {
-  /*
-    effect: 'fade',
-    autoplay: {
+if(document.querySelector('.slider__body')){
+  let sliderBody = new Swiper('.slider__body', {
+     /*
+      effect: 'fade',
+      autoplay: {
       delay: 3000,
       disableOnInteraction: false,
-    },
-    */
+      },
+      */
     observer:true,
     observerParents: true,
     slidesPerView: 1,
     autoHeight: true,
-    speed: 800,
-    //spaceBetween: 0,
-    //loop: true,
+    speed: 900,
+    spaceBetween: 0,
+    loop: true,
     //touchRatio: 0 ,
     //simuLateTouch: false,
     //Lazy: true
@@ -68,3 +96,11 @@ let sliderBody = new Swiper('.swiper-container', {
     //el: '.swiper-scrollbar',
   //},
 });
+  let sliderImages = document.querySelectorAll('.slider__image');
+  let sliderDotts = document.querySelectorAll('slider__dotts .swiper-pagination-bullet');
+  for (let index = 0 ; index < sliderImages.length; index++){
+    const sliderImage = sliderImages[index].querySelector('img').getAttribute('src');
+    sliderDotts[index].style.backgroundImage = "url('+ sliderImage + ')"
+  }
+
+}
