@@ -65,7 +65,7 @@ body, html
       width: 100%
       top: 0
       left: 0
-      
+      transform: translateX(-50%)
       overflow: auto
       padding: 100px 20px 30px 20px
       transition: all 0.2s ease 0.1s
@@ -80,7 +80,7 @@ body, html
         background-color: $COLOR-GREEN
       &.activ
         opacity: 1
-            
+        transform: translateX(0%)
   &__inner
     @media (max-width: 980px)
       margin-bottom: 5px
@@ -347,14 +347,11 @@ body, html
   
 .wrapper
   display: flex
-  @media (max-width: 990px)
-    display: flex
-    flex-wrap: wrap
+  
 .section
   flex-basis: calc( 100% - 260px )
   overflow: hidden
-  @media (max-width: 990px)
-    flex-basis: 100%
+  
 .wrapper
   padding-bottom: 50px
 @import "aside.sass"
