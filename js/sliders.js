@@ -1,3 +1,4 @@
+
 let sliders = document.querySelectorAll('._swiper');
 if(sliders) {
   for (let index = 0 ; index < sliders.length; index++ ){
@@ -27,7 +28,6 @@ if(sliders) {
 
 }
 function sliders_bild_callback(params) { }
-
 
 
 
@@ -96,11 +96,73 @@ if(document.querySelector('.slider__body')){
     //el: '.swiper-scrollbar',
   //},
 });
-  let sliderImages = document.querySelectorAll('.slider__image');
-  let sliderDotts = document.querySelectorAll('slider__dotts .swiper-pagination-bullet');
-  for (let index = 0 ; index < sliderImages.length; index++){
-    const sliderImage = sliderImages[index].querySelector('img').getAttribute('src');
-    sliderDotts[index].style.backgroundImage = "url('+ sliderImage + ')"
+ 
   }
 
+
+  if(document.querySelector('.products-slider__slider')){
+  let productSlider = new Swiper('.products-slider__slider', {
+    /*
+     effect: 'fade',
+     autoplay: {
+     delay: 3000,
+     disableOnInteraction: false,
+     },
+     */
+   observer:true,
+   observerParents: true,
+   slidesPerView: 1,
+   autoHeight: true,
+   speed: 900,
+   spaceBetween: 0,
+   loop: true,
+   //touchRatio: 0 ,
+   //simuLateTouch: false,
+   //Lazy: true
+   //Dotts
+   
+   pagination: {
+    el: '.products-slider__info',
+    type: 'fraction',
+  },
+   //Arrws
+   
+   navigation: {
+     nextEl: '.products-slider__arrow_next',
+     prevEl: '.products-slider__arrow_prev',
+   },
+   
+   /*
+     breakpoints:{
+       320:{
+         slidesPerView: 1,
+         autoHeight: true,
+         spaceBetween: 0,
+       },
+       720{
+         slidesPerView: 2,
+         spaceBetween: 20,
+       },
+       992{
+         spaceBetween: 20,
+         slidesPerView: 3,
+       },
+       1286{
+         spaceBetween: 30,
+         slidesPerView: 4,
+       },
+
+     },
+   */
+
+   on:{
+     lazyImageReady: function(){
+       ibg();
+     },
+   }  
+   // And if we need scrollbar
+ //scrollbar: {
+   //el: '.swiper-scrollbar',
+ //},
+});
 }

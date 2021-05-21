@@ -1,12 +1,16 @@
 .aside
   display: flex
   flex-direction: column
+  @media (max-width: 905px)
+    order: 1
 .menu
   position: relative
   z-index: 4
   flex-basis: 260px
   margin-right: 30px
-  
+  @media (max-width: 905px)
+    flex-basis: 100%
+    margin: 10px 15px 10px 15px
 .product
   padding: 13px 25px
   &__item
@@ -83,20 +87,27 @@
 //====== .news
 .news
   margin-top: 45px
+  @media (max-width: 905px)
+    margin-top: 20px
+
   &__title
     text-transform: uppercase
     font-size: $FONT-SIZE-CAT
     color: rgba($COLOR-TEXT,0.6 )
     font-weight: $FONT-WEIGHT-BOLT
-    font-family: $FONT-FAMALI4
+    font-family: $FONT-FAMALI1
+    &:hover
+      color: $COLOR-GREEN
   &__inner
     margin-top: 47px
   &__subtitle
     font-size: $FONT-SIZE
     font-weight: $FONT-WEIGHT-BLACK
-    color: $COLOR-ORANGE
+    color: $COLOR-GREEN
     text-transform: uppercase
     margin-bottom: 20px
+    &.activ
+      color: $COLOR-ORANGE
   &__content
     display: flex
   &__time
@@ -112,19 +123,28 @@
 //====== .reviews
 .reviews
   margin-top: 60px
+  @media (max-width: 905px)
+    margin-top: 30px
   &__title
     text-transform: uppercase
     margin-bottom: 40px
     font-size: $FONT-SIZE-CAT
     color: rgba($COLOR-TEXT,0.6 )
     font-weight: $FONT-WEIGHT-BOLT
-    font-family: $FONT-FAMALI4
+    font-family: $FONT-FAMALI1
+    &:hover
+      color: $COLOR-GREEN
   &__inner
     margin-bottom: 40px
     &:hover
-      .reviews__name,.reviews__time
+      
+      .reviews__name,.reviews__time,
         color: $COLOR-GREEN
-
+      .reviews__texts
+        background: $COLOR-GREEN
+        color: $COLOR-ACCENT
+      .reviews__text:before
+        color: rgba($COLOR-TEXT,0.6 )
   &__content
     display: flex
     justify-content: space-between
@@ -146,12 +166,22 @@
     fill: rgba($COLOR-TEXT,0.6 )
     
   &__text
+    position: relative
     cursor: pointer
     flex-basis: calc(100%-30px  )
     display: block
     font-size: $FONT-SIZE
     line-height: $FONT-HEIGHT1
-  &__text:hover
+    margin-left: 25px
+    &::before
+      content: ' " '
+      display: inline-block
+      color: rgba($COLOR-TEXT,0.6 )
+      font-size: 48px
+      font-weight: 900
+      position: absolute
+      left: -25px
+      line-height: $FONT-HEIGHT
+      top: 0px
+  
       
-      background: $COLOR-GREEN
-      color: $COLOR-ACCENT

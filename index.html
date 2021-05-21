@@ -8,7 +8,7 @@
   <meta name="description" content="online store" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  
+
   <title>online store</title>
 </head>
 
@@ -597,7 +597,7 @@
       <aside class="menu aside">
         <div class="catalog">
           <div class="catalog__part catalog__control">
-            <h2 class="catalog__title">каталог <br>товаров</h2>
+            <h2 class="catalog__title">каталог товаров </h2>
             <button class="catalog__btn-switch"><span class="catalog__btn-line"></span></button>
           </div>
 
@@ -788,7 +788,7 @@
 
 
           <article class="news__inner">
-            <h3 class="news__subtitle">снижение цен на игровые площадки Jungle gum</h3>
+            <h3 class="news__subtitle activ">снижение цен на игровые площадки Jungle gum</h3>
             <p class="news__content">
               <time class="news__time" datetime="2012-12-23">12 авг</time>
               <span class="news__text">Уважаемые покупатели! Мы рады сообщить вам о снижении цены с 27 июля на
@@ -821,10 +821,10 @@
             </div>
 
 
-
-            <span class="reviews__text">Ради экономии места в тренажерном зале приобрел многофункционный силовой
-              тренажер Jungle gum.За такую не большую стоимость и с такими возможностями, он просто не заменим</span>
-
+            <div class="reviews__texts">
+              <div class="reviews__text">Ради экономии места в тренажерном зале приобрел многофункционный силовой
+                тренажер Jungle gum.За такую не большую стоимость и с такими возможностями, он просто не заменим</div>
+            </div>
           </article>
 
           <article class="reviews__inner">
@@ -832,9 +832,10 @@
               <h3 class="reviews__name">Дмитрий Иванов </h3>
               <time class="reviews__time" datetime="2020-08-12">2020-08-12</time>
             </div>
-
-            <span class="reviews__text">спасибо за прекрастный совет бвелосипед всей семье понравился и цену за него
-              достойную запросили </span>
+            <div class="reviews__texts">
+              <div class="reviews__text">спасибо за прекрастный совет бвелосипед всей семье понравился и цену за него
+                достойную запросили </div>
+            </div>
           </article>
 
           <article class="reviews__inner">
@@ -842,10 +843,12 @@
               <h3 class="reviews__name">Дмитрий Иванов </h3>
               <time class="reviews__time" datetime="2020-08-12">2020-08-12</time>
             </div>
-
-            <span class="reviews__text">спасибо за прекрастный совет бвелосипед всей семье понравился и цену за него
-              достойную запросили </span>
+            <div class="reviews__texts">
+              <span class="reviews__text">спасибо за прекрастный совет бвелосипед всей семье понравился и цену за него
+                достойную запросили </span>
+            </div>
           </article>
+
         </div>
 
 
@@ -867,7 +870,9 @@
               <svg class="search__icon ">
                 <use xlink:href="#loupe"></use>
               </svg>
-              Везде
+              <span class="search__titles">Везде
+
+              </span>
 
               <svg class="search__icons ">
                 <use xlink:href="#fast-forward"></use>
@@ -1006,7 +1011,7 @@
         <!-- slider-->
 
         <div class="slider swiper-container">
-          <div class=" slider__body _swiper " >
+          <div class=" slider__body _swiper ">
             <div class=" slider__slide ">
               <div class="slider__contant">
                 <h1 class="slider__title"> <span class="slider__titles"> мега </span>распрадажа</h1>
@@ -1025,7 +1030,7 @@
               </div>
               <picture class="slider__image">
                 <source srcset="" type="image/webp">
-                
+
                 <img class="slider__img" src="./img/header.jpg" alt="">
               </picture>
             </div>
@@ -1047,7 +1052,7 @@
               </div>
               <picture class="slider__image">
                 <source srcset="" type="image/webp">
-                
+
                 <img class="slider__img" src="./img/header1.jpg" alt="">
               </picture>
             </div>
@@ -1069,7 +1074,7 @@
               </div>
               <picture class="slider__image">
                 <source srcset="" type="image/webp">
-                
+
                 <img class="slider__img" src="./img/4.jpg" alt="">
               </picture>
             </div>
@@ -1091,7 +1096,7 @@
               </div>
               <picture class="slider__image">
                 <source srcset="" type="image/webp">
-                
+
                 <img class="slider__img" src="./img/3.jpg" alt="">
               </picture>
             </div>
@@ -1114,17 +1119,691 @@
               </div>
               <picture class="slider__image">
                 <source srcset="" type="image/webp">
-                
+
                 <img class="slider__img" src="./img/5.jpg" alt="">
               </picture>
             </div>
           </div>
           <!-- /slider__body-->
           <div class="slider__dotts ">
-            
+
           </div><!-- slider__dotts-->
 
         </div><!-- /slider-->
+
+
+        <!-- products-slider-->
+
+        <div class="products products-slider">
+          <!-- products-slider__header-->
+          <div class="products-slider__header">
+            <span class="products-slider__title">Популярные товары </span>
+            <div class="products-slider__control">
+              <div class="products-slider__arrow products-slider__arrow_next">
+                <button class="products-slider__btn">
+                  <svg class="products-slider__icon products-slider__icon--next">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="products-slider__info ">
+                
+              </div>
+              <div class="products-slider__arrow products-slider__arrow_prev">
+                <button class="products-slider__btn">
+                  <svg class="products-slider__icon products-slider__icon--previous">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div><!-- /products-slider__header-->
+
+          <!-- products-slider__items-->
+          <div class="products-slider__content swiper-container">
+            <div class="products-slider__slider _swiper">
+              <div class="products-slider__items ">
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--contents"> 
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__row-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__row-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+              </div><!-- /products-slider__items-->
+              
+              <div class="products-slider__items  ">
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--contents"> 
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__row-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__row-->
+
+                <div class="products-slider__column">
+                  <div class="products-slider__item">
+                    <div class="product products-slider__product">
+
+                      <a class="product__item__img" href="#">
+                        <img class="product__item__image" src="./img/table.jpg" alt="теннистный стол">
+                      </a>
+                      <a class="product__inner products-slider--inner" href="#">
+                        <h3 class="product__title products-slider--titles">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title ">Start Line Top Expert Outdoor</h3>
+                      </a>
+                      <div class="product__content">
+                        <a class="product__content__inner " href="#">
+                          <svg class="product__icon ">
+                            <use xlink:href="#shop"></use>
+                          </svg>
+                        </a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prise"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--prise"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div><!-- /product products-slider--productr-->
+
+
+                    <div class="products-slider__product--hover ">
+                      <div class="products-slider__product--contant">
+                        <h3 class="product__title products-slider--title">BH Fitness F1 G6414V </h3>
+                        <h2 class="product__title products-slider--subtitle">Беговая дорожка</h3>
+                          <div class="products-slider--option">
+                            <span class="products-slider--texts" data-name="электрическая">Тип беговой дорожки</span>
+                            <span class="products-slider--texts" data-name="22">Скорость движения (км/ч)</span>
+                            <span class="products-slider--texts" data-name="Есть">Складывание</span>
+
+                            <a class="product__content__inner  products-slider--icons" href="#">
+                              <svg class="product__icon products-slider--icon">
+                                <use xlink:href="#shop"></use>
+                              </svg>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="products-slider--content">
+                        <a class="products-slider--text " href="#">в наличии</a>
+                        <div class="product__content__item products-slider--item">
+                          <del class="product__content__prises products-slider--prises"> 264 500₽</del>
+                          <span class="product__content__prise products-slider--pris"> 164 500₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /products-slider__item-->
+                </div><!-- /products-slider__column-->
+
+              </div><!-- /products-slider__items-->
+            </div>
+          </div>
+
+        </div><!-- /products-slider-->
+
 
 
   </main><!-- /page-->
@@ -1137,7 +1816,7 @@
   <script src="./js/burger.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/sliders.js"></script>
-  
+
 </body>
 
 </html>
