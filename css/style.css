@@ -320,7 +320,7 @@ body, html {
 }
 @media (max-width: 605px) {
   .profil {
-    padding: 15px 0 0 0;
+    padding: 10px 0 0 0;
   }
 }
 .profil__items {
@@ -1259,6 +1259,11 @@ body, html {
   margin-top: -27.5px;
   counter-reset: item;
   z-index: 3;
+}
+@media (max-width: 520px) {
+  .slider__dotts {
+    display: none;
+  }
 }
 .slider__dotts .swiper-pagination-bullet {
   position: relative;
