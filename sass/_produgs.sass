@@ -5,14 +5,21 @@
     margin-bottom: 30px
   &__control
     display: flex
+  &__info
+    margin: 0 0px 0 -7px
   &__title
     text-transform: uppercase
-    font-family: $FONT-FAMALI4
     font-size: $FONT-SIZE-CAT
-    color: $COLOR-TEXT
+    color: rgba($COLOR-TEXT,0.6 )
     font-weight: $FONT-WEIGHT-BOLT
+    font-family: $FONT-FAMALI1
+    @media (max-width: 905px)
+      font-size: $FONT-SIZE-PRISE
+    @media (max-width: 450px)
+      width: 150px
   &__items
     display: flex
+   
     margin-bottom: 31px
     flex-wrap: wrap
     padding: 7px 
@@ -27,11 +34,12 @@
     margin-right: -15px
     margin-bottom: 20px
     @media (max-width: 1098px)
-      flex-basis: 50%
+      flex-basis: 49%
+      margin-right: 2px
     @media (max-width: 905px)
       flex-basis: 33.333%
     @media (max-width: 905px)
-      flex-basis: 50%
+      flex-basis: 49%
     @media (max-width: 635px)
       width: 100%
   &__item
@@ -65,14 +73,14 @@
       opacity: 0
       transform: translatex(-100%)
       transition: transform 0.2s linear
-      min-height: 100%
+      
       @media (max-width: 1098px)
         width: 100%
       @media (max-width: 619px)
         width: 262px
-  &--contant
-    flex: 1 0 auto
-    color: $COLOR-ACCENT
+    &--contant
+      flex: 1 0 auto
+      color: $COLOR-ACCENT
     
   &--title
     font-size: $FONT-SIZE-T2
@@ -124,7 +132,7 @@
     text-align: left
   &--titles
     font-weight: $FONT-WEIGHT-BOLT
-  &__contents
+  &--contents
     flex: 0 0 auto
   &--content
     padding-bottom: 15px
@@ -142,7 +150,7 @@
     padding: 6px 11px
     border-radius: 50px
   &--item
-    align-self: flex-end
+    
     margin-left: auto
     display: flex
     flex-direction: column
@@ -157,6 +165,9 @@
     width: 30px
     fill: $COLOR-GREEN
     transition:  all 0.2s linear
+    @media (max-width: 905px)
+      height: 35px
+      width: 25px
     &--previous
       transform: rotate(180deg)
     &:hover
@@ -165,6 +176,8 @@
   font-size: $FONT-SIZE-CAT
   font-weight: $FONT-WEIGHT-BOLT
   color: $COLOR-BLACK
+  @media (max-width: 905px)
+      font-size: $FONT-SIZE-PRISE
 .swiper-pagination-total
   color: rgba($COLOR-TEXT ,0.8 )
   font-weight: $FONT-WEIGHT-BOLT

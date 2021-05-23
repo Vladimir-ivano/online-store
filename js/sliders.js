@@ -82,7 +82,6 @@ if(document.querySelector('.slider__body')){
           spaceBetween: 30,
           slidesPerView: 4,
         },
-
       },
     */
 
@@ -151,7 +150,6 @@ if(document.querySelector('.slider__body')){
          spaceBetween: 30,
          slidesPerView: 4,
        },
-
      },
    */
 
@@ -166,3 +164,4 @@ if(document.querySelector('.slider__body')){
  //},
 });
 }
+  
