@@ -3,7 +3,8 @@
   margin: 25px 0 75px 0 
   z-index: 1
   width: 100%
-  
+  @media (max-width: 990px)
+    margin: 25px 0 25px 0
   &__image
     width: 100%
     position: absolute
@@ -102,7 +103,7 @@
     margin-top: -27.5px
     counter-reset: item
     z-index: 3
-    @media (max-width: 520px)
+    @media (max-width: 990px)
       display: none
     .swiper-pagination-bullet
       position: relative

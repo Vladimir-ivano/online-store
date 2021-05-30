@@ -510,12 +510,7 @@ body, html {
 }
 @media (max-width: 905px) {
   .page {
-    padding-top: 155px;
-  }
-}
-@media (max-width: 905px) {
-  .page {
-    padding-top: 140px;
+    padding-top: 160px;
   }
 }
 @media (max-width: 605px) {
@@ -531,6 +526,7 @@ body, html {
 @media (max-width: 905px) {
   .wrapper {
     flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 }
 
@@ -681,6 +677,11 @@ body, html {
 .news__inner {
   margin-top: 47px;
 }
+@media (max-width: 990px) {
+  .news__inner {
+    margin-top: 20px;
+  }
+}
 .news__subtitle {
   font-size: 12px;
   font-weight: 900;
@@ -712,7 +713,7 @@ body, html {
 }
 @media (max-width: 905px) {
   .reviews {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 .reviews__title {
@@ -733,6 +734,11 @@ body, html {
 }
 .reviews__inner {
   margin-bottom: 40px;
+}
+@media (max-width: 990px) {
+  .reviews__inner {
+    margin-top: 20px;
+  }
 }
 .reviews__inner:hover .reviews__name, .reviews__inner:hover .reviews__time {
   color: #009CB0;
@@ -1146,6 +1152,11 @@ body, html {
   z-index: 1;
   width: 100%;
 }
+@media (max-width: 990px) {
+  .slider {
+    margin: 25px 0 25px 0;
+  }
+}
 .slider__image {
   width: 100%;
   position: absolute;
@@ -1263,7 +1274,7 @@ body, html {
   counter-reset: item;
   z-index: 3;
 }
-@media (max-width: 520px) {
+@media (max-width: 990px) {
   .slider__dotts {
     display: none;
   }
@@ -1321,6 +1332,11 @@ body, html {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+@media (max-width: 990px) {
+  .products-slider__header {
+    margin-bottom: 10px;
+  }
 }
 .products-slider__control {
   display: flex;
@@ -1857,8 +1873,16 @@ body, html {
 }
 @media (max-width: 997px) {
   .footer__contant__grup {
-    width: 57%;
+    width: 57% !important;
     margin-right: 15px;
+  }
+}
+@media (max-width: 528px) {
+  .footer__contant__grup {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: auto;
   }
 }
 .footer__contant__contants {
@@ -1977,6 +2001,12 @@ body, html {
 .footer__payment {
   display: flex;
   margin-top: 40px;
+}
+@media (max-width: 528px) {
+  .footer__payment {
+    margin-top: 20px;
+    justify-content: center;
+  }
 }
 .footer__payment__item {
   margin-right: 22px;
