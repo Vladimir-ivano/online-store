@@ -8,7 +8,7 @@
     fill: $COLOR-TEXT
     height: 17px
     width: 17px
-    transition: all .3s linear
+    transition: transform .1s linear
   &__icons
     fill: $COLOR-TEXT
     height: 11px
@@ -33,6 +33,9 @@
     transition: all .3s linear
     @media (max-width: 520px)
       padding: 0 7px
+    &.activ
+      .search__icons
+        transform: rotate(270deg)
   &__btns
     display: inline-flex
     align-items: center

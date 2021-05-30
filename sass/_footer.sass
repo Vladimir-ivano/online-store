@@ -1,12 +1,13 @@
 .footer
-  &__compani
-    margin-top: 30px
-    &__inner
-      display: flex
-      justify-content: space-between
-      margin-bottom: 25px
+  &__compani 
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+    align-items: center
+    @media (max-width: 528px)
+      justify-content: center
     &__item
-      margin-right: 20px
+      padding: 15px
   &__contant
     display: flex
     flex-direction: column
@@ -15,6 +16,10 @@
       display: flex
       width: 100% !important
       justify-content: space-between
+      margin-right: 15px
+      @media (max-width: 997px)
+        width: 57% 
+        margin-right: 15px
     &__contants
       display: flex
       flex-direction: column
@@ -22,26 +27,49 @@
       display: flex
       flex-direction: row
       margin-bottom: 30px
+      @media (max-width: 997px)
+        flex-wrap: wrap
     &__item
-      flex-basis: 50%
+      flex-basis: 49%
+      margin-right: auto
+      @media (max-width: 997px)
+        flex-basis: 100%
+        margin-bottom: 20px
       &:last-child
-        margin-left: 20px
+        margin-right: 0
+      
   &__content
     display: flex
     flex-direction: column
   &__inner
     display: flex
+    @media (max-width: 528px)
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
   &__item
     flex-basis: 30%
-  &
+    @media (max-width: 528px)
+      display: flex
+      justify-content: center
+      flex-basis: 100%
+      margin: 0 auto
   &__items
     flex-basis: 60%
-    margin-left: 40px
+    margin-left: 45px
+    @media (max-width: 528px)
+      display: flex
+      flex-direction: column
+      flex-basis: 100%
+      margin-left: 0
   &__logo
     text-align: center
     display: inline-block
     background: $COLOR-GREEN
     padding: 20px 20px
+    @media (max-width: 528px)
+      margin-right: 50px
+      margin-bottom:  20px
   &__title
     font-family: $FONT-FAMALI2
     font-size: $FONT-SIZE-LOGO
@@ -49,10 +77,11 @@
     color: $COLOR-ACCENT
     
   &__titles
-    
     text-transform: uppercase
     font-weight: $FONT-WEIGHT-BLACK
     color: rgba($COLOR-TEXT ,0.5 )
+    @media (max-width: 528px)
+      text-align: center
   &__link
     font-size: $FONT-SIZE
     font-family: $FONT-FAMALI1

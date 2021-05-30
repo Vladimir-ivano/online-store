@@ -5,14 +5,30 @@
     
     background-color: $COLOR-GREEN
     padding: 43px 35px
+    @media (max-width: 997px)
+      padding: 23px 35px 23px 35px
   &__title
+    text-transform: uppercase
+    margin-bottom: 40px
+    font-size: $FONT-SIZE-CAT
+    font-weight: $FONT-WEIGHT-BOLT
+    font-family: $FONT-FAMALI1
     color: #22B7CA
+    @media (max-width: 997px)
+      margin-bottom: 20px
+    @media (max-width: 905px)
+      font-size: $FONT-SIZE-PRISE
   &__subtitle
     color: $COLOR-ACCENT
     font-size: $FONT-SIZE
     font-weight: $FONT-WEIGHT-BOLT
+    text-transform: uppercase
   &__contant
+    position: relative
     display: flex
+    
+    @media (max-width: 997px)
+      flex-wrap: wrap
   &__icons
     
     height: 15px
@@ -28,6 +44,9 @@
     color: $COLOR-ACCENT
     font-size: $FONT-SIZE
     line-height: $FONT-HEIGHT2
+    @media (max-width: 997px)
+      flex-basis: 100%
+      margin-bottom: 15px
     &:last-child
       margin-right: 0
   &__texts
@@ -35,6 +54,8 @@
     font-size: $FONT-SIZE
     line-height: $FONT-HEIGHT2
     margin-bottom: 30px
+    @media (max-width: 997px)
+      margin-bottom: 15px
     &--three
     &:last-child
       margin-bottom: 0
@@ -49,20 +70,21 @@
       color: #22B7CA
     &--four
       max-width: 300px
+      @media (max-width: 1135px)
+        max-width: 100%
   &__image
-    width: 251px
-    height: 335px
-    z-index: 1
+    display: block
+    width: 255px
+    height: 350px
     position: absolute
-    right: 16%
-    bottom: 10%
-    transform: translate(-16%, -10% )
-    
+    z-index: 1
+    right: -1%
+    bottom: -15%
+    transform: translate(1%, 15% )
+    @media (max-width: 1136px)
+      display: none
   &__img
-    width: 100%
-    height: auto
     object-fit: cover
-    z-index: 1
-    position: absolute
-    right: -0px
-    bottom: -230px
+    width: 100%
+    height: 100%
+    

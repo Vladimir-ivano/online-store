@@ -96,7 +96,7 @@ if(document.querySelector('.slider__body')){
   //},
 });
  
-  }
+}
 
 
   if(document.querySelector('.products-slider__slider')){
@@ -164,4 +164,62 @@ if(document.querySelector('.slider__body')){
  //},
 });
 }
+if(document.querySelector('.brands-slider__body')){
+  let brandsBody = new Swiper('.brands-slider__body', {
+     /*
+      effect: 'fade',
+      autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      },
+      */
+    observer:true,
+    observerParents: true,
+    slidesPerView: 5,
+    speed: 900,
+    spaceBetween: 0,
+    loop: true,
+    //touchRatio: 0 ,
+    //simuLateTouch: false,
+    //Lazy: true
+    //Dotts
+    
+    
+    //Arrws
   
+    navigation: {
+      nextEl: '.brands__btn--next',
+      prevEl: '.brands__btn--previous',
+    },
+    
+    breakpoints:{
+      320:{
+        slidesPerView: 1,
+        autoHeight: true,
+      },
+      480:{
+        slidesPerView: 2,
+        
+      },
+      600:{
+        slidesPerView: 3,
+        
+      },
+      768:{
+        slidesPerView: 4,
+        
+      },
+      992:{
+        slidesPerView: 5,
+        
+      },
+    },
+     
+      
+    // And if we need scrollbar
+  //scrollbar: {
+    //el: '.swiper-scrollbar',
+  //},
+});
+ 
+}

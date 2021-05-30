@@ -1,52 +1,60 @@
 .brands
+  overflow: hidden
   border-top: 3px dashed rgba($COLOR-TEXT ,0.5 )
   border-bottom: 3px dashed rgba($COLOR-TEXT ,0.5 )
-  &__control
+  padding: 25px 0
+  &__container
     position: relative
-    padding: 40px 0
-  &__slider
-    padding: 0 40px
-    justify-content: space-between
-    align-items: center
-    display: flex
-  &__image
-   
-    margin-right: 50px
-    min-height: 40px
-    max-width: 150px
-  &__img
-    cursor: pointer
-    transition: 0.3s linear
-    filter: grayscale(1)
-    -webkit-filter: grayscale(1)
-    -o-object-filter: grayscale(1)
-    -moz-filter: grayscale(1)
-    max-width: 100%
-    object-fit: cover
-    &:hover
-      filter: grayscale(0)
-      -webkit-filter: grayscale(0)
-      -o-filter: grayscale(0)
-      -moz-filter: grayscale(0)
+    max-width: 1140px
+    margin: 0 auto
+  &-slider
+    
+    &__body
+      padding: 0 40px 0 30px
+    &__slider
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 10px
+      margin-right: auto
+    &__img
+      height: 40px
+      min-width: 150px
+      cursor: pointer
+      transition: 0.3s linear
+      filter: grayscale(1)
+      -webkit-filter: grayscale(1)
+      -o-object-filter: grayscale(1)
+      -moz-filter: grayscale(1)
+      &:hover
+        filter: grayscale(0)
+        -webkit-filter: grayscale(0)
+        -o-filter: grayscale(0)
+        -moz-filter: grayscale(0)
+
   &__btn
-    background: #fff
+    height: 100%
     position: absolute
+    z-index: 3
     top: 50%
-    z-index: 2
-    transform: translateY(-50%)
+    background: #fff 
+    transform: translate(0,-50%)
     transition: all 0.2s linear
-    
-  &__btn--next
-    right: 0%
-    
-  &__btn--previous
-    left: 0%
+    &--next
+      left: 0
+      @media (max-width: 1159px)
+        left: 10px
+    &--previous
+      right: 0
+      @media (max-width: 1159px)
+        right: 10px
   &__icon
     height: 35px
     width: 30px
     fill: $COLOR-GREEN
     transition:  all 0.2s linear
-    &--next
+    &--previous
+      
       transform: rotate(180deg)
     &:hover
       fill: $COLOR-ORANGE
