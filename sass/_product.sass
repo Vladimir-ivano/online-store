@@ -2,6 +2,8 @@
   margin-top: 25px
   display: flex
   flex-direction: column
+  &__items
+    margin-bottom: 0px
   &__title
     color: $COLOR-BLACK
     font-family: $FONT-FAMALI4 
@@ -19,17 +21,43 @@
   &__container
     display: flex
     justify-content: space-between
-    margin-bottom: 35px
-  &__sliber
-    flex-basis: 49%
-    margin-right: 7px
-
+    @media (max-width: 762px)
+      display: flex
+      flex-wrap: wrap
+  &__content
+    min-width: 0
+    overflow: hidden
+    flex-basis: 48%
+    @media (max-width: 1124px)
+      flex-basis: 45%
+      
+    @media (max-width: 762px)
+      flex: 1 1 100%
+  &__bodys
+    flex-basis: 48%
+    &--bodys
+      display: flex
+      flex-direction: column
+    @media (max-width: 1130px)
+      flex-basis: 52%
+    @media (max-width: 762px)
+      flex-basis: 100%
+      margin-top: 20px
+  &__mainslider
+    overflow: hidden
   &__mainsliders
+    flex-basis: 100%
     &__image
       width: 390px
       height: 304px
       border: 1px solid rgba($COLOR-TEXT, 0.6)
       position: relative
+      @media (max-width: 1124px)
+        width: 330px
+      @media (max-width: 1053px)
+        width: 300px
+      @media (max-width: 989px)
+        width: 100%
     &__img
       position: absolute
       width: 300px
@@ -37,6 +65,8 @@
       top: 50%
       left: 30%
       transform: translate(-30%,-50%)
+      @media (max-width: 1124px)
+        width: 250px
     &__sale
       display: flex
       align-items: center
@@ -52,21 +82,44 @@
       z-index: 1
       top: 10px
       left: 10px
-  &__content
-    margin-left: 7px
-    flex-basis: 49%
+  &__subslider
+    
+    padding-top: 22px
+  &__subsliders
+    overflow: hidden
+    &__images
+      max-width: 86px
+      transition: all 0.3s linear
+      position: relative
+      max-width: 86px
+      height: 68px
+      border: 1px solid rgba($COLOR-TEXT, 0.6)
+      margin-right: 12px
+      @media (max-width: 989px)
+        max-width: 95px
+      &.swiper-slide-thumb-active
+          border: 3px solid $COLOR-ORANGE 
+      &:last-child
+        margin-right: 0
+    &__imgs
+      padding: 6px
+      width: 100%
+      height: 100%
+      object-fit: cover
+    
+
   &__top
-    align-items: center
     display: flex
     justify-content: space-between
+    align-items: center
     border-bottom: 1px solid rgba($COLOR-TEXT, 0.3)
+    padding-bottom: 15px
   &__button
+    display: flex
     border-radius: 50px
     padding: 10px 20px
     background: rgba($COLOR-TEXT, 0.3)
     align-items: center
-    display: flex
-    margin-bottom: 15px
     &__icon
       margin-right: 5px
       height: 22px
@@ -79,6 +132,8 @@
       color: $COLOR-TEXT
       text-transform: uppercase
   &__incash
+    display: flex
+    align-items: center
     font-weight: $FONT-WEIGHT-LIGHT
     text-transform: uppercase
     font-size: $FONT-SIZE-MENU
@@ -87,16 +142,18 @@
     background: $COLOR-ORANGE
     color: $COLOR-ACCENT
   &__midle
-    position: relative
-    align-items: center
-    
     display: flex
+    align-items: center
     padding: 25px 0
     border-bottom: 1px solid rgba($COLOR-TEXT, 0.3)
+    @media (max-width: 977px)
+      display: flex
+      flex-wrap: wrap
   &__prises
     display: flex
     flex-direction: column
-    margin-right: 20px
+    margin-right: auto
+    flex-basis: 20%
   &__oldprise
     color: $COLOR-TEXT
     font-size: $FONT-SIZE-TEL
@@ -105,17 +162,21 @@
     font-weight: $FONT-WEIGHT-BLACK
     color: $COLOR-BLACK
   &__card
-    padding-right: 20px
+    width: 35%
+    margin-left: auto
+    @media (max-width: 977px)
+      width: 100%
+      padding-top: 20px
   &__cards
+    position: relative
     display: flex
-    align-items: center
-    justify-content: flex-end
+    padding-right: 20px
     &__title
-      display: flex
-      justify-content: flex-end
+      
       font-weight: $FONT-WEIGHT-BLACK
       text-transform: uppercase
-      padding: 10px 43px 10px 17px
+      width: 100%
+      padding: 10px 10px
       color: $COLOR-TEXT
       background: rgba($COLOR-TEXT, 0.1)
       transition: background 0.3s linear
@@ -128,12 +189,12 @@
       justify-content: center
       position: absolute
       top: 50%
-      right: 0
+      right: 0%
       background: $COLOR-ORANGE
       height: 58px
       width: 58px
       border-radius: 100%
-      transform: translateY(-50%)
+      transform: translate(0%,-50%,)
     &__icon
       display: flex
       align-items: center
@@ -176,7 +237,7 @@
   &__body
     position: relative
     margin-bottom: 60px
-
+    margin-top: 51px
   &__input
     z-index: -3
     opacity: 0
@@ -186,7 +247,9 @@
   &__label
     margin-right: 50px
     padding: 15px 0px
-    
+    @media (max-width: 970px)
+      margin-right: 12px
+      padding: 7px 0px
   &__labels
     cursor: pointer
     margin-right: auto
@@ -212,8 +275,12 @@
   &__contents-1 
     padding: 37px 30px
     background: rgba($COLOR-TEXT , 0.2 )
+    @media (max-width: 970px)
+      padding: 15px 12px
   &__contents-2
-    padding-top: 40px 
+    padding-top: 40px
+    @media (max-width: 970px)
+      padding-top: 20px
   &__table
     border-collapse: collapse
     width: 100%
@@ -224,6 +291,8 @@
     font-size: $FONT-SIZE-T2
     color: $COLOR-BLACK
     padding: 14px 23px
+    @media (max-width: 970px)
+      padding: 7px 12px
     &--label
       color: $COLOR-TEXT
   &__product

@@ -99,7 +99,7 @@ if(document.querySelector('.slider__body')){
 }
 
 
-  if(document.querySelector('.products-slider__slider')){
+if(document.querySelector('.products-slider__slider')){
   let productSlider = new Swiper('.products-slider__slider', {
     /*
      effect: 'fade',
@@ -113,7 +113,7 @@ if(document.querySelector('.slider__body')){
    slidesPerView: 1,
    autoHeight: true,
    speed: 900,
-   spaceBetween: 0,
+   spaceBetween: 30,
    loop: true,
    //touchRatio: 0 ,
    //simuLateTouch: false,
@@ -222,4 +222,117 @@ if(document.querySelector('.brands-slider__body')){
   //},
 });
  
+}
+
+if(document.querySelector('.catalogs__slider')){
+  let Catalogs = new Swiper('.catalogs__slider', {
+    /*
+     effect: 'fade',
+     autoplay: {
+     delay: 3000,
+     disableOnInteraction: false,
+     },
+     */
+   observer:true,
+   observerParents: true,
+   slidesPerView: 1,
+   autoHeight: true,
+   speed: 900,
+   spaceBetween: 0,
+   loop: true,
+   
+
+   on:{
+     lazyImageReady: function(){
+       ibg();
+     },
+   }  
+   // And if we need scrollbar
+ //scrollbar: {
+   //el: '.swiper-scrollbar',
+ //},
+});
+};
+
+
+
+
+
+if(document.querySelector('.good__subslider')){
+  let goodSubSliders = new Swiper('.good__subsliders', {
+    /*
+     effect: 'fade',
+     autoplay: {
+     delay: 3000,
+     disableOnInteraction: false,
+     },
+     */
+   observer:true,
+   observerParents: true,
+   slidesPerView: 4,
+   freeMode: true,
+   watchSlidesVisibility: true,
+   watchSlidesProgress: true,
+   speed: 900,
+   spaceBetween: 14,
+   
+   //loop: true,
+   breakpoints:{
+    320:{
+      slidesPerView: 4,
+      autoHeight: true,
+    },
+    480:{
+      slidesPerView: 4,
+      
+    },
+    600:{
+      slidesPerView: 4,
+      
+    },
+    768:{
+      slidesPerView: 4,
+      
+    },
+    991:{
+      slidesPerView: 4,
+    },
+  },
+    
+   // And if we need scrollbar
+ //scrollbar: {
+   //el: '.swiper-scrollbar',
+ //},
+});
+
+if(document.querySelector('.good__mainslider__container')){
+  let goodMainSlider = new Swiper('.good__mainslider', {
+    /*
+     effect: 'fade',
+     autoplay: {
+     delay: 3000,
+     disableOnInteraction: false,
+     },
+     */
+   observer:true,
+   observerParents: true,
+   slidesPerView: 1,
+   speed: 900,
+   spaceBetween: 5,
+   //loop: true,
+   thumbs: {
+    swiper: goodSubSliders,
+  },
+
+   on:{
+     lazyImageReady: function(){
+       ibg();
+     },
+   }  
+   // And if we need scrollbar
+ //scrollbar: {
+   //el: '.swiper-scrollbar',
+ //},
+});
+};
 }

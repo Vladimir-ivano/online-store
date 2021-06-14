@@ -1,5 +1,6 @@
 .navs
   padding: 35px 0 26px 0
+  display: flex
   &__inner
     display: flex
   &__item--activ
@@ -36,11 +37,15 @@
     margin: 15px 0 
     border: 1px solid rgba($COLOR-TEXT,0.4 )
     &--navs
-      margin: -15px 0
+      margin: 0px 0
   &__show
     display: flex
     align-items: center
     width: 30%
+    @media (max-width: 620px)
+      display: flex
+      flex-wrap: wrap
+
   &__item
     display: flex
     align-items: center
@@ -64,9 +69,12 @@
     &--shows
       min-width: 50px
       border: 1px solid rgba($COLOR-TEXT,0.4 )
-
+      @media (max-width: 620px)
+        width: 90px
   &__select
     position: relative
+    @media (max-width: 643px)
+      margin-top: 7px
     &::after
       margin-right: 6px
       content: ""
@@ -92,6 +100,9 @@
     height: 36px
     background: $COLOR-GREEN
     margin-right: 10px
+    &--list
+      @media (max-width: 905px)
+        display: none
     &_activ
       background: $COLOR-ACCENT
     &:hover
@@ -102,27 +113,38 @@
     fill: $COLOR-ACCENT
   &__pagging
     display: flex
+  &__paggings
+    justify-content: flex-end
+    flex-basis: 45%
+    @media (max-width: 905px)
+      flex-basis: 35%
   &__list
     display: flex
-  &__item 
+    margin: 0 10px
     
-
-    &:first-child
+  &__item 
+    @media (max-width: 643px)
+      display: flex
+      flex-wrap: wrap
+  &__items
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 33px
+    height: 33px
+    border-radius: 50%
+    &.activ
+      background: $COLOR-ORANGE
+      .catalogs__links
+        color: $COLOR-ACCENT
   &__links
     display: flex
     align-items: center
     justify-content: center
-    margin: 0 15px
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-TEL
-    line-height: $FONT-HEIGHT1
     color: $COLOR-BLACK
-    &--activ
-      color: $COLOR-ACCENT
-      width: 28px
-      height: 28px
-      border-radius: 100%
-      background: $COLOR-ORANGE
+    
   &__products
     display: block
     margin-bottom: 40px
@@ -132,6 +154,22 @@
     width: 25px
     height: 25px
     fill: $COLOR-ACCENT
+  .swiper-pagination
+    position: relative
+  .swiper-pagination-bullet
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: $FONT-WEIGHT-BLACK
+    font-size: $FONT-SIZE-TEL
+    color: $COLOR-BLACK
+    opacity: 1
+    background: none
+    width: 33px
+    height: 33px
+  .swiper-pagination-bullet-active
+    color: #fff
+    background: $COLOR-ORANGE
       
       
       

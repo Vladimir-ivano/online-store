@@ -5,157 +5,9 @@
     margin-bottom: 30px
     @media (max-width: 990px)
       margin-bottom: 10px
+      margin-top: 10px
   &__control
     display: flex
-  &__info
-    margin: 0 0px 0 -7px
-  &__title
-    text-transform: uppercase
-    font-size: $FONT-SIZE-CAT
-    color: rgba($COLOR-TEXT,0.6 )
-    font-weight: $FONT-WEIGHT-BOLT
-    font-family: $FONT-FAMALI1
-    @media (max-width: 905px)
-      font-size: $FONT-SIZE-PRISE
-    @media (max-width: 450px)
-      width: 150px
-  &__items
-    display: flex
-   
-    margin-bottom: 31px
-    flex-wrap: wrap
-    padding: 7px 
-    justify-content: space-between
-    @media (max-width: 1098px)
-      padding: 15px
-    @media (max-width: 619px)
-      justify-content: center
-    
-  &__column
-    flex-basis: 33.333%
-    margin-right: -15px
-    margin-bottom: 20px
-    @media (max-width: 1098px)
-      flex-basis: 49%
-      margin-right: 2px
-    @media (max-width: 905px)
-      flex-basis: 33.333%
-    @media (max-width: 905px)
-      flex-basis: 49%
-    @media (max-width: 635px)
-      width: 100%
-  &__item
-    overflow: hidden
-    position: relative
-    &:hover
-      .products-slider__product--hover
-        transform: translateX(0%)
-        opacity: 1
-  &__product
-    overflow: hidden
-    height: 100%
-    width: 262px
-    border: 1px solid rgba($COLOR-TEXT ,0.2 )
-    @media (max-width: 1098px)
-      width: auto
-    @media (max-width: 629px)
-      width: 262px
-    &--hover
-      display: flex
-      flex-direction: column
-      padding: 20px 20px 20px 20px
-      position: absolute
-      top: 0
-      left: 0
-      z-index: 2
-      height: 100%
-      width: 262px
-      border: 3px solid $COLOR-ORANGE
-      background: rgba(#000 ,0.84)
-      opacity: 0
-      transform: translatex(-100%)
-      transition: transform 0.2s linear
-      
-      @media (max-width: 1098px)
-        width: 100%
-      @media (max-width: 619px)
-        width: 262px
-    &--contant
-      flex: 1 0 auto
-      color: $COLOR-ACCENT
-    
-  &--title
-    font-size: $FONT-SIZE-T2
-    color: $COLOR-ACCENT
-    line-height: $FONT-HEIGHT2
-    font-weight: $FONT-WEIGHT-BOLT
-  &--subtitle
-    color: rgba($COLOR-TEXT ,0.5 )
-    line-height: $FONT-HEIGHT2
-    font-weight: $FONT-WEIGHT-LIGHT
-    font-size: $FONT-SIZE-MENU
-    margin-bottom: 30px
-  &__option
-    display: flex
-    flex-direction: column
-  &--pris
-    color: $COLOR-ACCENT
-  &--texts
-    color: $COLOR-ACCENT
-    line-height: $FONT-HEIGHT2
-    font-weight: $FONT-WEIGHT-LIGHT
-    font-size: $FONT-SIZE-MENU
-    &:last-child
-      margin-bottom: 20px
-    &::after
-      display: block 
-      content: attr(data-name)
-      color: $COLOR-ORANGE
-      font-weight: $FONT-WEIGHT-BOLT
-  &--icons
-    margin: 0 auto
-    display: flex
-    height: 60px
-    width: 60px
-    background: $COLOR-ORANGE
-    margin-bottom: 29px
-  &--iconss
-    margin: 0 auto
-    display: flex
-    height: 60px
-    width: 60px
-    background: $COLOR-ORANGE
-    margin-bottom: 5px
-  &--icon
-    width: 27px
-    height: 31px
-  &--inner
-    padding: 0 25px
-    text-align: left
-  &--titles
-    font-weight: $FONT-WEIGHT-BOLT
-  &--contents
-    flex: 0 0 auto
-  &--content
-    padding-bottom: 15px
-    display: flex
-  &--text
-    display: block
-    position: absolute
-    bottom: 19px
-    left: 10px
-    margin-right: auto
-    color: $COLOR-ORANGE
-    font-size: $FONT-SIZE-MENU
-    font-weight: $FONT-WEIGHT-LIGHT
-    background: $COLOR-ACCENT
-    padding: 6px 11px
-    border-radius: 50px
-  &--item
-    
-    margin-left: auto
-    display: flex
-    flex-direction: column
   &__control
     display: flex
     align-items: center
@@ -174,6 +26,149 @@
       transform: rotate(180deg)
     &:hover
       fill: $COLOR-ORANGE
+  &--item
+    margin-left: auto
+  
+    align-items: flex-end
+  &__info
+    margin: 0 0px 0 -7px
+  &__title
+    text-transform: uppercase
+    font-size: $FONT-SIZE-CAT
+    color: rgba($COLOR-TEXT,0.6 )
+    font-weight: $FONT-WEIGHT-BOLT
+    font-family: $FONT-FAMALI1
+    @media (max-width: 905px)
+      font-size: $FONT-SIZE-PRISE
+    @media (max-width: 450px)
+      width: 150px
+  &__items
+    display: flex
+    margin-bottom: 31px
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: 1098px)
+      padding: 15px
+    @media (max-width: 619px)
+      justify-content: center
+  &__column
+    flex-basis: 33.333%
+    margin-right: -15px
+    margin-bottom: 20px
+    @media (max-width: 1098px)
+      flex-basis: 49%
+      margin-right: 2px
+    @media (max-width: 905px)
+      flex-basis: 33.333%
+    @media (max-width: 905px)
+      flex-basis: 49%
+    @media (max-width: 635px)
+      width: 100%
+  &__item
+    margin-bottom: 5px
+    overflow: hidden
+    position: relative
+    &:hover
+      .products-slider__product--hover
+        transform: translateX(0%)
+        opacity: 1
+  &__product
+    overflow: hidden
+    height: 100%
+    width: 262px
+    border: 1px solid rgba($COLOR-TEXT ,0.2 )
+    @media (max-width: 1098px)
+      width: auto
+    @media (max-width: 629px)
+      width: 262px
+    &--hover
+      display: flex
+      flex-direction: column
+      height: 100%
+      padding: 20px 20px 20px 20px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 2
+      width: 262px
+      border: 3px solid $COLOR-ORANGE
+      background: rgba(#000 ,0.84)
+      opacity: 0
+      transform: translatex(-100%)
+      color: $COLOR-ACCENT
+      transition: transform 0.2s linear
+      @media (max-width: 1098px)
+        width: 100%
+      @media (max-width: 619px)
+        width: 262px
+    &--contant
+      flex: 1 0 auto
+    &--title
+      font-size: $FONT-SIZE-T2
+      line-height: $FONT-HEIGHT2
+      font-weight: $FONT-WEIGHT-BOLT
+    &--subtitle
+      color: rgba($COLOR-TEXT ,0.5 )
+      line-height: $FONT-HEIGHT2
+      font-weight: $FONT-WEIGHT-LIGHT
+      font-size: $FONT-SIZE-MENU
+      margin-bottom: 30px
+    &--option
+      display: flex
+      flex-direction: column
+    &--texts
+      color: $COLOR-ACCENT
+      line-height: $FONT-HEIGHT2
+      font-weight: $FONT-WEIGHT-LIGHT
+      font-size: $FONT-SIZE-MENU
+      &:last-child
+        margin-bottom: 20px
+      &::after
+        display: block 
+        content: attr(data-name)
+        color: $COLOR-ORANGE
+        font-weight: $FONT-WEIGHT-BOLT
+    &--icons
+      position: relative
+      margin: 0 auto
+      display: flex
+      height: 60px
+      width: 60px
+      background: $COLOR-ORANGE
+      margin-bottom: 5px
+      border-radius: 50%
+      transition: all .5s linear
+      &:hover
+        background: $light-accent
+
+    &--icon
+      position: absolute
+      fill: $COLOR-ACCENT
+      top: 50%
+      left: 50%
+      width: 27px
+      height: 31px
+      transform: translate(-50%,-50%)
+  &--content
+    flex: 0 0 auto
+  &--contents
+    margin-top: 5px
+    position: relative
+    display: flex
+    justify-content: space-between
+  &--text
+    display: flex
+    position: absolute
+    top: 50%
+    align-items: center
+    justify-content: center
+    color: $COLOR-ORANGE
+    font-size: $FONT-SIZE-MENU
+    font-weight: $FONT-WEIGHT-LIGHT
+    background: $COLOR-ACCENT
+    padding: 6px 11px
+    border-radius: 50px
+    transform: translateY(-50%)
 .swiper-pagination-current
   font-size: $FONT-SIZE-CAT
   font-weight: $FONT-WEIGHT-BOLT

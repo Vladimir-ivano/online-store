@@ -1,9 +1,26 @@
 .filter
+  position: relative
+  z-index: 10
   margin-top: 20px 
   border: 4px solid $light-accent
   height: auto
   display: flex
   flex-direction: column
+  z-index: 3
+  &__titles
+    cursor: pointer
+    padding: 25px 10px
+    text-transform: uppercase
+    color: $COLOR-GREEN
+    font-size: $FONT-SIZE-PRISE
+    font-family: $FONT-FAMALI1
+    font-weight: $FONT-WEIGHT-BOLT
+    transition: all 0.2s linear
+    border-bottom: 1px solid $light-accent
+  &__contant
+    display: none
+    &.activ
+      display: block
   &__sector
     border-bottom: 1px solid $light-accent
     &:last-child
@@ -16,11 +33,13 @@
     &--one
     padding: 0 12px 25px 12px
   &__title
+    
     margin-top: 30px
     margin-bottom: 20px
     font-weight: $FONT-WEIGHT-BLACK
     font-size: $FONT-SIZE-T2
     color: $COLOR-GREEN
+    transition: all 0.2s linear
   &__slider
     margin-bottom: 40px
   &__inputs
@@ -38,6 +57,7 @@
     border-radius: 4px
     padding: 5px 5px
     border: 1px solid $COLOR-TEXT
+    
   &__slider
     background: rgba($COLOR-TEXT, 0.3)
     border: none
@@ -139,6 +159,8 @@
       height: 30px
       border: 1px solid $light-accent
       border-radius: 100%
+      &--list
+        
     &__icons
       fill: $light-accent
       width: 12px
@@ -219,7 +241,7 @@
   display: none
 .noUi-handle
   cursor: pointer
-  position: relative
+  
   box-shadow: none
   background: $COLOR-ACCENT
   border-radius: 100%
@@ -236,7 +258,9 @@
     left: 48.5%
     transform: translate(-48.5%, -48.5%)
     background: $COLOR-ORANGE
-  
+.noUi-origin
+  position: absolute
+
 .noUi-horizontal .noUi-handle
   height: 23px
   top: -10px

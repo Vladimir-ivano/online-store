@@ -1,17 +1,18 @@
 .aside
   display: flex
   flex-direction: column
-  @media (max-width: 905px)
+  @media (max-width: 991px)
     order: 1
 .menu
   position: relative
   z-index: 4
   flex-basis: 260px
   margin-right: 30px
-  @media (max-width: 905px)
+  @media (max-width: 991px)
     flex-basis: 100%
     margin: 10px 15px 10px 15px
 .product
+  
   padding: 13px 25px
   &__item
     display: flex
@@ -28,12 +29,14 @@
       background-color: $COLOR-ORANGE
       color: $COLOR-ACCENT
     &__img
+      
       width: 200px
-      height: auto
+      height: 246px
     &__image
-      margin: 25px 0
       width: 100%
       object-fit: cover
+      height: 200px
+      
   &__inner
     text-align: center
     margin: 0 -25px
@@ -62,18 +65,24 @@
       &:hover
         background-color: rgba($COLOR-GREEN, 0.5)
     &__item
+      display: flex
+      flex-direction: column
       text-align: right
     &__prise
       font-size: $FONT-SIZE-PRISE
       font-weight: $FONT-WEIGHT-BLACK
       color: $COLOR-BLACK
       line-height: $FONT-HEIGHT
+      &--prise
+        color: $COLOR-ACCENT
     &__prises
       margin-bottom: 8px
       font-size: $FONT-SIZE-TEL
       font-weight: $FONT-WEIGHT-LIGHT
       color: rgba($COLOR-TEXT, 0.5)
       line-height: $FONT-HEIGHT
+      &--prises
+        color: $COLOR-ACCENT
   &__icon
     position: absolute
     top: 50%

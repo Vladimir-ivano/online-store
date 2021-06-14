@@ -60,16 +60,17 @@ document.addEventListener('DOMContentLoaded', function() {
    selectedItemNumber === li ? item.classList.add(classActive) : item.classList.remove(classActive);
   };
  };
-VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
-VK.Widgets.Group("vk_groups", {mode: 0, width: "263",height: "263"}, 20003922);
+ 
 });
 
- const searchSelect = document.querySelector( ' .search__btn');
- if(searchSelect ) {  
-     const categoriesSerch = document.querySelector( '.search__categories ');
-   searchSelect .addEventListener("click", function(e){
-    searchSelect.classList.toggle( 'activ')
-    categoriesSerch.classList.toggle( 'activ')
-  });
+const searchSelect = document.querySelector( ' .search__btn');
+if(searchSelect ) {  
+    const categoriesSerch = document.querySelector( '.search__categories ');
+  searchSelect .addEventListener("click", function(e){
+   searchSelect.classList.toggle( 'activ')
+   categoriesSerch.classList.toggle( 'activ')
+ });
 };
+
+
 
