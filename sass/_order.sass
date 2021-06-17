@@ -6,13 +6,20 @@
     font-weight: $FONT-WEIGHT-BOLT
     text-transform: uppercase
     margin-bottom: 25px
+    @media (max-width: 991px)
+      margin-bottom: 15px
+      font-size: $FONT-SIZE-PRISE
+
   &__body
-    padding: 15px 15px 20px 
+    padding: 15px 15px 20px 0
     position: relative
     background: rgba($COLOR-TEXT , 0.2 )
     display: flex
     flex-wrap: wrap
     margin-bottom: 40px
+    @media (max-width: 1086px)
+      padding: 5px 15px 10px 0
+      margin-bottom: 20px
   &__input
     opacity: 0
     top: 0
@@ -22,6 +29,16 @@
     margin-right: auto
     padding: 15px 23px
     margin-bottom: 50px
+
+    @media (max-width: 991px)
+      margin-bottom: 20px
+
+
+    @media (max-width: 680px)
+      margin-bottom: 0px
+      width: 100%
+      text-align: center
+     
   &__labels
     cursor: pointer
     margin-right: auto
@@ -33,17 +50,39 @@
   &__form
     display: none
     width: 100%
+    @media (max-width: 680px)
+      margin-top: 20px
   &__inner
     margin: 0 40px 0 30px
     display: flex
+    @media (max-width: 1086px)
+      margin: 0 20px 0 15px
+    @media (max-width: 726px)
+      display: flex
+      flex-wrap: wrap
+    @media (max-width: 586px)
+      margin: 0 5px 0 15px
   &__forms
     width: 400px
+    @media (max-width: 726px)
+      width: 100%
   &__line 
     display: flex
     margin-bottom: 10px
     align-items: center
     justify-content: space-between
-    
+    @media (max-width: 426px)
+      display: flex
+      flex-wrap: wrap
+    &__check
+      display: flex
+      flex: 1 1 100%
+      margin-top: 50px
+      margin-left: 160px
+    &__checkes
+     
+    &__checks
+      margin-left: 10px
     &--lines
       margin-left: 100px
     &__titles
@@ -54,14 +93,23 @@
     &__title
       font-size: $FONT-SIZE-MENU
       font-weight: $FONT-WEIGHT-BLACK
-      display: flex
+      flex-basis: 35%
       line-height: $FONT-HEIGHT2
       color: $COLOR-BLACK
+      
+      @media (max-width: 426px)
+        margin-bottom: 10px
+        flex-basis: 100%
+         
       span
         margin-left: 2px
         color: red
     &__inputs
-      width: 213px
+      width: 55%
+      @media (max-width: 426px)
+        width: 100%
+
+
     &__input
       color: rgba($COLOR-TEXT , 0.9 )
       width: 100%
@@ -72,14 +120,20 @@
       &--texter
         resize: none
         padding: 5px 5px
-        width: 216px
+        width: 100%
         height: 120px
     &__selects
       color: rgba($COLOR-TEXT , 0.9 )
-      min-width: 213px
+      width: 100%
+  &__select
+    width: 55%
+    @media (max-width: 426px)
+      width: 100%
   &__texts
     margin-left: 40px
     width: calc( 100% - 400px  )
+    @media (max-width: 726px)
+      width: 100%
   &__text
     margin-bottom: 15px
     font-weight: $FONT-WEIGHT-LIGHT
@@ -104,10 +158,24 @@
     padding: 10px 10px
     display: flex
     align-items: center
+    @media (max-width: 798px)
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 20px
   &__contant
     display: flex
     align-items: center
-    
+    flex: 1 1 55%
+    @media (max-width: 798px)
+      flex: 1 1 100%
+  &__contats
+    display: flex
+    align-items: center
+    flex: 1 1 35%
+    @media (max-width: 798px)
+      flex: 1 1 80%
+      display: flex
+      justify-content: space-between
   &__contents
     display: flex
     flex-direction: column
@@ -116,7 +184,6 @@
     font-size: $FONT-SIZE-MENU
     color: $dark-accent
     font-weight: $FONT-WEIGHT-BLACK
-    margin-bottom: 15px
     span
       font-weight: $FONT-WEIGHT-LIGHT
   &__price
@@ -134,6 +201,7 @@
   &__total
     display: flex
     flex-direction: column
+    
     &__title
       font-weight: $FONT-WEIGHT-LIGHT
       color: $COLOR-TEXT
@@ -167,10 +235,14 @@
       font-size: $FONT-SIZE-PRISE
       text-transform: uppercase
       font-weight: $FONT-WEIGHT-BLACK
+      @media (max-width: 798px)
+        font-size: $FONT-SIZE-TEL
       span
         font-size: $FONT-SIZE-price
         margin-left: 10px
         color: $COLOR-ORANGE
+        @media (max-width: 798px)
+        font-size: $FONT-SIZE-CAT
     &__btns
       display: flex
       justify-content: flex-end
@@ -189,6 +261,7 @@
         background: #e27215
 .quantity
   flex-basis: 20%
+  margin-right: 50px
   &__order
     display: flex
   &__input

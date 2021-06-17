@@ -5,12 +5,13 @@
   &__items
     margin-bottom: 0px
   &__title
-    color: $COLOR-BLACK
-    font-family: $FONT-FAMALI4 
     text-transform: uppercase
-    font-weight: $FONT-WEIGHT-BOLT
     font-size: $FONT-SIZE-CAT
-    line-height: $FONT-HEIGHT2
+    color: $COLOR-BLACK
+    font-weight: $FONT-WEIGHT-REG
+    font-family: $FONT-FAMALI1
+    @media (max-width: 905px)
+      font-size: $FONT-SIZE-PRISE
   &__subtitle
     font-size: $FONT-SIZE-CAT
     font-family: $FONT-FAMALI4 
@@ -18,6 +19,9 @@
     font-weight: $FONT-WEIGHT-BOLT
     color: rgba($COLOR-TEXT, 0.6)
     margin-bottom: 25px
+    @media (max-width: 991px)
+      margin-bottom: 15px
+      font-size: $FONT-SIZE-PRISE
   &__container
     display: flex
     justify-content: space-between
