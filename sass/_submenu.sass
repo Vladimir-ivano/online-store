@@ -61,6 +61,9 @@
   &__category
     overflow: hidden
     max-height: 0
+    @media (max-width: 991px)
+      .catalog.is-vible-submenu &
+        width: 50%
   &__item
     align-items: center
     cursor: pointer
@@ -82,7 +85,6 @@
     transform: translateX(0%)
     width: 14px
   &__submenu
-  
     background-color: $COLOR-ACCENT
     border: 2px solid $dark-accent
     height: 100%
@@ -93,10 +95,8 @@
     width: 100%
     z-index: 1
     @media (max-width: 991px) 
-      left: -100%
-      transform: translate(100%, 0px)
       
-
+  
     &-item
       height: auto
       left: 0
