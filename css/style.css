@@ -941,6 +941,12 @@ body, html {
   width: 100%;
   z-index: 1;
 }
+@media (max-width: 991px) {
+  .catalog__submenu {
+    width: 50%;
+    z-index: 2;
+  }
+}
 .catalog__submenu-item {
   height: auto;
   left: 0;
