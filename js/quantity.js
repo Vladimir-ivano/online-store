@@ -18,10 +18,10 @@ const init = () =>{
 init();
 
 document.getElementById('basket').addEventListener('click', (event)=> {
-  if(event.target.classList.contains('quantity__button-minus')){
+  if (event.target.classList.contains('quantity__button-minus')){
     console.log('minus');
   }
-  if(event.target.classList.contains('quantity__button-minus')){
+  if (event.target.classList.contains('quantity__button-minus')){
     console.log('plus');
   }
 });
