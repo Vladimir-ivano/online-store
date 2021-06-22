@@ -904,6 +904,11 @@ body, html {
     width: 50%;
   }
 }
+@media (max-width: 545px) {
+  .catalog.is-visible-submenu .catalog__category {
+    width: 40%;
+  }
+}
 .catalog__item {
   align-items: center;
   cursor: pointer;
@@ -944,6 +949,12 @@ body, html {
 @media (max-width: 991px) {
   .catalog__submenu {
     width: 50%;
+    z-index: 2;
+  }
+}
+@media (max-width: 545px) {
+  .catalog__submenu {
+    width: 70%;
     z-index: 2;
   }
 }

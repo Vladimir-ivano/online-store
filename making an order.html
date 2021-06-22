@@ -1202,7 +1202,7 @@
                   <div class="checkout__line">
                     <span class="checkout__line__title"> Способ оплаты:<span>*</span></span>
                     <div class="catalogs__select checkout__select">
-                      <select class="catalogs__form checkout__line__selects" name="form[]" id="">
+                      <select class="catalogs__form checkout__line__selects" name="form[]" id="#">
                         <option class="catalogs__link " value="1" selected="selected">Сбербанк</option>
                         <option class="catalogs__link " value="2">ВТБ</option>
                         <option class="catalogs__link " value="3">PayPal</option>
@@ -1274,7 +1274,7 @@
 
         <h4 class=" checkout__title"> Ваш заказ</h4>
         <div class="order">
-          <div class="order__body">
+          <div class="order__body" id="basket">
             <div class="order__items">
               <div class="order__item">
                 <div class="order__contant">
@@ -1283,30 +1283,30 @@
                   </a>
                   <a class="order__contents" href="#">
                     <h6 class="order__titles ">BH Fitness F1 G6414V<span> Беговая дорожка</span> </h6>
-                    <div class="order__total__prise">64000₽</div>
+                    <div class="order__total__prise prise">64000₽</div>
                   </a>
                 </div>
                 <div class="order__contats">
-                  <div class="quantity">
-                    <div class="quantity__order">
-                      <button class="quantity__button">
-                        <svg class="quantity__button__icon">
+                  <div class="quantity count">
+                    <div class="quantity__order ">
+                      <button class="quantity__button quantity__button-minus">
+                        <svg class="quantity__button__icon ">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </button>
                       <div class="quantity__input">
-                        <input class="quantity__inputs" type="number" value="1">
+                        <input class="quantity__inputs input" type="number" value="2" data-prise= "64000">
                       </div>
-                      <button class="quantity__button">
-                        <svg class="quantity__button__icon quantity__button__icon--next">
+                      <button class="quantity__button quantity__button-plus">
+                        <svg class="quantity__button__icon quantity__button__icon--next  ">
                           <use xlink:href="#arrow"></use>
                         </svg>
                       </button>
                     </div>
                   </div><!-- /quantity-->
                   <div class="order__total">
-                    <h6 class="order__total__title">всего </h6>
-                    <span class="order__total__prise">64000₽</span>
+                    <h6 class="order__total__title">всего: </h6>
+                    <span class="order__total__prise subtotal">64000₽</span>
                   </div>
                 </div>
                   <button class="order__btn">
@@ -1327,30 +1327,30 @@
                   </a>
                   <a class="order__contents" href="#">
                     <h6 class="order__titles ">BH Fitness F1 G6414V<span> Беговая дорожка</span> </h6>
-                    <div class="order__total__prise">64000₽</div>
+                    <div class="order__total__prise prise">64000₽</div>
                   </a>
                 </div>
                 <div class="order__contats">
-                  <div class="quantity">
-                    <div class="quantity__order">
-                      <button class="quantity__button">
-                        <svg class="quantity__button__icon">
-                          <use xlink:href="#arrow"></use>
+                  <div class="quantity count">
+                    <div class="quantity__order ">
+                      <button class="quantity__button btn-minus">
+                        <svg class="quantity__button__icon ">
+                          <use xlink:href="#arrow">-</use>
                         </svg>
                       </button>
                       <div class="quantity__input">
-                        <input class="quantity__inputs" type="number" value="1">
+                        <input class="quantity__inputs input" type="number" value="1" data-prise= "64000">
                       </div>
-                      <button class="quantity__button">
-                        <svg class="quantity__button__icon quantity__button__icon--next">
-                          <use xlink:href="#arrow"></use>
+                      <button class="quantity__button btn-plus">
+                        <svg class="quantity__button__icon quantity__button__icon--next  ">
+                          <use xlink:href="#arrow">+</use>
                         </svg>
                       </button>
                     </div>
                   </div><!-- /quantity-->
                   <div class="order__total">
-                    <h6 class="order__total__title">всего </h6>
-                    <span class="order__total__prise">64000₽</span>
+                    <h6 class="order__total__title">всего: </h6>
+                    <span class="order__total__prise subtotal">64000₽</span>
                   </div>
                 </div>
                   <button class="order__btn">
@@ -1365,14 +1365,14 @@
 
             <div class="order__totals">
               <div class="order__totals__body">
-                <div class="order__totals__title">итого <span>120000₽ </span></div>
+                <div class="order__totals__title">итого <span id="total-prise"></span>₽</div>
 
               </div>
             </div><!-- /order__totals-->
             <div class="order__totals__btns">
               <button class="order__totals__btn " type="submit">оформить заказ</button>
             </div>
-          </div>
+          </div><!-- /order__body-->
         </div>
       </section><!-- section-->
 
@@ -1588,6 +1588,8 @@
   <script src="./js/burger.js"></script>
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
   <script src="./js/webKid.js"></script>
+  <script src="/js/quantity.js"></script>
+
 </body>
 
 </html>
