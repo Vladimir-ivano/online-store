@@ -11,7 +11,7 @@ for (let oi = 0; oi < orderItems.length; oi++) {
 		productPrice = +inputCount.getAttribute('data-prise'), // Цена товара.
 		btnMinus = orderItem.querySelector('.quantity__button-minus'), // Кнопка уменьшения количества.
 		btnPlus = orderItem.querySelector('.quantity__button-plus'), // Кнопка увеличения количества.
-		totalPrice = orderItem.querySelector('.order__total__prise'); // Итоговая цена товара.
+		totalPrice = orderItem.querySelector('.subtotal'); // Итоговая цена товара.
 
 	let counterItem = 1; // Начальное количество товара.
 
@@ -19,17 +19,19 @@ for (let oi = 0; oi < orderItems.length; oi++) {
 	if (inputCount.value === '' || inputCount.value === 0) inputCount.value = counterItem;
 
 	// Изменение итоговой суммы исходя от выбранных товаров:
-	if ((totalSum.textContent === '' || totalSum.textContent === 0) && orderItems.length > 0) totalSum.textContent += productPrice;
+	if ((totalSum.textContent === '' || totalSum.textContent === 0) && orderItems.length > 0) totalSum.textContent += productPrice*orderItems.length;
 
 	// Уменьшение количества штук товара и уменьшение общей цены за товар:
 	btnMinus.addEventListener('click', function() {
 		counterItem <= 1 ? counterItem = 1 : counterItem--;
+		inputCount.value = counterItem;
 		totalPrice.textContent = productPrice*counterItem;
 	});
 
 	// Увеличение количества штук товара и увеличение общей цены за товар:
 	btnPlus.addEventListener('click', function() {
 		counterItem++;
+		inputCount.value = counterItem;
 		totalPrice.textContent = productPrice*counterItem;
 	});
 };
