@@ -8,8 +8,8 @@
   width: 260px
   z-index: 2
   @media (max-width: 991px)
-    
     width: 100%
+  
   &__control
     align-items: center
     display: flex
@@ -64,9 +64,12 @@
     @media (max-width: 991px)
       .catalog.is-visible-submenu &
         width: 50%
-    @media (max-width: 545px)
+    @media (max-width: 552px)
       .catalog.is-visible-submenu &
-        width: 40%
+        width: 80%
+    @media (max-width: 392px)
+      .catalog.is-visible-submenu &
+        width: 90%
   &__item
     align-items: center
     cursor: pointer
@@ -81,7 +84,8 @@
         animation-name: move-decor
   &__text
     margin-right: auto
-    
+    @media (max-width: 552px)
+     display: none
   &__decor
     animation-duration: 1s
     animation-timing-function: linear
@@ -102,7 +106,7 @@
     @media (max-width: 991px) 
       width: 50%
       z-index: 2
-    @media (max-width: 545px)
+    @media (max-width: 552px)
       width: 70%
       z-index: 2
     &-item
@@ -131,6 +135,10 @@
     .catalog.is-visible-submenu &
       opacity: 1
       transform: translateX(100%)
+      @media (max-width: 552px)
+        transform: translateX(45%)
+      @media (max-width: 392px)
+        transform: translateX(40%)
   &__types
     border-bottom: 1px solid $grey 
     padding: 20px 0
