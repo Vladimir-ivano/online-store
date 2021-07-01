@@ -907,13 +907,13 @@ body, html {
 @media (max-width: 991px) {
   .catalog.is-visible-submenu .catalog__category {
     width: 50%;
-    z-index: 3;
+    max-width: 576px;
   }
 }
 @media (max-width: 576px) {
   .catalog.is-visible-submenu .catalog__category {
     transform: translateX(calc(-100% + 54px));
-    z-index: 5;
+    z-index: 3;
     width: 100%;
   }
 }
