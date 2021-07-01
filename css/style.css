@@ -904,16 +904,6 @@ body, html {
     width: 50%;
   }
 }
-@media (max-width: 552px) {
-  .catalog.is-visible-submenu .catalog__category {
-    width: 80%;
-  }
-}
-@media (max-width: 392px) {
-  .catalog.is-visible-submenu .catalog__category {
-    width: 90%;
-  }
-}
 .catalog__item {
   align-items: center;
   cursor: pointer;
@@ -931,11 +921,6 @@ body, html {
 }
 .catalog__text {
   margin-right: auto;
-}
-@media (max-width: 552px) {
-  .catalog__text {
-    display: none;
-  }
 }
 .catalog__decor {
   animation-duration: 1s;
