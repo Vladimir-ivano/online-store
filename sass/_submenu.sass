@@ -69,7 +69,7 @@
       .catalog.is-visible-submenu &
         transform: translateX(calc(-100% + 54px)) 
         z-index: 5
-        
+        width: 100%
     //@media (max-width: 392px)
       //.catalog.is-visible-submenu &
         //width: 90%
@@ -78,10 +78,7 @@
     cursor: pointer
     display: flex
     padding: 15px 20px
-    @media (max-width: 576px)
-      .catalog.is-visible-submenu &
-        width: 100%
-        transform: translateX(calc(-100% + 54px))
+    
     &:not(:last-child)
       border-bottom: 1px solid $light-accent
     &:hover
