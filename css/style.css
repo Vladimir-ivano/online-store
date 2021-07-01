@@ -911,9 +911,11 @@ body, html {
   }
 }
 @media (max-width: 576px) {
+  .catalog__category {
+    z-index: 3;
+  }
   .catalog.is-visible-submenu .catalog__category {
     transform: translateX(calc(-100% + 54px));
-    z-index: 3;
     width: 100%;
   }
 }
