@@ -9,7 +9,8 @@
   z-index: 2
   @media (max-width: 991px)
     width: 100%
-  
+  @media (max-width: 576px)
+    overflow: hidden
   &__control
     align-items: center
     display: flex
@@ -64,9 +65,11 @@
     @media (max-width: 991px)
       .catalog.is-visible-submenu &
         width: 50%
-    //@media (max-width: 552px)
-      //.catalog.is-visible-submenu &
-        //width: 80%
+    @media (max-width: 576px)
+      .catalog.is-visible-submenu &
+        translateX: (calc(-100% + 54px))
+        z-index: 5
+        
     //@media (max-width: 392px)
       //.catalog.is-visible-submenu &
         //width: 90%

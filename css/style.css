@@ -834,6 +834,11 @@ body, html {
     width: 100%;
   }
 }
+@media (max-width: 576px) {
+  .catalog {
+    overflow: hidden;
+  }
+}
 .catalog__control {
   align-items: center;
   display: flex;
@@ -902,6 +907,12 @@ body, html {
 @media (max-width: 991px) {
   .catalog.is-visible-submenu .catalog__category {
     width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .catalog.is-visible-submenu .catalog__category {
+    translateX: calc(-100% + 54px);
+    z-index: 5;
   }
 }
 .catalog__item {
