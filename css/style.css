@@ -971,6 +971,9 @@ body, html {
 @media (max-width: 392px) {
   .catalog__submenu {
     width: 90%;
+    left: 0%;
+    z-index: 2;
+    transform: translateX(-70%);
   }
 }
 .catalog__submenu-item {
@@ -1009,7 +1012,7 @@ body, html {
 }
 @media (max-width: 392px) {
   .catalog.is-visible-submenu .catalog__submenu {
-    transform: translateX(30%);
+    transform: translateX(15%);
   }
 }
 .catalog__types {
