@@ -78,7 +78,10 @@
     cursor: pointer
     display: flex
     padding: 15px 20px
-    
+    @media (max-width: 576px)
+      .catalog.is-visible-submenu &
+        width: 100%
+        transform: translateX(calc(-100% + 54px))
     &:not(:last-child)
       border-bottom: 1px solid $light-accent
     &:hover
