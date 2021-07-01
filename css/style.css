@@ -907,6 +907,7 @@ body, html {
 @media (max-width: 991px) {
   .catalog.is-visible-submenu .catalog__category {
     width: 50%;
+    z-index: 3;
   }
 }
 @media (max-width: 576px) {
