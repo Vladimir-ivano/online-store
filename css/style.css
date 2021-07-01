@@ -911,7 +911,7 @@ body, html {
 }
 @media (max-width: 576px) {
   .catalog.is-visible-submenu .catalog__category {
-    translateX: calc(-100% + 54px);
+    transform: translateX(calc(-100% + 54px));
     z-index: 5;
   }
 }
