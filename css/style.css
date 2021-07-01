@@ -965,7 +965,9 @@ body, html {
 @media (max-width: 552px) {
   .catalog__submenu {
     width: 70%;
+    left: 0%;
     z-index: 2;
+    transform: translateX(-90%);
   }
 }
 @media (max-width: 392px) {
