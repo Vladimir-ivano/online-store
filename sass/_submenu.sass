@@ -111,15 +111,10 @@
       width: 50%
       z-index: 2
     @media (max-width: 576px)
-      
-      
-    
-    
-    //@media (max-width: 392px)
-      width: 90%
-      left: 0%
-      z-index: 2
-      //transform: translateX(-70%)
+      .catalog.is-visible-submenu &
+        transform: none
+        left: 54px
+        width: calc(100% - 54px)
     &-item
       height: auto
       left: 0

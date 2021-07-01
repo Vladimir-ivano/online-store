@@ -960,6 +960,13 @@ body, html {
     z-index: 2;
   }
 }
+@media (max-width: 576px) {
+  .catalog.is-visible-submenu .catalog__submenu {
+    transform: none;
+    left: 54px;
+    width: calc(100% - 54px);
+  }
+}
 .catalog__submenu-item {
   height: auto;
   left: 0;
