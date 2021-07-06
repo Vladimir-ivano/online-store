@@ -95,8 +95,16 @@ if(document.querySelector('.slider__body')){
     //el: '.swiper-scrollbar',
   //},
 });
- 
-}
+
+let sliderImages = document.querySelectorAll('.slider__image');
+  
+
+};
+
+
+
+
+
 
 
 if(document.querySelector('.products-slider__slider')){
@@ -304,7 +312,7 @@ if(document.querySelector('.good__subslider')){
    //el: '.swiper-scrollbar',
  //},
 });
-
+};
 if(document.querySelector('.good__mainslider__container')){
   let goodMainSlider = new Swiper('.good__mainslider', {
     /*
@@ -333,6 +341,6 @@ if(document.querySelector('.good__mainslider__container')){
  //scrollbar: {
    //el: '.swiper-scrollbar',
  //},
-});
+  });
 };
-}
+
